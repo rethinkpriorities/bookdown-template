@@ -1,0 +1,40 @@
+---
+title: "Bookdown Template"
+author: "Rethink Priorities"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: ["assets/bib/book.bib", "assets/bib/packages.bib"]
+always_allow_html: yes
+link-citations: yes
+github-repo: rethinkpriorities/bookdown-template
+description: "A bookdown template "
+---
+
+```{r, setup, include=FALSE}
+# Load packages
+library(tidyverse)
+```
+
+# Bookdown Template {-}
+
+## About {-}
+
+This book is a bookdown template to be used for various projects of the Rethink Priorities survey team. The main goal of this book is to serve as a skeleton project that can be copied and used in other projects. Additionally, it contains some chapters that serve as tutorials for different features of this bookdown format.
+
+## Contributions {-}
+
+Please add yourself to the list below to acknowledge your contributions.
+
+- Willem Sleegers: [willem@rethinkpriorities.org](mailto:willem@rethinkpriorities.org)
+
+- David Reinstein: [dreinstein@rethinkpriorities.org](mailto:dreinstein@rethinkpriorities.org)
+
+
+```{r include=FALSE}
+# Automatically create a bib database for R packages
+knitr::write_bib(
+  x = c(.packages(), "bookdown", "knitr", "rmarkdown"),
+  file = "assets/bib/packages.bib"
+)
+```

@@ -1,0 +1,6 @@
+bookdown::bs4_book:
+  css: "assets/css/style.css"
+  includes:
+    in_header: "assets/html/header.html"
+  theme:
+    primary: "#42708e"

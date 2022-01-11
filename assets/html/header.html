@@ -1,0 +1,113 @@
+<header>
+  <script>
+    function toggleAllCode() {
+      // Find all the sourceCode elements
+      const elements = document.getElementsByClassName("sourceCode")
+      
+      // Loop over the elements and toggle the 'hidden' class if the element
+      // is a div
+      for (let element of elements) {
+        if (element.nodeName == "DIV") {
+          if (element.classList.contains("sourceCode")) {
+            element.classList.toggle("hidden")
+          }  
+        }
+      }
+      
+      // Update the button text
+      const button = document.getElementById("toggle-code-button")
+      
+      // Toggle the button's class
+      button.classList.toggle("code-hidden")
+
+      // Update the button text
+      if (button.classList.contains("code-hidden")) {
+        button.textContent = "Show All Code"
+      } else {
+        button.textContent = "Hide All Code"
+      }
+    }
+
+    function toggleText() {
+      // Find the foldable div this button belongs to
+      const div = this.parentNode;
+
+      // Loop over the elements and toggle the folded class
+      for (child of div.children) {
+        child.classList.toggle("folded")
+      }
+
+      // Toggle the text of the button
+      const button = this
+      if (button.textContent == "Show me more") {
+        button.textContent = "Show me less"
+      } else {
+        button.textContent = "Show me more"
+      }
+    }
+
+    function addFoldButtons() {
+      // Create a fold button
+      const button = document.createElement("button")
+      button.textContent = "Show me more"
+      button.className = "btn foldable-button"
+      button.onclick = toggleText
+
+      // Find all foldable divs
+      const foldableDivs = document.getElementsByClassName("foldable")
+      
+      // Loop over the foldable divs to add a folded class to each child and 
+      // add a foldable button at the bottom
+      for (let div of foldableDivs) {
+        const children = div.children;
+        for (let child of children) {
+          child.classList.toggle("folded")
+        }
+
+        div.insertBefore(button, div.firstChild)
+      }
+    }
+
+    window.onload = function() {
+      // Check if there are any code sections on the page
+      const codeBlocks = document.getElementsByClassName("sourceCode")
+      
+      // Add toggle code button, but only if there are code blocks
+      if (codeBlocks.length > 0) {
+        // Find the sidebar-chapter element on the right side of the page
+        const sidebar = document.getElementsByClassName("sidebar-chapter").item(0)
+        
+        // Create a settings div
+        const settings = document.createElement("div")
+        settings.className = "settings"
+        
+        // Create a settings label
+        const label = document.createElement("p")
+        label.textContent = "Settings"
+        label.className = "settings-label"
+        
+        // Add the label to the settings div
+        settings.appendChild(label)
+      
+        // Create the toggle all code button
+        const button = document.createElement("button")
+        button.textContent = "Show All Code"
+        button.id = "toggle-code-button"
+        button.className = "btn"
+        button.onclick = toggleAllCode
+        
+        // Add the button to the settings div
+        settings.appendChild(button)
+        
+        // Add the settings div to the beginning of the sidebar
+        sidebar.insertBefore(settings, sidebar.firstChild)
+        
+        // Run the toggleAllCode once to hide the code blocks by default
+        toggleAllCode()
+      }
+
+      // Add foldable text buttons
+      addFoldButtons()
+    }
+  </script>
+</header>
