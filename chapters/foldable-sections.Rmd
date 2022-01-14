@@ -17,7 +17,3 @@ This is a foldable section.
 By default is shows the "Show me more" text, followed by "Show me less" after clicking on it. This text could be changed to something else in the `header.html` file that can be found in the `assets` folder.
 
 For more information on custom blocks, see [here](https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html).
-
-::: foldable
-Test test
-:::

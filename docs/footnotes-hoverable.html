@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>4 EA Forum | Bookdown Template</title>
+<title>3 Footnotes (hoverable) | Bookdown Template</title>
 <meta name="author" content="Rethink Priorities">
-<meta name="description" content="We often need to make output into a format acceptable for the EA Forum. Our current thinking for the EA Survey reports is: Bookdown: detailed graphs and analysis, some technical details, but...">
+<meta name="description" content="Standard markdown footnote syntax should work: blah blah text^[contents of footnote] Which will create … blah blah text1 We have made these footnotes ‘hoverable’, so mouse-over should show their...">
 <meta name="generator" content="bookdown 0.24.4 with bs4_book()">
-<meta property="og:title" content="4 EA Forum | Bookdown Template">
+<meta property="og:title" content="3 Footnotes (hoverable) | Bookdown Template">
 <meta property="og:type" content="book">
-<meta property="og:description" content="We often need to make output into a format acceptable for the EA Forum. Our current thinking for the EA Survey reports is: Bookdown: detailed graphs and analysis, some technical details, but...">
+<meta property="og:description" content="Standard markdown footnote syntax should work: blah blah text^[contents of footnote] Which will create … blah blah text1 We have made these footnotes ‘hoverable’, so mouse-over should show their...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="4 EA Forum | Bookdown Template">
-<meta name="twitter:description" content="We often need to make output into a format acceptable for the EA Forum. Our current thinking for the EA Survey reports is: Bookdown: detailed graphs and analysis, some technical details, but...">
+<meta name="twitter:title" content="3 Footnotes (hoverable) | Bookdown Template">
+<meta name="twitter:description" content="Standard markdown footnote syntax should work: blah blah text^[contents of footnote] Which will create … blah blah text1 We have made these footnotes ‘hoverable’, so mouse-over should show their...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1.9000/transition.js"></script><script src="libs/bs3compat-0.3.1.9000/tabs.js"></script><script src="libs/bs3compat-0.3.1.9000/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -65,6 +65,12 @@
         }
 
         function addFoldButtons() {
+          // Create a fold button
+          const button = document.createElement("button")
+          button.textContent = "Show me more"
+          button.className = "btn foldable-button"
+          button.onclick = toggleText
+
           // Find all foldable divs
           const foldableDivs = document.getElementsByClassName("foldable")
           
@@ -75,12 +81,6 @@
             for (let child of children) {
               child.classList.toggle("folded")
             }
-            
-             // Create a fold button
-            const button = document.createElement("button")
-            button.textContent = "Show me more"
-            button.className = "btn foldable-button"
-            button.onclick = toggleText
 
             div.insertBefore(button, div.firstChild)
           }
@@ -152,8 +152,8 @@
 <li><a class="" href="index.html">Bookdown Template</a></li>
 <li><a class="" href="how-to-use-this-template.html"><span class="header-section-number">1</span> How to use this template</a></li>
 <li><a class="" href="foldable-sections.html"><span class="header-section-number">2</span> Foldable Sections</a></li>
-<li><a class="" href="footnotes-hoverable.html"><span class="header-section-number">3</span> Footnotes (hoverable)</a></li>
-<li><a class="active" href="ea-forum.html"><span class="header-section-number">4</span> EA Forum</a></li>
+<li><a class="active" href="footnotes-hoverable.html"><span class="header-section-number">3</span> Footnotes (hoverable)</a></li>
+<li><a class="" href="ea-forum.html"><span class="header-section-number">4</span> EA Forum</a></li>
 </ul>
 
         <div class="book-extra">
@@ -161,40 +161,25 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="ea-forum" class="section level1" number="4">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="footnotes-hoverable" class="section level1" number="3">
 <h1>
-<span class="header-section-number">4</span> EA Forum<a class="anchor" aria-label="anchor" href="#ea-forum"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3</span> Footnotes (hoverable)<a class="anchor" aria-label="anchor" href="#footnotes-hoverable"><i class="fas fa-link"></i></a>
 </h1>
-<p>We often need to make output into a format acceptable for the EA Forum.</p>
-<p>Our current thinking for the EA Survey reports is:</p>
-<ul>
-<li><p>Bookdown: detailed graphs and analysis, some technical details, but minimal discussion. Link to our ‘methodology’ bookdown where relevant, rather than re-explaining a concept</p></li>
-<li><p>EA Forum: Summaries and excerpts of the analysis and figures, more discussion, interpretation, and implications.</p></li>
-</ul>
-<div id="r-code-to-ea-forum-conversion" class="section level2 unnumbered">
-<h2>R code to EA Forum conversion<a class="anchor" aria-label="anchor" href="#r-code-to-ea-forum-conversion"><i class="fas fa-link"></i></a>
-</h2>
-<p>Typically, RP has made EA Forum these posts first in Google Docs for feedback and then there is some sort of procedure to get it into EA forum markdown syntax from there. For some previous posts, we pasted from the Rstudio visual mode pastes into Google docs for narrative, and figures/tables could be manually pasted. But we want to avoid having to do that!</p>
-<p>David Reinstein has worked with Pete and others on tools to (mostly) automate this conversion and hosting process, but some manual tweaks were needed at the end. See the work on this <a href="https://github.com/rethinkpriorities/ea-data/blob/master/main_2020.R">here, at bottom</a>, and in <a href="https://github.com/rethinkpriorities/ea-data/blob/master/code/parse_ea_forum_md.R">this R script</a> and <a href="https://github.com/rethinkpriorities/ea-data/blob/master/code/fix_eafo_links.py">this Python script</a>. Yes, it’s spaghetti code.</p>
-<p>Atm, some formatting adjustments are necessary, but both EA forum and our bookdown style templates are changing.</p>
+<p>Standard markdown footnote syntax should work:</p>
+<p><code>blah blah text^[contents of footnote]</code></p>
+<p>Which will create
+… blah blah text<a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;contents of footnote&lt;/p&gt;"><sup>1</sup></a></p>
+<p>We have made these footnotes ‘hoverable’, so mouse-over should show their contents.
+(We see this as a good but imperfect substitute for the ‘tufte-style margin notes’ from the our previousstyle.)</p>
 
 </div>
-</div>
-
-
-
-
-
 
   <div class="chapter-nav">
-<div class="prev"><a href="footnotes-hoverable.html"><span class="header-section-number">3</span> Footnotes (hoverable)</a></div>
-<div class="empty"></div>
+<div class="prev"><a href="foldable-sections.html"><span class="header-section-number">2</span> Foldable Sections</a></div>
+<div class="next"><a href="ea-forum.html"><span class="header-section-number">4</span> EA Forum</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#ea-forum"><span class="header-section-number">4</span> EA Forum</a></li>
-<li><a class="nav-link" href="#r-code-to-ea-forum-conversion">R code to EA Forum conversion</a></li>
-</ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#footnotes-hoverable"><span class="header-section-number">3</span> Footnotes (hoverable)</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">

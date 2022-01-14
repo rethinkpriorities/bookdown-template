@@ -11,11 +11,6 @@ github-repo: rethinkpriorities/bookdown-template
 description: "A bookdown template "
 ---
 
-```{r, setup, include=FALSE}
-# Load packages
-library(tidyverse)
-```
-
 # Bookdown Template {.unnumbered}
 
 ## About {.unnumbered}

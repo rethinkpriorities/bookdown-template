@@ -2,4 +2,5 @@ book_filename: "bookdown_template"
 delete_merged_file: TRUE
 output_dir: "docs"
 rmd_files: ["index.Rmd", "chapters/how-to.Rmd", 
-  "chapters/foldable-sections.Rmd", "chapters/EA-forum.Rmd"]
+  "chapters/foldable-sections.Rmd", "chapters/footnotes.Rmd", 
+  "chapters/EA-forum.Rmd"]
