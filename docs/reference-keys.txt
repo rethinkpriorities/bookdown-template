@@ -2,4 +2,5 @@ how-to-use-this-template
 setup
 usage
 foldable-sections
+footnotes-hoverable
 ea-forum

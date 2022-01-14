@@ -13,6 +13,9 @@ description: "A bookdown template "
 
 ```{r, setup, include=FALSE}
 # Load packages
+
+# NOTE: the package loading is redundant for now -- if we use 'David's system' we would remove this from index.Rmd and just load these packages in main.R
+
 library(tidyverse)
 ```
 
