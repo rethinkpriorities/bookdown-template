@@ -1,2 +1,5 @@
+how-to-use-this-template
+setup
+usage
 foldable-sections
 ea-forum

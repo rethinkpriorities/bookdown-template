@@ -16,20 +16,19 @@ description: "A bookdown template "
 library(tidyverse)
 ```
 
-# Bookdown Template {-}
+# Bookdown Template {.unnumbered}
 
-## About {-}
+## About {.unnumbered}
 
 This book is a bookdown template to be used for various projects of the Rethink Priorities survey team. The main goal of this book is to serve as a skeleton project that can be copied and used in other projects. Additionally, it contains some chapters that serve as tutorials for different features of this bookdown format.
 
-## Contributions {-}
+## Contributions {.unnumbered}
 
 Please add yourself to the list below to acknowledge your contributions.
 
-- Willem Sleegers: [willem@rethinkpriorities.org](mailto:willem@rethinkpriorities.org)
+-   Willem Sleegers: [willem\@rethinkpriorities.org](mailto:willem@rethinkpriorities.org)
 
-- David Reinstein: [dreinstein@rethinkpriorities.org](mailto:dreinstein@rethinkpriorities.org)
-
+-   David Reinstein: [dreinstein\@rethinkpriorities.org](mailto:dreinstein@rethinkpriorities.org)
 
 ```{r include=FALSE}
 # Automatically create a bib database for R packages

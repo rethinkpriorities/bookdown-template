@@ -4,15 +4,13 @@ Our bookdown template supports foldable sections by means of custom blocks and c
 
 A foldable section can be created by placing text between two sets of three colons (`:::`) and specifying the `.foldable` class between two curly braces, like so:
 
-```
-::: {.foldable}
-This is a foldable section.
-:::
-```
+    ::: {.foldable}
+    This is a foldable section.
+    :::
 
 This creates the following foldable section:
 
-::: {.foldable}
+::: foldable
 This is a foldable section.
 :::
 
