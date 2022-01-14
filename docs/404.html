@@ -65,12 +65,6 @@
         }
 
         function addFoldButtons() {
-          // Create a fold button
-          const button = document.createElement("button")
-          button.textContent = "Show me more"
-          button.className = "btn foldable-button"
-          button.onclick = toggleText
-
           // Find all foldable divs
           const foldableDivs = document.getElementsByClassName("foldable")
           
@@ -81,6 +75,12 @@
             for (let child of children) {
               child.classList.toggle("folded")
             }
+            
+             // Create a fold button
+            const button = document.createElement("button")
+            button.textContent = "Show me more"
+            button.className = "btn foldable-button"
+            button.onclick = toggleText
 
             div.insertBefore(button, div.firstChild)
           }
