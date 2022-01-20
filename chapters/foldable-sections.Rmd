@@ -1,19 +1,23 @@
 # Foldable Sections
 
-Our bookdown template supports foldable sections by means of custom blocks and custom code written specifically by us. Note that this means this feature is not supported out of the box and that some setup is necessary if you start with a fresh install of the `bookdown` format. It is recommended to clone the files of this template so that you don't have to worry about it.
+Our bookdown template supports foldable sections by means of custom blocks and custom code. Note that this means this feature is not supported out of the box and that some setup is necessary if you start with a fresh install of the `bookdown` format. It is recommended to clone the files of this template so that you don't have to worry about it.
 
-A foldable section can be created by placing text between two sets of three colons (`:::`) and specifying the `.foldable` class between two curly braces, like so:
+A foldable section can be created by placing text between two sets of three colons (`:::`) and specifying the `.foldable` class between two curly braces. In addition, you should add a line of HTML code to add a button that folds and unfolds the section. An example is shown below.
 
     ::: {.foldable}
+    <button class="fold-button">Show me more</button>
+    
     This is a foldable section.
     :::
 
 This creates the following foldable section:
 
 ::: foldable
+<button class="fold-button">Show me more</button>
+
 This is a foldable section.
 :::
 
-By default is shows the "Show me more" text, followed by "Show me less" after clicking on it. This text could be changed to something else in the `header.html` file that can be found in the `assets` folder.
+You can specify which text the button shows initially, but once you click on the button it will show "Show me less". This text could be changed to something else in the `header.html` file that can be found in the `html` folder of the `assets` folder.
 
-For more information on custom blocks, see [here](https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html).
+The reason you have to specify the button itself is because of performance reasons. By putting the HTML code into the section itself, the text will be immediately shown to the user when a page is loaded. If we add the button using JavaScript, the label will initially not be shown and only show up after some (variable) time when the page is first opened.

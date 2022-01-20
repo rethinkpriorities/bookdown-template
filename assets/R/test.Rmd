@@ -1,5 +1,0 @@
-
-```{js, echo=FALSE}
-console.log("Hai")
-$('.title').css('color', 'red')
-```

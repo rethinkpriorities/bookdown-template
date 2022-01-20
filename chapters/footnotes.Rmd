@@ -1,11 +1,9 @@
-# Footnotes (hoverable)
+# Footnotes
 
-Standard markdown footnote syntax should work: 
+Footnotes are supported using the typical Markdown format:
 
-`blah blah text^[contents of footnote]`
+`This sentence has a footnote.^[Here I am!]`
 
-Which will create 
-... blah blah text^[contents of footnote]
+The result: This sentence has a footnote.^[Here I am!]
 
-We have made these footnotes 'hoverable', so mouse-over should show their contents.
-(We see this as a good but imperfect substitute for the 'tufte-style margin notes' from the our previousstyle.)
+The footnotes are shown in-line using [bigfoot.js](http://www.bigfootjs.com). Simply click on the footnote to show a popover window that contains the footnote. 

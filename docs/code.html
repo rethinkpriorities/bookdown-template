@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>1 How to use this template | Bookdown Template</title>
+  <title>2 Code | Bookdown Template</title>
   <meta name="description" content="The Rethink Priorities bookdown template" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="1 How to use this template | Bookdown Template" />
+  <meta property="og:title" content="2 Code | Bookdown Template" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rethinkpriorities/bookdown-template" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="1 How to use this template | Bookdown Template" />
+  <meta name="twitter:title" content="2 Code | Bookdown Template" />
   
   <meta name="twitter:description" content="The Rethink Priorities bookdown template" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="code.html"/>
+<link rel="prev" href="how-to-use-this-template.html"/>
+<link rel="next" href="foldable-sections.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -235,7 +235,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2" data-path="code.html"><a href="code.html"><i class="fa fa-check"></i><b>2</b> Code</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="code.html"><a href="code.html#code-chunks"><i class="fa fa-check"></i><b>2.1</b> Code chunks</a></li>
-<li class="chapter" data-level="2.2" data-path="code.html"><a href="code.html#including-plots"><i class="fa fa-check"></i><b>2.2</b> Including Plots</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="foldable-sections.html"><a href="foldable-sections.html"><i class="fa fa-check"></i><b>3</b> Foldable Sections</a></li>
 <li class="chapter" data-level="4" data-path="footnotes-hoverable.html"><a href="footnotes-hoverable.html"><i class="fa fa-check"></i><b>4</b> Footnotes (hoverable)</a></li>
@@ -257,22 +256,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="how-to-use-this-template" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> How to use this template</h1>
-<p>The goal of this template is to make it easy to get started on writing a <code>bookdown</code> book. The word ‘book’ might be a misnomer because you can also use it to write notes, a manual (similar to this bookdown), a thesis, and many other things.</p>
-<p>If you have enough time, the best way to get started is to read the <code>bookdown</code> <a href="https://bookdown.org/yihui/bookdown/">book</a>. For those in a hurry, we list the important steps below.</p>
-<div id="setup" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Setup</h2>
-<ol style="list-style-type: decimal">
-<li><p>Clone this template from GitHub. The easiest way to do this is to open RStudio and select File -&gt; New Project -&gt; Version Control -&gt; Git. The repository URL of this template is “<a href="https://github.com/rethinkpriorities/bookdown-template" class="uri">https://github.com/rethinkpriorities/bookdown-template</a>.” After entering this, and changing some of the other settings if you want to, click on Create Project.</p></li>
-<li><p>Next, go to the Build tab (next to Environment, History, and Connection) and click on “Build Book.”</p></li>
-<li><p>Done. The book is up and running!</p></li>
-</ol>
-</div>
-<div id="usage" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> Usage</h2>
-<p>The template is in and of itself not interesting, so now you need to adapt the content. The first thing to adapt are the contents of ‘index.Rmd.’ You should change some of the information at the top of the file (between the two <code>---</code> symbols). These are the YAML options and you can change them to alter the meta-information of the book or to change some of the settings.</p>
-<p>After changing the content of this file, you should start adding chapters. This template comes with a ‘chapters’ folder where you can store individual chapter files. You can simply take one of the example chapters and change the content. You should also change the file names, but in order for the book to include the chapter when you build it, you should change the contents of <code>_bookdown.yml</code>. Make sure to adapt the file paths in the <code>rmd_files</code> option so it refers to the new chapter. The order of these file paths also determines the order of the chapters in the book.</p>
+<div id="code" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Code</h1>
+<p>An important reason for creating this bookdown template is to present analyses performed in R. Not only do we want to show these results, we also want to show the R code that was used to produce those results. This can be done by using so-called code chunks.</p>
+<div id="code-chunks" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Code chunks</h2>
+<p>A code chunk is created by using using two sets of three back ticks (```). In the case of R code, you add a set of parentheses containing the letter <code>r</code>, followed by a label that describes the code chunk. The actual R code goes between the sets of back ticks. For example, in the code chunk below we use R code to present a summary of the <code>cars</code> data frame.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="code.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r cars}</span></span>
+<span id="cb1-2"><a href="code.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="in">summary(cars)</span></span>
+<span id="cb1-3"><a href="code.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<p>This produces the following result:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="code.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cars)</span></code></pre></div>
+<pre><code>##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00</code></pre>
+<p>By default, the code that produces this result is hidden. Readers who are interested in the code can click on the ‘Toggle code’ button in the navigation bar to show all the code chunks.</p>
+<p>Note that the toggle code button is a custom feature and is not supported out of the box when you begin a <code>bookdown</code> project.</p>
 
 </div>
 </div>
@@ -281,8 +284,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="code.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="how-to-use-this-template.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="foldable-sections.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
