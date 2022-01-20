@@ -3,8 +3,6 @@ setup
 usage
 code
 code-chunks
-including-plots
 foldable-sections
-footnotes-hoverable
-ea-forum
 footnotes
+ea-forum
