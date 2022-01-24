@@ -32,10 +32,6 @@ body {
 
 /* Positioning */
 
-.body-inner {
-  margin-right: 1rem;
-}
-
 .book .book-summary {
   width: var(--sidebar-width);
 }

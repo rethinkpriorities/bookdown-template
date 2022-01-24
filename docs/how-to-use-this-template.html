@@ -134,7 +134,12 @@
       }
       
       // Initiate bigfoot to add popover footnotes
-      $.bigfoot()
+      $.bigfoot(
+        {
+            activateOnHover: true,
+            deleteOnUnhover: true
+        }
+      )
     }
   </script>
 </header>
