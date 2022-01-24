@@ -1,9 +1,31 @@
 # Callout blocks
 
-You can create a callout block by creating a custom block and giving it one of the following classes: `.rmdnote`.
+You can create a callout block by creating a custom block and giving it one of the following classes: `.rmdnote`, `.rmdimportant`, `.rmdcaution`, `.rmdwarning`, `.rmdtip`.
 
 For example:
 
+    ::: {.rmdnote}
+    This is a callout block.
+    :::
+
+They look like this:
+
 ::: {.rmdnote}
-This template also includes an `.rmdnote` callout block like this one.
+This is a callout block.
+:::
+
+::: {.rmdimportant}
+This one is for something positive, I guess?
+:::
+
+::: {.rmdcaution}
+This is to indicate something bad!
+:::
+
+::: {.rmdwarning}
+This is to cast a warning.
+:::
+
+::: {.rmdtip}
+This one is for if you like this kind of blue, I suppose.
 :::

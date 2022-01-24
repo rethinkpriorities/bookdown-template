@@ -6,14 +6,18 @@ A foldable section can be created by placing text between two sets of three colo
 
     ::: {.foldable}
     <button class="fold-button">Show me more</button>
-    
+
     This is a foldable section.
     :::
 
 This creates the following foldable section:
 
 ::: foldable
-<button class="fold-button">Show me more</button>
+<button class="fold-button">
+
+Show me more
+
+</button>
 
 This is a foldable section.
 :::
@@ -24,52 +28,24 @@ The reason you have to specify the button itself is because of performance reaso
 
 \
 
-We have had some issues with multiple foldables in the past, so I include another one just for testing, and to show a 'multi-line' foldable with a different opening text. 
-
-
+We have had some issues with multiple foldables in the past, so I include another one just for testing, and to show a 'multi-line' foldable with a different opening text.
 
 ::: foldable
-<button class="fold-button">Do not open this foldable unless you want to hear about a lion </button>
+<button class="fold-button">
+
+Do not open this foldable unless you want to hear about a lion
+
+</button>
 
 **ROAR**
 
-
 samantha Dec 2013
 
-The Lion & the Lamb
-And so the lion fell in love with the lamb
-She thought she had the upper hand
-But fate got in the way
-And the lion had nothing to say
-So they began a life together
-Determined to last forever
-For their love was stronger than you would believe
-So intense it almost decieves
-But the lion couldn't overcome
-All the obstacles to be with the one
-He left the lamb with tears in her eyes
-And wouldn't return despite her tries
-Now the lamb couldn't comprehend
-Why the lion wouldn't spend
-A life time with her by his side
-the lion and his stupid pride
-But the lion soon came to regret
-The fact that he could ever let
-His precious lamb get away
-And now the lion knew what to say
-He needed his lamb and needed her bad
-See he missed the love that they had
-But the lamb did not forgive
-All that the lion did
-But she loved her lion, she couldn't deny
-Even if she couldn't explain why
-And so the lion fell in love with the lamb
-Stupid lion, stupid lamb
+The Lion & the Lamb And so the lion fell in love with the lamb She thought she had the upper hand But fate got in the way And the lion had nothing to say So they began a life together Determined to last forever For their love was stronger than you would believe So intense it almost decieves But the lion couldn't overcome All the obstacles to be with the one He left the lamb with tears in her eyes And wouldn't return despite her tries Now the lamb couldn't comprehend Why the lion wouldn't spend A life time with her by his side the lion and his stupid pride But the lion soon came to regret The fact that he could ever let His precious lamb get away And now the lion knew what to say He needed his lamb and needed her bad See he missed the love that they had But the lamb did not forgive All that the lion did But she loved her lion, she couldn't deny Even if she couldn't explain why And so the lion fell in love with the lamb Stupid lion, stupid lamb
 
+From: <https://hellopoetry.com/words/lion/>
 
-From: https://hellopoetry.com/words/lion/
-              
-(we warned you)              
+(we warned you)
 :::
 
 That's foldables for ya.

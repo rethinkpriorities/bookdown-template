@@ -13,3 +13,7 @@ bookdown::gitbook:
       twitter: no
       facebook: no
       all: no  
+    theme:
+      primary: "#0d6efd"   # default .rmdnote = blue
+      danger:  "#dc3545"   # default .rmdcaution = red
+      success: "#198754" 

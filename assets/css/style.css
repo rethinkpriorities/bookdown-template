@@ -180,7 +180,7 @@ button {
   box-shadow: none;
 }
 
-/* special callout blocks */
+/* Callout blocks */
 
 .rmdnote, .rmdcaution, .rmdimportant, .rmdtip, .rmdwarning {
   margin: 1rem calc(-2px - 0.5em);
@@ -188,7 +188,9 @@ button {
   border: 2px solid #eee;
 }
 
-.rmdnote > *:last-child, .rmdcaution > *:last-child, .rmdimportant > *:last-child, .rmdtip > *:last-child, .rmdwarning > *:last-child {
+.rmdnote > *:last-child, .rmdcaution > *:last-child, 
+.rmdimportant > *:last-child, .rmdtip > *:last-child, 
+.rmdwarning > *:last-child {
   margin-bottom: 0;
 }
 
@@ -200,19 +202,23 @@ button {
 }
 
 .rmdnote {
-  border-color: var(--primary);
+  border-color: #008cff;
 }
+
 .rmdimportant {
-  border-color: var(--success);
+  border-color: #28a745;
 }
+
 .rmdcaution {
-  border-color: var(--danger);
+  border-color: #dc3545;
 }
+
 .rmdwarning {
-  border-color: var(--warning);
+  border-color: #ffc107;
 }
+
 .rmdtip {
-  border-color: var(--info);
+  border-color: #17a2b8;
 }
 
 .rmdcaution pre, .rmdimportant pre, .rmdnote pre, .rmdtip pre, .rmdwarning pre {

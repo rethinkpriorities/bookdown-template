@@ -259,10 +259,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="callout-blocks" class="section level1" number="4">
 <h1><span class="header-section-number">4</span> Callout blocks</h1>
-<p>You can create a callout block by creating a custom block and giving it one of the following classes: <code>.rmdnote</code>.</p>
+<p>You can create a callout block by creating a custom block and giving it one of the following classes: <code>.rmdnote</code>, <code>.rmdimportant</code>, <code>.rmdcaution</code>, <code>.rmdwarning</code>, <code>.rmdtip</code>.</p>
 <p>For example:</p>
+<pre><code>::: {.rmdnote}
+This is a callout block.
+:::</code></pre>
+<p>They look like this:</p>
 <div class="rmdnote">
-<p>This template also includes an <code>.rmdnote</code> callout block like this one.</p>
+<p>This is a callout block.</p>
+</div>
+<div class="rmdimportant">
+<p>This one is for something positive, I guess?</p>
+</div>
+<div class="rmdcaution">
+<p>This is to indicate something bad!</p>
+</div>
+<div class="rmdwarning">
+<p>This is to cast a warning.</p>
+</div>
+<div class="rmdtip">
+<p>This one is for if you like this kind of blue, I suppose.</p>
 </div>
 
 </div>
@@ -321,6 +337,11 @@ gitbook.start({
 },
 "toc": {
 "collapse": "subsection"
+},
+"theme": {
+"primary": "#0d6efd",
+"danger": "#dc3545",
+"success": "#198754"
 }
 });
 });
