@@ -178,3 +178,49 @@ button {
 .fold-button:focus {
   box-shadow: none;
 }
+
+/* special callout blocks */
+
+.rmdnote, .rmdcaution, .rmdimportant, .rmdtip, .rmdwarning {
+  margin: 1rem calc(-2px - 0.5em);
+  padding: 1rem;
+  border: 2px solid #eee;
+}
+
+.rmdnote > *:last-child, .rmdcaution > *:last-child, .rmdimportant > *:last-child, .rmdtip > *:last-child, .rmdwarning > *:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .rmdnote, .rmdcaution, .rmdimportant, .rmdtip, .rmdwarning {
+    margin: 1rem -1rem;
+    border-width: 4px;
+  }
+}
+
+.rmdnote {
+  border-color: var(--primary);
+}
+.rmdimportant {
+  border-color: var(--success);
+}
+.rmdcaution {
+  border-color: var(--danger);
+}
+.rmdwarning {
+  border-color: var(--warning);
+}
+.rmdtip {
+  border-color: var(--info);
+}
+
+.rmdcaution pre, .rmdimportant pre, .rmdnote pre, .rmdtip pre, .rmdwarning pre {
+  /* Make code blocks full width in rmdnote */
+  margin: 0 -1rem 1rem -1rem;
+  padding: 1rem;
+}
+
+.rmdcaution .btn-copy, .rmdimportant .btn-copy, .rmdnote .btn-copy, .rmdtip .btn-copy, .rmdwarning .btn-copy {
+  /* Needs to be set according to margin in callout pre block */
+  right: -1rem;
+}

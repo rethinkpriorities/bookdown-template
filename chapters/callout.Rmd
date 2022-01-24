@@ -1,0 +1,9 @@
+# Callout blocks
+
+You can create a callout block by creating a custom block and giving it one of the following classes: `.rmdnote`.
+
+For example:
+
+::: {.rmdnote}
+This template also includes an `.rmdnote` callout block like this one.
+:::

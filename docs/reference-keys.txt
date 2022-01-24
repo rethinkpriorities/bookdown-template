@@ -4,5 +4,6 @@ usage
 code
 code-chunks
 foldable-sections
+callout-blocks
 footnotes
 ea-forum
