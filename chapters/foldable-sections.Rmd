@@ -14,9 +14,7 @@ This creates the following foldable section:
 
 ::: foldable
 <button class="fold-button">
-
 Show me more
-
 </button>
 
 This is a foldable section.
@@ -32,9 +30,7 @@ We have had some issues with multiple foldables in the past, so I include anothe
 
 ::: foldable
 <button class="fold-button">
-
 Do not open this foldable unless you want to hear about a lion
-
 </button>
 
 **ROAR**
