@@ -4,7 +4,7 @@ usage
 code
 code-chunks
 foldable-sections
-what-kind-of-content-can-foldables-containt
+different-types-of-content-and-different-times-of-bla-bla-who-cares-i-just-need-words
 callout-blocks
 footnotes
 tables
