@@ -64,6 +64,20 @@ Here comes a footnote.^[I'm a footnote]
 :::
 
 
+itemized lists?:
+
+::: {.foldable}
+<button class='fold-button'>try a list</button>
+
+Here comes a list
+
+- item one
+- item two
+   - second level
+   
+:::
+
+
 Html commented out text?:
 
 ::: {.foldable}

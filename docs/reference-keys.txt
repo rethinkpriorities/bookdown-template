@@ -4,6 +4,7 @@ usage
 code
 code-chunks
 foldable-sections
+what-kind-of-content-can-foldables-containt
 callout-blocks
 footnotes
 ea-forum

@@ -241,7 +241,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="2.1" data-path="code.html"><a href="code.html#code-chunks"><i class="fa fa-check"></i><b>2.1</b> Code chunks</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="foldable-sections.html"><a href="foldable-sections.html"><i class="fa fa-check"></i><b>3</b> Foldable Sections</a></li>
+<li class="chapter" data-level="3" data-path="foldable-sections.html"><a href="foldable-sections.html"><i class="fa fa-check"></i><b>3</b> Foldable Sections</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="foldable-sections.html"><a href="foldable-sections.html#what-kind-of-content-can-foldables-containt"><i class="fa fa-check"></i><b>3.1</b> What kind of content can foldables containt</a></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="callout-blocks.html"><a href="callout-blocks.html"><i class="fa fa-check"></i><b>4</b> Callout blocks</a></li>
 <li class="chapter" data-level="5" data-path="footnotes.html"><a href="footnotes.html"><i class="fa fa-check"></i><b>5</b> Footnotes</a></li>
 <li class="chapter" data-level="6" data-path="ea-forum.html"><a href="ea-forum.html"><i class="fa fa-check"></i><b>6</b> EA Forum</a></li>
@@ -278,7 +281,7 @@ Show me more
 </button>
 <p>This is a foldable section.</p>
 </div>
-<p>You can specify which text the button shows initially, but once you click on the button it will show “Show me less.” This text could be changed to something else in the <code>header.html</code> file that can be found in the <code>html</code> folder of the <code>assets</code> folder.</p>
+<p>You can specify which text the button shows initially, but once you click on the button it will show “Show me less”. This text could be changed to something else in the <code>header.html</code> file that can be found in the <code>html</code> folder of the <code>assets</code> folder.</p>
 <p>The reason you have to specify the button itself is because of performance reasons. By putting the HTML code into the section itself, the text will be immediately shown to the user when a page is loaded. If we add the button using JavaScript, the label will initially not be shown and only show up after some (variable) time when the page is first opened.</p>
 <p><br />
 </p>
@@ -294,7 +297,50 @@ Do not open this foldable unless you want to hear about a lion
 <p>(we warned you)</p>
 </div>
 <p>That’s foldables for ya.</p>
+<div id="what-kind-of-content-can-foldables-containt" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> What kind of content can foldables containt</h2>
+<p>Can they contain:</p>
+<p>Inline r code?:</p>
+<div class="foldable">
+<p><button class='fold-button'>try inline r code</button></p>
+<p>let’s try some 4</p>
+</div>
+<p>Footnotes?:</p>
+<div class="foldable">
+<button class="fold-button">
+try a footnote
+</button>
+<p>Here comes a footnote.<a href="ea-forum.html#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+</div>
+<p>itemized lists?:</p>
+<div class="foldable">
+<button class="fold-button">
+try a list
+</button>
+<p>Here comes a list</p>
+<ul>
+<li>item one</li>
+<li>item two
+<ul>
+<li>second level</li>
+</ul></li>
+</ul>
+</div>
+<p>Html commented out text?:</p>
+<div class="foldable">
+<button class="fold-button">
+try html comment
+</button>
+<!-- html comment thing -->
+<p>more text</p>
+</div>
+<p>Latex math bits like “<span class="math inline">\(x^2\)</span>?”?:</p>
+<div class="foldable">
+<p><button class='fold-button'>try latex</button>
+trying … <span class="math inline">\(x^2\)</span>?</p>
+</div>
 
+</div>
 </div>
             </section>
 
@@ -361,6 +407,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

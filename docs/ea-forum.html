@@ -241,7 +241,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="2.1" data-path="code.html"><a href="code.html#code-chunks"><i class="fa fa-check"></i><b>2.1</b> Code chunks</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="foldable-sections.html"><a href="foldable-sections.html"><i class="fa fa-check"></i><b>3</b> Foldable Sections</a></li>
+<li class="chapter" data-level="3" data-path="foldable-sections.html"><a href="foldable-sections.html"><i class="fa fa-check"></i><b>3</b> Foldable Sections</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="foldable-sections.html"><a href="foldable-sections.html#what-kind-of-content-can-foldables-containt"><i class="fa fa-check"></i><b>3.1</b> What kind of content can foldables containt</a></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="callout-blocks.html"><a href="callout-blocks.html"><i class="fa fa-check"></i><b>4</b> Callout blocks</a></li>
 <li class="chapter" data-level="5" data-path="footnotes.html"><a href="footnotes.html"><i class="fa fa-check"></i><b>5</b> Footnotes</a></li>
 <li class="chapter" data-level="6" data-path="ea-forum.html"><a href="ea-forum.html"><i class="fa fa-check"></i><b>6</b> EA Forum</a></li>
@@ -275,12 +278,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Atm, some formatting adjustments are necessary, but both EA forum and our bookdown style templates are changing.</p>
 
 </div>
-
-
-
-
-
-
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p>I’m a footnote<a href="foldable-sections.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Here I am!<a href="footnotes.html#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
             </section>
 
           </div>
@@ -346,6 +350,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
