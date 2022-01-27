@@ -241,7 +241,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="2.1" data-path="code.html"><a href="code.html#code-chunks"><i class="fa fa-check"></i><b>2.1</b> Code chunks</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="foldable-sections.html"><a href="foldable-sections.html"><i class="fa fa-check"></i><b>3</b> Foldable Sections</a></li>
+<li class="chapter" data-level="3" data-path="foldable-sections.html"><a href="foldable-sections.html"><i class="fa fa-check"></i><b>3</b> Foldable Sections</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="foldable-sections.html"><a href="foldable-sections.html#what-kind-of-content-can-foldables-containt"><i class="fa fa-check"></i><b>3.1</b> What kind of content can foldables containt</a></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="callout-blocks.html"><a href="callout-blocks.html"><i class="fa fa-check"></i><b>4</b> Callout blocks</a></li>
 <li class="chapter" data-level="5" data-path="footnotes.html"><a href="footnotes.html"><i class="fa fa-check"></i><b>5</b> Footnotes</a></li>
 <li class="chapter" data-level="6" data-path="tables.html"><a href="tables.html"><i class="fa fa-check"></i><b>6</b> Tables</a></li>
@@ -270,14 +273,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="setup" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> Setup</h2>
 <ol style="list-style-type: decimal">
-<li><p>Clone this template from GitHub. The easiest way to do this is to open RStudio and select File -&gt; New Project -&gt; Version Control -&gt; Git. The repository URL of this template is “<a href="https://github.com/rethinkpriorities/bookdown-template" class="uri">https://github.com/rethinkpriorities/bookdown-template</a>.” After entering this, and changing some of the other settings if you want to, click on Create Project.</p></li>
-<li><p>Next, go to the Build tab (next to Environment, History, and Connection) and click on “Build Book.”</p></li>
+<li><p>Clone this template from GitHub. The easiest way to do this is to open RStudio and select File -&gt; New Project -&gt; Version Control -&gt; Git. The repository URL of this template is “<a href="https://github.com/rethinkpriorities/bookdown-template" class="uri">https://github.com/rethinkpriorities/bookdown-template</a>”. After entering this, and changing some of the other settings if you want to, click on Create Project.</p></li>
+<li><p>Next, go to the Build tab (next to Environment, History, and Connection) and click on “Build Book”.</p></li>
 <li><p>Done. The book is up and running!</p></li>
 </ol>
 </div>
 <div id="usage" class="section level2" number="1.2">
 <h2><span class="header-section-number">1.2</span> Usage</h2>
-<p>The template is in and of itself not interesting, so now you need to adapt the content. The first thing to adapt are the contents of ‘index.Rmd.’ You should change some of the information at the top of the file (between the two <code>---</code> symbols). These are the YAML options and you can change them to alter the meta-information of the book or to change some of the settings.</p>
+<p>The template is in and of itself not interesting, so now you need to adapt the content. The first thing to adapt are the contents of ‘index.Rmd’. You should change some of the information at the top of the file (between the two <code>---</code> symbols). These are the YAML options and you can change them to alter the meta-information of the book or to change some of the settings.</p>
 <p>After changing the content of this file, you should start adding chapters. This template comes with a ‘chapters’ folder where you can store individual chapter files. You can simply take one of the example chapters and change the content. You should also change the file names, but in order for the book to include the chapter when you build it, you should change the contents of <code>_bookdown.yml</code>. Make sure to adapt the file paths in the <code>rmd_files</code> option so it refers to the new chapter. The order of these file paths also determines the order of the chapters in the book.</p>
 
 </div>
@@ -347,6 +350,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 
 # Load packages ####
 library(pacman)
-p_load(dplyr, knitr, bookdown, rmarkdown, bettertrace, install = FALSE)
+p_load(dplyr, knitr, bettertrace, install = FALSE)
 
 knitr::write_bib(
   x = c(.packages(), "bookdown", "knitr", "rmarkdown"),

@@ -13,9 +13,7 @@ A foldable section can be created by placing text between two sets of three colo
 This creates the following foldable section:
 
 ::: foldable
-<button class="fold-button">
-Show me more
-</button>
+<button class="fold-button">  Show me more  </button>
 
 This is a foldable section.
 :::
@@ -29,9 +27,7 @@ The reason you have to specify the button itself is because of performance reaso
 We have had some issues with multiple foldables in the past, so I include another one just for testing, and to show a 'multi-line' foldable with a different opening text.
 
 ::: foldable
-<button class="fold-button">
-Do not open this foldable unless you want to hear about a lion
-</button>
+<button class="fold-button">  Do not open this foldable unless you want to hear about a lion  </button>
 
 **ROAR**
 
@@ -45,3 +41,54 @@ From: <https://hellopoetry.com/words/lion/>
 :::
 
 That's foldables for ya.
+
+## What kind of content can foldables containt
+
+Can they contain:
+
+Inline r code?:
+
+::: {.foldable}
+ <button class='fold-button'>try inline r code</button>
+
+ let's try some `r 2+2`
+:::
+
+
+Footnotes?:
+
+::: {.foldable}
+<button class='fold-button'>try a footnote</button>
+
+Here comes a footnote.^[I'm a footnote]
+:::
+
+
+itemized lists?:
+
+::: {.foldable}
+<button class='fold-button'>try a list</button>
+
+Here comes a list
+
+- item one
+- item two
+   - second level
+   
+:::
+
+
+Html commented out text?:
+
+::: {.foldable}
+<button class='fold-button'>try html comment</button>
+<!-- html comment thing -->
+more text
+:::
+
+Latex math bits like "$x^2$?"?:
+
+::: {.foldable}
+ <button class='fold-button'>try latex</button>
+trying ... $x^2$?
+:::
