@@ -6,7 +6,7 @@ always_allow_html: yes
 link-citations: yes
 github-repo: rethinkpriorities/bookdown-template
 description: "The Rethink Priorities bookdown template"
-site: bookdown::bookdown_site #this line is necessary to knit on David's machine
+site: bookdown::bookdown_site
 ---
 
 

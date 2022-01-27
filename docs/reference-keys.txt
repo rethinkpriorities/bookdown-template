@@ -6,4 +6,5 @@ code-chunks
 foldable-sections
 callout-blocks
 footnotes
+tables
 ea-forum
