@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Bookdown Template</title>
+  <meta name="description" content="The Rethink Priorities bookdown template" />
+  <meta name="generator" content="bookdown #bookdown:version# and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Bookdown Template" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="The Rethink Priorities bookdown template" />
+  <meta name="github-repo" content="rethinkpriorities/bookdown-template" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Bookdown Template" />
+  
+  <meta name="twitter:description" content="The Rethink Priorities bookdown template" />
+  
+
+<meta name="author" content="Rethink Priorities" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<!--bookdown:link_prev-->
+<!--bookdown:link_next-->
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<body>
+<div class="container">
+  <div class="row flex-nowrap">
+
+<!--bookdown:title:start-->
+
+<div id="header">
+  
+<h1 class="title">Bookdown Template</h1>
+<p class="author"><em>Rethink Priorities</em></p>
+</div>
+<!--bookdown:title:end-->
+
+<!--bookdown:toc:start-->
+  <div class="col-auto px-0">
+
+    <div id="sidebar" class="collapse collapse-horizontal show border-end" style="width: 130px;">
+      <div id="sidebar-nav" class="list-group border-0 rounded-0 text-sm-start min-vh-100">
+<!--bookdown:toc2:start-->
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#how-to-use-this-template"><span class="toc-section-number">1</span> How to use this template</a>
+<ul>
+<li><a href="#setup"><span class="toc-section-number">1.1</span> Setup</a></li>
+<li><a href="#usage"><span class="toc-section-number">1.2</span> Usage</a></li>
+</ul></li>
+<li><a href="#code"><span class="toc-section-number">2</span> Code</a>
+<ul>
+<li><a href="#code-chunks"><span class="toc-section-number">2.1</span> Code chunks</a></li>
+</ul></li>
+<li><a href="#foldable-sections"><span class="toc-section-number">3</span> Foldable Sections</a>
+<ul>
+<li><a href="#different-types-of-content-and-different-times-of-bla-bla-who-cares-i-just-need-words"><span class="toc-section-number">3.1</span> Different types of content and different times of bla bla who cares I just need words</a></li>
+</ul></li>
+<li><a href="#callout-blocks"><span class="toc-section-number">4</span> Callout blocks</a></li>
+<li><a href="#footnotes"><span class="toc-section-number">5</span> Footnotes</a></li>
+<li><a href="#tables"><span class="toc-section-number">6</span> Tables</a></li>
+<li><a href="#ea-forum"><span class="toc-section-number">7</span> EA Forum</a></li>
+</ul>
+<!--bookdown:toc2:end-->
+      </div>
+    </div>
+  </div>
+
+    
+        <main class="col ps-md-2 pt-2">
+           <a href="#" data-bs-target="#sidebar" data-bs-toggle="collapse" class="border rounded-3 p-1 text-decoration-none"><i class="bi bi-list bi-lg py-2 p-1"></i> Menu</a>
+          <div>
+
+            <section>
+<!--bookdown:toc:end-->
+<!--bookdown:body:start-->
+<div id="about" class="section level1 unnumbered">
+<h1 class="unnumbered">About</h1>
+<p>This book is a bookdown template to be used for various projects of the Rethink Priorities survey team. The main goal of this book is to serve as a skeleton project that can be copied and used in other projects. Additionally, it contains some chapters that serve as tutorials for different features of this bookdown format.</p>
+<p>You can find other content that will be helpful across bookdowns in the <code>main,R</code>, <code>index.Rmd</code> files in our other bookdowns, and <code>support</code>, <code>code</code>, and <code>assets</code> folders within these.</p>
+<div id="contributions" class="section level4 unnumbered">
+<h4 class="unnumbered">Contributions</h4>
+<p>Please add yourself to the list below to acknowledge your contributions.</p>
+<ul>
+<li><p>Willem Sleegers: <a href="mailto:willem@rethinkpriorities.org">willem@rethinkpriorities.org</a></p></li>
+<li><p>David Reinstein: <a href="mailto:dreinstein@rethinkpriorities.org">dreinstein@rethinkpriorities.org</a></p></li>
+</ul>
+<!--chapter:end:index.Rmd-->
+</div>
+</div>
+<div id="how-to-use-this-template" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> How to use this template</h1>
+<p>The goal of this template is to make it easy to get started on writing a <code>bookdown</code> book. The word ‘book’ might be a misnomer because you can also use it to write notes, a manual (similar to this bookdown), a thesis, and many other things.</p>
+<p>If you have enough time, the best way to get started is to read the <code>bookdown</code> <a href="https://bookdown.org/yihui/bookdown/">book</a>. For those in a hurry, we list the important steps below.</p>
+<div id="setup" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Setup</h2>
+<ol style="list-style-type: decimal">
+<li><p>Clone this template from GitHub. The easiest way to do this is to open RStudio and select File -&gt; New Project -&gt; Version Control -&gt; Git. The repository URL of this template is “<a href="https://github.com/rethinkpriorities/bookdown-template" class="uri">https://github.com/rethinkpriorities/bookdown-template</a>.” After entering this, and changing some of the other settings if you want to, click on Create Project.</p></li>
+<li><p>Next, go to the Build tab (next to Environment, History, and Connection) and click on “Build Book.”</p></li>
+<li><p>Done. The book is up and running!</p></li>
+</ol>
+</div>
+<div id="usage" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Usage</h2>
+<p>The template is in and of itself not interesting, so now you need to adapt the content. The first thing to adapt are the contents of ‘index.Rmd.’ You should change some of the information at the top of the file (between the two <code>---</code> symbols). These are the YAML options and you can change them to alter the meta-information of the book or to change some of the settings.</p>
+<p>After changing the content of this file, you should start adding chapters. This template comes with a ‘chapters’ folder where you can store individual chapter files. You can simply take one of the example chapters and change the content. You should also change the file names, but in order for the book to include the chapter when you build it, you should change the contents of <code>_bookdown.yml</code>. Make sure to adapt the file paths in the <code>rmd_files</code> option so it refers to the new chapter. The order of these file paths also determines the order of the chapters in the book.</p>
+<!--chapter:end:chapters/how-to.Rmd-->
+</div>
+</div>
+<div id="code" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Code</h1>
+<p>An important reason for creating this bookdown template is to present analyses performed in R. Not only do we want to show these results, we also want to show the R code that was used to produce those results. This can be done by using so-called code chunks.</p>
+<div id="code-chunks" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Code chunks</h2>
+<p>A code chunk is created by using using two sets of three back ticks (```). In the case of R code, you add a set of parentheses containing the letter <code>r</code>, followed by a label that describes the code chunk. The actual R code goes between the sets of back ticks. For example, in the code chunk below we use R code to present a summary of the <code>cars</code> data frame.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r cars}</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="in">summary(cars)</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<p>This produces the following result:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># adding a comment here to make this code chunk a bit more visible</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># for this example</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cars)</span></code></pre></div>
+<pre><code>##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00</code></pre>
+<p>By default, the code that produces this result is hidden. Readers who are interested in the code can click on the ‘Toggle code’ button in the navigation bar to show all the code chunks.</p>
+<p>Note that the toggle code button is a custom feature and is not supported out of the box when you begin a <code>bookdown</code> project.</p>
+<p>Note that the above example table is output in a ‘raw text’ format; this could be styled to be more attractive with packages such as <code>kableExtra</code>.</p>
+<!--chapter:end:chapters/code.Rmd-->
+</div>
+</div>
+<div id="foldable-sections" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Foldable Sections</h1>
+<p>Our bookdown template supports foldable sections by means of custom blocks and custom code. Note that this means this feature is not supported out of the box and that some setup is necessary if you start with a fresh install of the <code>bookdown</code> format. It is recommended to clone the files of this template so that you don’t have to worry about it.</p>
+<p>A foldable section can be created by placing text between two sets of three colons (<code>:::</code>) and specifying the <code>.foldable</code> class between two curly braces. In addition, you should add a line of HTML code to add a button that folds and unfolds the section. An example is shown below.</p>
+<pre><code>::: {.foldable}
+&lt;button class=&quot;fold-button&quot;&gt;Show me more&lt;/button&gt;
+
+This is a foldable section.
+:::</code></pre>
+<p>This creates the following foldable section:</p>
+<div class="foldable">
+<button class="fold-button">
+Show me more
+</button>
+<p>This is a foldable section.</p>
+</div>
+<p>You can specify which text the button shows initially, but once you click on the button it will show “Show me less.” This text could be changed to something else in the <code>header.html</code> file that can be found in the <code>html</code> folder of the <code>assets</code> folder.</p>
+<p>The reason you have to specify the button itself is because of performance reasons. By putting the HTML code into the section itself, the text will be immediately shown to the user when a page is loaded. If we add the button using JavaScript, the label will initially not be shown and only show up after some (variable) time when the page is first opened.</p>
+<p><br />
+</p>
+<p>We have had some issues with multiple foldables in the past, so I include another one just for testing, and to show a ‘multi-line’ foldable with a different opening text.</p>
+<div class="foldable">
+<button class="fold-button">
+Do not open this foldable unless you want to hear about a lion
+</button>
+<p><strong>ROAR</strong></p>
+<p>samantha Dec 2013</p>
+<p>The Lion &amp; the Lamb And so the lion fell in love with the lamb She thought she had the upper hand But fate got in the way And the lion had nothing to say So they began a life together Determined to last forever For their love was stronger than you would believe So intense it almost decieves But the lion couldn’t overcome All the obstacles to be with the one He left the lamb with tears in her eyes And wouldn’t return despite her tries Now the lamb couldn’t comprehend Why the lion wouldn’t spend A life time with her by his side the lion and his stupid pride But the lion soon came to regret The fact that he could ever let His precious lamb get away And now the lion knew what to say He needed his lamb and needed her bad See he missed the love that they had But the lamb did not forgive All that the lion did But she loved her lion, she couldn’t deny Even if she couldn’t explain why And so the lion fell in love with the lamb Stupid lion, stupid lamb</p>
+<p>From: <a href="https://hellopoetry.com/words/lion/" class="uri">https://hellopoetry.com/words/lion/</a></p>
+<p>(we warned you)</p>
+</div>
+<p>That’s foldables for ya.</p>
+<div id="different-types-of-content-and-different-times-of-bla-bla-who-cares-i-just-need-words" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Different types of content and different times of bla bla who cares I just need words</h2>
+<p>Can they contain:</p>
+<p>Inline r code?:</p>
+<div class="foldable">
+<button class="fold-button">
+Show me more
+</button>
+<p>let’s try some 4</p>
+</div>
+<p>Footnotes like this one?<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<div class="foldable">
+<button class="fold-button">
+Show me more
+</button>
+<p>Here comes a footnote.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+</div>
+<p>itemized lists?:</p>
+<div class="foldable">
+<button class="fold-button">
+Show me more
+</button>
+<p>Here comes a list</p>
+<ul>
+<li>item one</li>
+<li>item two
+<ul>
+<li>second level</li>
+</ul></li>
+</ul>
+</div>
+<p>Html commented out text?:</p>
+<div class="foldable">
+<button class="fold-button">
+Show me more
+</button>
+<!-- html comment thing -->
+<p>more text</p>
+</div>
+<p>Latex math bits like “<span class="math inline">\(x^2\)</span>?”:</p>
+<div class="foldable">
+<button class="fold-button">
+Show me more
+</button>
+<p>trying … <span class="math inline">\(x^2\)</span>?</p>
+</div>
+<!--chapter:end:chapters/foldable-sections.Rmd-->
+</div>
+</div>
+<div id="callout-blocks" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Callout blocks</h1>
+<p>You can create a callout block by creating a custom block and giving it one of the following classes: <code>.rmdnote</code>, <code>.rmdimportant</code>, <code>.rmdcaution</code>, <code>.rmdwarning</code>, <code>.rmdtip</code>.</p>
+<p>For example:</p>
+<pre><code>::: {.rmdnote}
+This is a callout block.
+:::</code></pre>
+<p>They look like this:</p>
+<div class="rmdnote">
+<p>This is a callout block.</p>
+</div>
+<div class="rmdimportant">
+<p>This one is for something positive, I guess?</p>
+</div>
+<div class="rmdcaution">
+<p>This is to indicate something bad!</p>
+</div>
+<div class="rmdwarning">
+<p>This is to cast a warning.</p>
+</div>
+<div class="rmdtip">
+<p>This one is for if you like this kind of blue, I suppose.</p>
+</div>
+<!--chapter:end:chapters/callout.Rmd-->
+</div>
+<div id="footnotes" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Footnotes</h1>
+<p>Footnotes are supported using the typical Markdown format:</p>
+<p><code>This sentence has a footnote.^[Here I am!]</code></p>
+<p>The result: This sentence has a footnote.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+<p>The footnotes are shown in-line using <a href="http://www.bigfootjs.com">bigfoot.js</a>. Simply click on the footnote to show a popover window that contains the footnote.</p>
+<!--chapter:end:chapters/footnotes.Rmd-->
+</div>
+<div id="tables" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Tables</h1>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span></code></pre></div>
+<table>
+<colgroup>
+<col width="9%" />
+<col width="14%" />
+<col width="7%" />
+<col width="8%" />
+<col width="13%" />
+<col width="10%" />
+<col width="23%" />
+<col width="14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+<th>Filler</th>
+<th>Filler 2</th>
+<th>Even more</th>
+<th>Another column</th>
+<th>Another one</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>col 1 is</td>
+<td align="center">left-aligned</td>
+<td align="right">$1600</td>
+<td>Content</td>
+<td>More content</td>
+<td>OPhOh</td>
+<td>Maybe now its cuts off?</td>
+<td>Or now maybe?</td>
+</tr>
+<tr class="even">
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>d1 <span class="ot">&lt;-</span> <span class="fu">head</span>(iris)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">select</span>(starwars, <span class="sc">-</span>films))</span></code></pre></div>
+<table>
+<colgroup>
+<col width="6%" />
+<col width="2%" />
+<col width="2%" />
+<col width="4%" />
+<col width="6%" />
+<col width="4%" />
+<col width="3%" />
+<col width="4%" />
+<col width="3%" />
+<col width="4%" />
+<col width="4%" />
+<col width="13%" />
+<col width="39%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">height</th>
+<th align="right">mass</th>
+<th align="left">hair_color</th>
+<th align="left">skin_color</th>
+<th align="left">eye_color</th>
+<th align="right">birth_year</th>
+<th align="left">sex</th>
+<th align="left">gender</th>
+<th align="left">homeworld</th>
+<th align="left">species</th>
+<th align="left">vehicles</th>
+<th align="left">starships</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Luke Skywalker</td>
+<td align="right">172</td>
+<td align="right">77.0</td>
+<td align="left">blond</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">19.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Tatooine</td>
+<td align="left">Human</td>
+<td align="left">Snowspeeder , Imperial Speeder Bike</td>
+<td align="left">X-wing , Imperial shuttle</td>
+</tr>
+<tr class="even">
+<td align="left">C-3PO</td>
+<td align="right">167</td>
+<td align="right">75.0</td>
+<td align="left">NA</td>
+<td align="left">gold</td>
+<td align="left">yellow</td>
+<td align="right">112.0</td>
+<td align="left">none</td>
+<td align="left">masculine</td>
+<td align="left">Tatooine</td>
+<td align="left">Droid</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">R2-D2</td>
+<td align="right">96</td>
+<td align="right">32.0</td>
+<td align="left">NA</td>
+<td align="left">white, blue</td>
+<td align="left">red</td>
+<td align="right">33.0</td>
+<td align="left">none</td>
+<td align="left">masculine</td>
+<td align="left">Naboo</td>
+<td align="left">Droid</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Darth Vader</td>
+<td align="right">202</td>
+<td align="right">136.0</td>
+<td align="left">none</td>
+<td align="left">white</td>
+<td align="left">yellow</td>
+<td align="right">41.9</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Tatooine</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">TIE Advanced x1</td>
+</tr>
+<tr class="odd">
+<td align="left">Leia Organa</td>
+<td align="right">150</td>
+<td align="right">49.0</td>
+<td align="left">brown</td>
+<td align="left">light</td>
+<td align="left">brown</td>
+<td align="right">19.0</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Alderaan</td>
+<td align="left">Human</td>
+<td align="left">Imperial Speeder Bike</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Owen Lars</td>
+<td align="right">178</td>
+<td align="right">120.0</td>
+<td align="left">brown, grey</td>
+<td align="left">light</td>
+<td align="left">blue</td>
+<td align="right">52.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Tatooine</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Beru Whitesun lars</td>
+<td align="right">165</td>
+<td align="right">75.0</td>
+<td align="left">brown</td>
+<td align="left">light</td>
+<td align="left">blue</td>
+<td align="right">47.0</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Tatooine</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">R5-D4</td>
+<td align="right">97</td>
+<td align="right">32.0</td>
+<td align="left">NA</td>
+<td align="left">white, red</td>
+<td align="left">red</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">masculine</td>
+<td align="left">Tatooine</td>
+<td align="left">Droid</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Biggs Darklighter</td>
+<td align="right">183</td>
+<td align="right">84.0</td>
+<td align="left">black</td>
+<td align="left">light</td>
+<td align="left">brown</td>
+<td align="right">24.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Tatooine</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">X-wing</td>
+</tr>
+<tr class="even">
+<td align="left">Obi-Wan Kenobi</td>
+<td align="right">182</td>
+<td align="right">77.0</td>
+<td align="left">auburn, white</td>
+<td align="left">fair</td>
+<td align="left">blue-gray</td>
+<td align="right">57.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Stewjon</td>
+<td align="left">Human</td>
+<td align="left">Tribubble bongo</td>
+<td align="left">Jedi starfighter , Trade Federation cruiser, Naboo star skiff , Jedi Interceptor , Belbullab-22 starfighter</td>
+</tr>
+<tr class="odd">
+<td align="left">Anakin Skywalker</td>
+<td align="right">188</td>
+<td align="right">84.0</td>
+<td align="left">blond</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">41.9</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Tatooine</td>
+<td align="left">Human</td>
+<td align="left">Zephyr-G swoop bike, XJ-6 airspeeder</td>
+<td align="left">Trade Federation cruiser, Jedi Interceptor , Naboo fighter</td>
+</tr>
+<tr class="even">
+<td align="left">Wilhuff Tarkin</td>
+<td align="right">180</td>
+<td align="right">NA</td>
+<td align="left">auburn, grey</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">64.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Eriadu</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Chewbacca</td>
+<td align="right">228</td>
+<td align="right">112.0</td>
+<td align="left">brown</td>
+<td align="left">unknown</td>
+<td align="left">blue</td>
+<td align="right">200.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Kashyyyk</td>
+<td align="left">Wookiee</td>
+<td align="left">AT-ST</td>
+<td align="left">Millennium Falcon, Imperial shuttle</td>
+</tr>
+<tr class="even">
+<td align="left">Han Solo</td>
+<td align="right">180</td>
+<td align="right">80.0</td>
+<td align="left">brown</td>
+<td align="left">fair</td>
+<td align="left">brown</td>
+<td align="right">29.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Corellia</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">Millennium Falcon, Imperial shuttle</td>
+</tr>
+<tr class="odd">
+<td align="left">Greedo</td>
+<td align="right">173</td>
+<td align="right">74.0</td>
+<td align="left">NA</td>
+<td align="left">green</td>
+<td align="left">black</td>
+<td align="right">44.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Rodia</td>
+<td align="left">Rodian</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Jabba Desilijic Tiure</td>
+<td align="right">175</td>
+<td align="right">1358.0</td>
+<td align="left">NA</td>
+<td align="left">green-tan, brown</td>
+<td align="left">orange</td>
+<td align="right">600.0</td>
+<td align="left">hermaphroditic</td>
+<td align="left">masculine</td>
+<td align="left">Nal Hutta</td>
+<td align="left">Hutt</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Wedge Antilles</td>
+<td align="right">170</td>
+<td align="right">77.0</td>
+<td align="left">brown</td>
+<td align="left">fair</td>
+<td align="left">hazel</td>
+<td align="right">21.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Corellia</td>
+<td align="left">Human</td>
+<td align="left">Snowspeeder</td>
+<td align="left">X-wing</td>
+</tr>
+<tr class="even">
+<td align="left">Jek Tono Porkins</td>
+<td align="right">180</td>
+<td align="right">110.0</td>
+<td align="left">brown</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Bestine IV</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">X-wing</td>
+</tr>
+<tr class="odd">
+<td align="left">Yoda</td>
+<td align="right">66</td>
+<td align="right">17.0</td>
+<td align="left">white</td>
+<td align="left">green</td>
+<td align="left">brown</td>
+<td align="right">896.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">NA</td>
+<td align="left">Yoda’s species</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Palpatine</td>
+<td align="right">170</td>
+<td align="right">75.0</td>
+<td align="left">grey</td>
+<td align="left">pale</td>
+<td align="left">yellow</td>
+<td align="right">82.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Naboo</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Boba Fett</td>
+<td align="right">183</td>
+<td align="right">78.2</td>
+<td align="left">black</td>
+<td align="left">fair</td>
+<td align="left">brown</td>
+<td align="right">31.5</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Kamino</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">Slave 1</td>
+</tr>
+<tr class="even">
+<td align="left">IG-88</td>
+<td align="right">200</td>
+<td align="right">140.0</td>
+<td align="left">none</td>
+<td align="left">metal</td>
+<td align="left">red</td>
+<td align="right">15.0</td>
+<td align="left">none</td>
+<td align="left">masculine</td>
+<td align="left">NA</td>
+<td align="left">Droid</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Bossk</td>
+<td align="right">190</td>
+<td align="right">113.0</td>
+<td align="left">none</td>
+<td align="left">green</td>
+<td align="left">red</td>
+<td align="right">53.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Trandosha</td>
+<td align="left">Trandoshan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Lando Calrissian</td>
+<td align="right">177</td>
+<td align="right">79.0</td>
+<td align="left">black</td>
+<td align="left">dark</td>
+<td align="left">brown</td>
+<td align="right">31.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Socorro</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">Millennium Falcon</td>
+</tr>
+<tr class="odd">
+<td align="left">Lobot</td>
+<td align="right">175</td>
+<td align="right">79.0</td>
+<td align="left">none</td>
+<td align="left">light</td>
+<td align="left">blue</td>
+<td align="right">37.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Bespin</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Ackbar</td>
+<td align="right">180</td>
+<td align="right">83.0</td>
+<td align="left">none</td>
+<td align="left">brown mottle</td>
+<td align="left">orange</td>
+<td align="right">41.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Mon Cala</td>
+<td align="left">Mon Calamari</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Mon Mothma</td>
+<td align="right">150</td>
+<td align="right">NA</td>
+<td align="left">auburn</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">48.0</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Chandrila</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Arvel Crynyd</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="left">brown</td>
+<td align="left">fair</td>
+<td align="left">brown</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">NA</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">A-wing</td>
+</tr>
+<tr class="odd">
+<td align="left">Wicket Systri Warrick</td>
+<td align="right">88</td>
+<td align="right">20.0</td>
+<td align="left">brown</td>
+<td align="left">brown</td>
+<td align="left">brown</td>
+<td align="right">8.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Endor</td>
+<td align="left">Ewok</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Nien Nunb</td>
+<td align="right">160</td>
+<td align="right">68.0</td>
+<td align="left">none</td>
+<td align="left">grey</td>
+<td align="left">black</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Sullust</td>
+<td align="left">Sullustan</td>
+<td align="left"></td>
+<td align="left">Millennium Falcon</td>
+</tr>
+<tr class="odd">
+<td align="left">Qui-Gon Jinn</td>
+<td align="right">193</td>
+<td align="right">89.0</td>
+<td align="left">brown</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">92.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">NA</td>
+<td align="left">Human</td>
+<td align="left">Tribubble bongo</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Nute Gunray</td>
+<td align="right">191</td>
+<td align="right">90.0</td>
+<td align="left">none</td>
+<td align="left">mottled green</td>
+<td align="left">red</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Cato Neimoidia</td>
+<td align="left">Neimodian</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Finis Valorum</td>
+<td align="right">170</td>
+<td align="right">NA</td>
+<td align="left">blond</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">91.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Coruscant</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Jar Jar Binks</td>
+<td align="right">196</td>
+<td align="right">66.0</td>
+<td align="left">none</td>
+<td align="left">orange</td>
+<td align="left">orange</td>
+<td align="right">52.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Naboo</td>
+<td align="left">Gungan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Roos Tarpals</td>
+<td align="right">224</td>
+<td align="right">82.0</td>
+<td align="left">none</td>
+<td align="left">grey</td>
+<td align="left">orange</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Naboo</td>
+<td align="left">Gungan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Rugor Nass</td>
+<td align="right">206</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">green</td>
+<td align="left">orange</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Naboo</td>
+<td align="left">Gungan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Ric Olié</td>
+<td align="right">183</td>
+<td align="right">NA</td>
+<td align="left">brown</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Naboo</td>
+<td align="left">NA</td>
+<td align="left"></td>
+<td align="left">Naboo Royal Starship</td>
+</tr>
+<tr class="even">
+<td align="left">Watto</td>
+<td align="right">137</td>
+<td align="right">NA</td>
+<td align="left">black</td>
+<td align="left">blue, grey</td>
+<td align="left">yellow</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Toydaria</td>
+<td align="left">Toydarian</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Sebulba</td>
+<td align="right">112</td>
+<td align="right">40.0</td>
+<td align="left">none</td>
+<td align="left">grey, red</td>
+<td align="left">orange</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Malastare</td>
+<td align="left">Dug</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Quarsh Panaka</td>
+<td align="right">183</td>
+<td align="right">NA</td>
+<td align="left">black</td>
+<td align="left">dark</td>
+<td align="left">brown</td>
+<td align="right">62.0</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Naboo</td>
+<td align="left">NA</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Shmi Skywalker</td>
+<td align="right">163</td>
+<td align="right">NA</td>
+<td align="left">black</td>
+<td align="left">fair</td>
+<td align="left">brown</td>
+<td align="right">72.0</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Tatooine</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Darth Maul</td>
+<td align="right">175</td>
+<td align="right">80.0</td>
+<td align="left">none</td>
+<td align="left">red</td>
+<td align="left">yellow</td>
+<td align="right">54.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Dathomir</td>
+<td align="left">Zabrak</td>
+<td align="left">Sith speeder</td>
+<td align="left">Scimitar</td>
+</tr>
+<tr class="odd">
+<td align="left">Bib Fortuna</td>
+<td align="right">180</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">pale</td>
+<td align="left">pink</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Ryloth</td>
+<td align="left">Twi’lek</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Ayla Secura</td>
+<td align="right">178</td>
+<td align="right">55.0</td>
+<td align="left">none</td>
+<td align="left">blue</td>
+<td align="left">hazel</td>
+<td align="right">48.0</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Ryloth</td>
+<td align="left">Twi’lek</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Dud Bolt</td>
+<td align="right">94</td>
+<td align="right">45.0</td>
+<td align="left">none</td>
+<td align="left">blue, grey</td>
+<td align="left">yellow</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Vulpter</td>
+<td align="left">Vulptereen</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Gasgano</td>
+<td align="right">122</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">white, blue</td>
+<td align="left">black</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Troiken</td>
+<td align="left">Xexto</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Ben Quadinaros</td>
+<td align="right">163</td>
+<td align="right">65.0</td>
+<td align="left">none</td>
+<td align="left">grey, green, yellow</td>
+<td align="left">orange</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Tund</td>
+<td align="left">Toong</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Mace Windu</td>
+<td align="right">188</td>
+<td align="right">84.0</td>
+<td align="left">none</td>
+<td align="left">dark</td>
+<td align="left">brown</td>
+<td align="right">72.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Haruun Kal</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Ki-Adi-Mundi</td>
+<td align="right">198</td>
+<td align="right">82.0</td>
+<td align="left">white</td>
+<td align="left">pale</td>
+<td align="left">yellow</td>
+<td align="right">92.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Cerea</td>
+<td align="left">Cerean</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Kit Fisto</td>
+<td align="right">196</td>
+<td align="right">87.0</td>
+<td align="left">none</td>
+<td align="left">green</td>
+<td align="left">black</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Glee Anselm</td>
+<td align="left">Nautolan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Eeth Koth</td>
+<td align="right">171</td>
+<td align="right">NA</td>
+<td align="left">black</td>
+<td align="left">brown</td>
+<td align="left">brown</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Iridonia</td>
+<td align="left">Zabrak</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Adi Gallia</td>
+<td align="right">184</td>
+<td align="right">50.0</td>
+<td align="left">none</td>
+<td align="left">dark</td>
+<td align="left">blue</td>
+<td align="right">NA</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Coruscant</td>
+<td align="left">Tholothian</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Saesee Tiin</td>
+<td align="right">188</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">pale</td>
+<td align="left">orange</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Iktotch</td>
+<td align="left">Iktotchi</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Yarael Poof</td>
+<td align="right">264</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">white</td>
+<td align="left">yellow</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Quermia</td>
+<td align="left">Quermian</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Plo Koon</td>
+<td align="right">188</td>
+<td align="right">80.0</td>
+<td align="left">none</td>
+<td align="left">orange</td>
+<td align="left">black</td>
+<td align="right">22.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Dorin</td>
+<td align="left">Kel Dor</td>
+<td align="left"></td>
+<td align="left">Jedi starfighter</td>
+</tr>
+<tr class="even">
+<td align="left">Mas Amedda</td>
+<td align="right">196</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">blue</td>
+<td align="left">blue</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Champala</td>
+<td align="left">Chagrian</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Gregar Typho</td>
+<td align="right">185</td>
+<td align="right">85.0</td>
+<td align="left">black</td>
+<td align="left">dark</td>
+<td align="left">brown</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Naboo</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">Naboo fighter</td>
+</tr>
+<tr class="even">
+<td align="left">Cordé</td>
+<td align="right">157</td>
+<td align="right">NA</td>
+<td align="left">brown</td>
+<td align="left">light</td>
+<td align="left">brown</td>
+<td align="right">NA</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Naboo</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Cliegg Lars</td>
+<td align="right">183</td>
+<td align="right">NA</td>
+<td align="left">brown</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">82.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Tatooine</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Poggle the Lesser</td>
+<td align="right">183</td>
+<td align="right">80.0</td>
+<td align="left">none</td>
+<td align="left">green</td>
+<td align="left">yellow</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Geonosis</td>
+<td align="left">Geonosian</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Luminara Unduli</td>
+<td align="right">170</td>
+<td align="right">56.2</td>
+<td align="left">black</td>
+<td align="left">yellow</td>
+<td align="left">blue</td>
+<td align="right">58.0</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Mirial</td>
+<td align="left">Mirialan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Barriss Offee</td>
+<td align="right">166</td>
+<td align="right">50.0</td>
+<td align="left">black</td>
+<td align="left">yellow</td>
+<td align="left">blue</td>
+<td align="right">40.0</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Mirial</td>
+<td align="left">Mirialan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Dormé</td>
+<td align="right">165</td>
+<td align="right">NA</td>
+<td align="left">brown</td>
+<td align="left">light</td>
+<td align="left">brown</td>
+<td align="right">NA</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Naboo</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Dooku</td>
+<td align="right">193</td>
+<td align="right">80.0</td>
+<td align="left">white</td>
+<td align="left">fair</td>
+<td align="left">brown</td>
+<td align="right">102.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Serenno</td>
+<td align="left">Human</td>
+<td align="left">Flitknot speeder</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Bail Prestor Organa</td>
+<td align="right">191</td>
+<td align="right">NA</td>
+<td align="left">black</td>
+<td align="left">tan</td>
+<td align="left">brown</td>
+<td align="right">67.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Alderaan</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Jango Fett</td>
+<td align="right">183</td>
+<td align="right">79.0</td>
+<td align="left">black</td>
+<td align="left">tan</td>
+<td align="left">brown</td>
+<td align="right">66.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Concord Dawn</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Zam Wesell</td>
+<td align="right">168</td>
+<td align="right">55.0</td>
+<td align="left">blonde</td>
+<td align="left">fair, green, yellow</td>
+<td align="left">yellow</td>
+<td align="right">NA</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Zolan</td>
+<td align="left">Clawdite</td>
+<td align="left">Koro-2 Exodrive airspeeder</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Dexter Jettster</td>
+<td align="right">198</td>
+<td align="right">102.0</td>
+<td align="left">none</td>
+<td align="left">brown</td>
+<td align="left">yellow</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Ojom</td>
+<td align="left">Besalisk</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Lama Su</td>
+<td align="right">229</td>
+<td align="right">88.0</td>
+<td align="left">none</td>
+<td align="left">grey</td>
+<td align="left">black</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Kamino</td>
+<td align="left">Kaminoan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Taun We</td>
+<td align="right">213</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">grey</td>
+<td align="left">black</td>
+<td align="right">NA</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Kamino</td>
+<td align="left">Kaminoan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Jocasta Nu</td>
+<td align="right">167</td>
+<td align="right">NA</td>
+<td align="left">white</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">NA</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Coruscant</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Ratts Tyerell</td>
+<td align="right">79</td>
+<td align="right">15.0</td>
+<td align="left">none</td>
+<td align="left">grey, blue</td>
+<td align="left">unknown</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Aleen Minor</td>
+<td align="left">Aleena</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">R4-P17</td>
+<td align="right">96</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">silver, red</td>
+<td align="left">red, blue</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">feminine</td>
+<td align="left">NA</td>
+<td align="left">Droid</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Wat Tambor</td>
+<td align="right">193</td>
+<td align="right">48.0</td>
+<td align="left">none</td>
+<td align="left">green, grey</td>
+<td align="left">unknown</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Skako</td>
+<td align="left">Skakoan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">San Hill</td>
+<td align="right">191</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">grey</td>
+<td align="left">gold</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Muunilinst</td>
+<td align="left">Muun</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Shaak Ti</td>
+<td align="right">178</td>
+<td align="right">57.0</td>
+<td align="left">none</td>
+<td align="left">red, blue, white</td>
+<td align="left">black</td>
+<td align="right">NA</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Shili</td>
+<td align="left">Togruta</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Grievous</td>
+<td align="right">216</td>
+<td align="right">159.0</td>
+<td align="left">none</td>
+<td align="left">brown, white</td>
+<td align="left">green, yellow</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Kalee</td>
+<td align="left">Kaleesh</td>
+<td align="left">Tsmeu-6 personal wheel bike</td>
+<td align="left">Belbullab-22 starfighter</td>
+</tr>
+<tr class="even">
+<td align="left">Tarfful</td>
+<td align="right">234</td>
+<td align="right">136.0</td>
+<td align="left">brown</td>
+<td align="left">brown</td>
+<td align="left">blue</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Kashyyyk</td>
+<td align="left">Wookiee</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Raymus Antilles</td>
+<td align="right">188</td>
+<td align="right">79.0</td>
+<td align="left">brown</td>
+<td align="left">light</td>
+<td align="left">brown</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Alderaan</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Sly Moore</td>
+<td align="right">178</td>
+<td align="right">48.0</td>
+<td align="left">none</td>
+<td align="left">pale</td>
+<td align="left">white</td>
+<td align="right">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Umbara</td>
+<td align="left">NA</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Tion Medon</td>
+<td align="right">206</td>
+<td align="right">80.0</td>
+<td align="left">none</td>
+<td align="left">grey</td>
+<td align="left">black</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Utapau</td>
+<td align="left">Pau’an</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Finn</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="left">black</td>
+<td align="left">dark</td>
+<td align="left">dark</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">NA</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Rey</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="left">brown</td>
+<td align="left">light</td>
+<td align="left">hazel</td>
+<td align="right">NA</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">NA</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Poe Dameron</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="left">brown</td>
+<td align="left">light</td>
+<td align="left">brown</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">NA</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">T-70 X-wing fighter</td>
+</tr>
+<tr class="odd">
+<td align="left">BB8</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">none</td>
+<td align="left">black</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">masculine</td>
+<td align="left">NA</td>
+<td align="left">Droid</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Captain Phasma</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="left">unknown</td>
+<td align="left">unknown</td>
+<td align="left">unknown</td>
+<td align="right">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Padmé Amidala</td>
+<td align="right">165</td>
+<td align="right">45.0</td>
+<td align="left">brown</td>
+<td align="left">light</td>
+<td align="left">brown</td>
+<td align="right">46.0</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Naboo</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">H-type Nubian yacht, Naboo star skiff , Naboo fighter</td>
+</tr>
+</tbody>
+</table>
+<!--chapter:end:chapters/tables.Rmd-->
+</div>
+<div id="ea-forum" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> EA Forum</h1>
+<p>We often need to make output into a format acceptable for the EA Forum.</p>
+<p>Our current thinking for the EA Survey reports is:</p>
+<ul>
+<li><p>Bookdown: detailed graphs and analysis, some technical details, but minimal discussion. Link to our ‘methodology’ bookdown where relevant, rather than re-explaining a concept</p></li>
+<li><p>EA Forum: Summaries and excerpts of the analysis and figures, more discussion, interpretation, and implications.</p></li>
+</ul>
+<p>Typically, RP has made EA Forum these posts first in Google Docs for feedback and then there is some sort of procedure to get it into EA forum markdown syntax from there. For some previous posts, we pasted from the Rstudio visual mode pastes into Google docs for narrative, and figures/tables could be manually pasted. But we want to avoid having to do that!</p>
+<p>David Reinstein has worked with Pete and others on tools to (mostly) automate this conversion and hosting process, but some manual tweaks were needed at the end. See the work on this <a href="https://github.com/rethinkpriorities/ea-data/blob/master/main_2020.R">here, at bottom</a>, and in <a href="https://github.com/rethinkpriorities/ea-data/blob/master/code/parse_ea_forum_md.R">this R script</a> and <a href="https://github.com/rethinkpriorities/ea-data/blob/master/code/fix_eafo_links.py">this Python script</a>. Yes, it’s spaghetti code.</p>
+<p>Atm, some formatting adjustments are necessary, but both EA forum and our bookdown style templates are changing.</p>
+<!--chapter:end:chapters/EA-forum.Rmd-->
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>I’m a footnote<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>I’m a footnote fwa;ef awf awefj aw;lefj wa;lekfj aw;lefj aw;lefkj aw;lefj aw;lkfj awf awf aw;lkefj aw;lefj aw;lefj ;awjef ;alwkjef afawef awefwfawefawfwafwafawefawfeawfwafwafewafwafawfwafawfawfwfwaefw<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Here I am!<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+<!--bookdown:body:end-->
+            </section>
+
+          </div>
+        </main>
+      
+<!--bookdown:link_prev-->
+<!--bookdown:link_next-->
+    
+  
+  </div>
+  </div>
+<!--bookdown:config-->
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
