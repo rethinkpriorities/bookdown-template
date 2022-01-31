@@ -53,13 +53,14 @@
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <header>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost" />
   <script src="assets/js/bigfoot.min.js"></script>
   <script>
     function toggleAllCode() {
       // Find all the r class elements
       const elements = document.getElementsByClassName("r")
       console.log(elements)
-      
+
       // Loop over the elements and toggle the 'hidden' class if the element
       // is a div
       for (let element of elements) {
@@ -74,9 +75,9 @@
 
     function toggleText() {
       // Find the foldable div this button belongs to
-      const div = this.parentNode;
+      const div = this.parentNode
 
-      // Loop over the elements and 
+      // Loop over the elements and
       for (child of div.children) {
         if (child.style.display === "block") {
           child.style.display = "none"
@@ -94,52 +95,50 @@
       }
     }
 
-    window.onload = function() {
+    window.onload = function () {
       // Check if there are any code sections on the page
       const codeBlocks = document.getElementsByClassName("sourceCode")
-      
+
       // Add toggle code button, but only if there are code blocks
       if (codeBlocks.length > 0) {
         // Find the book header at the top of the page
         const header = document.getElementsByClassName("book-header").item(0)
-        
+
         // Create a link element
         const link = document.createElement("a")
         link.className = "btn pull-left js-toolbar-action"
         link.title = "Toggle code"
         link.onclick = toggleAllCode
-        
+
         // Create an icon element
         const icon = document.createElement("i")
         icon.className = "fa fa-code"
-        
+
         // Add the icon to the link
         link.appendChild(icon)
-      
+
         // Add the link to the header
         header.appendChild(link)
       }
-      
+
       // Find all foldable sections
       const foldBlocks = document.getElementsByClassName("foldable")
-      
+
       if (foldBlocks.length > 0) {
         // Loop over the fold blocks, check if there is a button, if so, add the
         // fold text function
         for (block of foldBlocks) {
           const button = block.getElementsByClassName("fold-button").item(0)
-          
+
           if (button) button.onclick = toggleText
         }
       }
-      
+
       // Initiate bigfoot to add popover footnotes
-      $.bigfoot(
-        {
-            activateOnHover: true,
-            deleteOnUnhover: true
-        }
-      )
+      $.bigfoot({
+        activateOnHover: true,
+        deleteOnUnhover: true,
+      })
     }
   </script>
 </header>
@@ -243,7 +242,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="3" data-path="foldable-sections.html"><a href="foldable-sections.html"><i class="fa fa-check"></i><b>3</b> Foldable Sections</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="foldable-sections.html"><a href="foldable-sections.html#different-types-of-content-and-different-times-of-bla-bla-who-cares-i-just-need-words"><i class="fa fa-check"></i><b>3.1</b> Different types of content and different times of bla bla who cares I just need words</a></li>
+<li class="chapter" data-level="3.1" data-path="foldable-sections.html"><a href="foldable-sections.html#content-types"><i class="fa fa-check"></i><b>3.1</b> Content types</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="callout-blocks.html"><a href="callout-blocks.html"><i class="fa fa-check"></i><b>4</b> Callout blocks</a></li>
 <li class="chapter" data-level="5" data-path="footnotes.html"><a href="footnotes.html"><i class="fa fa-check"></i><b>5</b> Footnotes</a></li>
@@ -282,7 +281,7 @@ Show me more
 </button>
 <p>This is a foldable section.</p>
 </div>
-<p>You can specify which text the button shows initially, but once you click on the button it will show “Show me less”. This text could be changed to something else in the <code>header.html</code> file that can be found in the <code>html</code> folder of the <code>assets</code> folder.</p>
+<p>You can specify which text the button shows initially, but once you click on the button it will show “Show me less.” This text could be changed to something else in the <code>header.html</code> file that can be found in the <code>html</code> folder of the <code>assets</code> folder.</p>
 <p>The reason you have to specify the button itself is because of performance reasons. By putting the HTML code into the section itself, the text will be immediately shown to the user when a page is loaded. If we add the button using JavaScript, the label will initially not be shown and only show up after some (variable) time when the page is first opened.</p>
 <p><br />
 </p>
@@ -298,8 +297,8 @@ Do not open this foldable unless you want to hear about a lion
 <p>(we warned you)</p>
 </div>
 <p>That’s foldables for ya.</p>
-<div id="different-types-of-content-and-different-times-of-bla-bla-who-cares-i-just-need-words" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Different types of content and different times of bla bla who cares I just need words</h2>
+<div id="content-types" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Content types</h2>
 <p>Can they contain:</p>
 <p>Inline r code?:</p>
 <div class="foldable">
@@ -308,12 +307,12 @@ Show me more
 </button>
 <p>let’s try some 4</p>
 </div>
-<p>Footnotes like this one?<a href="ea-forum.html#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<p>Footnotes like this one?<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 <div class="foldable">
 <button class="fold-button">
 Show me more
 </button>
-<p>Here comes a footnote.<a href="ea-forum.html#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p>Here comes a footnote.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
 </div>
 <p>itemized lists?:</p>
 <div class="foldable">
@@ -337,7 +336,7 @@ Show me more
 <!-- html comment thing -->
 <p>more text</p>
 </div>
-<p>Latex math bits like “<span class="math inline">\(x^2\)</span>?”?:</p>
+<p>Latex math bits like “<span class="math inline">\(x^2\)</span>?”:</p>
 <div class="foldable">
 <button class="fold-button">
 Show me more
@@ -346,6 +345,13 @@ Show me more
 </div>
 
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>I’m a footnote<a href="foldable-sections.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>I’m a footnote fwa;ef awf awefj aw;lefj wa;lekfj aw;lefj aw;lefkj aw;lefj aw;lkfj awf awf aw;lkefj aw;lefj aw;lefj ;awjef ;alwkjef afawef awefwfawefawfwafwafawefawfeawfwafwafewafwafawfwafawfawfwfwaefw<a href="foldable-sections.html#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 

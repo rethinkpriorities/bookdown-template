@@ -53,13 +53,14 @@
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <header>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost" />
   <script src="assets/js/bigfoot.min.js"></script>
   <script>
     function toggleAllCode() {
       // Find all the r class elements
       const elements = document.getElementsByClassName("r")
       console.log(elements)
-      
+
       // Loop over the elements and toggle the 'hidden' class if the element
       // is a div
       for (let element of elements) {
@@ -74,9 +75,9 @@
 
     function toggleText() {
       // Find the foldable div this button belongs to
-      const div = this.parentNode;
+      const div = this.parentNode
 
-      // Loop over the elements and 
+      // Loop over the elements and
       for (child of div.children) {
         if (child.style.display === "block") {
           child.style.display = "none"
@@ -94,52 +95,50 @@
       }
     }
 
-    window.onload = function() {
+    window.onload = function () {
       // Check if there are any code sections on the page
       const codeBlocks = document.getElementsByClassName("sourceCode")
-      
+
       // Add toggle code button, but only if there are code blocks
       if (codeBlocks.length > 0) {
         // Find the book header at the top of the page
         const header = document.getElementsByClassName("book-header").item(0)
-        
+
         // Create a link element
         const link = document.createElement("a")
         link.className = "btn pull-left js-toolbar-action"
         link.title = "Toggle code"
         link.onclick = toggleAllCode
-        
+
         // Create an icon element
         const icon = document.createElement("i")
         icon.className = "fa fa-code"
-        
+
         // Add the icon to the link
         link.appendChild(icon)
-      
+
         // Add the link to the header
         header.appendChild(link)
       }
-      
+
       // Find all foldable sections
       const foldBlocks = document.getElementsByClassName("foldable")
-      
+
       if (foldBlocks.length > 0) {
         // Loop over the fold blocks, check if there is a button, if so, add the
         // fold text function
         for (block of foldBlocks) {
           const button = block.getElementsByClassName("fold-button").item(0)
-          
+
           if (button) button.onclick = toggleText
         }
       }
-      
+
       // Initiate bigfoot to add popover footnotes
-      $.bigfoot(
-        {
-            activateOnHover: true,
-            deleteOnUnhover: true
-        }
-      )
+      $.bigfoot({
+        activateOnHover: true,
+        deleteOnUnhover: true,
+      })
     }
   </script>
 </header>
@@ -243,7 +242,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="3" data-path="foldable-sections.html"><a href="foldable-sections.html"><i class="fa fa-check"></i><b>3</b> Foldable Sections</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="foldable-sections.html"><a href="foldable-sections.html#different-types-of-content-and-different-times-of-bla-bla-who-cares-i-just-need-words"><i class="fa fa-check"></i><b>3.1</b> Different types of content and different times of bla bla who cares I just need words</a></li>
+<li class="chapter" data-level="3.1" data-path="foldable-sections.html"><a href="foldable-sections.html#content-types"><i class="fa fa-check"></i><b>3.1</b> Content types</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="callout-blocks.html"><a href="callout-blocks.html"><i class="fa fa-check"></i><b>4</b> Callout blocks</a></li>
 <li class="chapter" data-level="5" data-path="footnotes.html"><a href="footnotes.html"><i class="fa fa-check"></i><b>5</b> Footnotes</a></li>
@@ -279,15 +278,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Atm, some formatting adjustments are necessary, but both EA forum and our bookdown style templates are changing.</p>
 
 </div>
-<div class="footnotes footnotes-end-of-document">
-<hr />
-<ol>
-<li id="fn1"><p>I’m a footnote<a href="foldable-sections.html#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>I’m a footnote fwa;ef awf awefj aw;lefj wa;lekfj aw;lefj aw;lefkj aw;lefj aw;lkfj awf awf aw;lkefj aw;lefj aw;lefj ;awjef ;alwkjef afawef awefwfawefawfwafwafawefawfeawfwafwafewafwafawfwafawfawfwfwaefw<a href="foldable-sections.html#fnref2" class="footnote-back">↩︎</a></p></li>
-<li id="fn3"><p>Here I am!<a href="footnotes.html#fnref3" class="footnote-back">↩︎</a></p></li>
-<li id="fn4"><p>… We have a bit of a problem in some cases: hovered footnotes seem to be cut off on the left when they are long and start on the left. Hovered footnotes seem to be cut off on the left when they are long and start on the left.<a href="footnotes.html#fnref4" class="footnote-back">↩︎</a></p></li>
-</ol>
-</div>
+
+
+
+
+
+
+
+
+
             </section>
 
           </div>
