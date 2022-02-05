@@ -5,16 +5,12 @@ Our bookdown template supports foldable sections by means of custom blocks and c
 A foldable section can be created by placing text between two sets of three colons (`:::`) and specifying the `.foldable` class between two curly braces. In addition, you should add a line of HTML code to add a button that folds and unfolds the section. An example is shown below.
 
     ::: {.foldable}
-    <button class="fold-button">Show me more</button>
-
     This is a foldable section.
     :::
 
 This creates the following foldable section:
 
-::: foldable
-<button class="fold-button">  Show me more  </button>
-
+::: {.foldable}
 This is a foldable section.
 :::
 
@@ -26,9 +22,7 @@ The reason you have to specify the button itself is because of performance reaso
 
 We have had some issues with multiple foldables in the past, so I include another one just for testing, and to show a 'multi-line' foldable with a different opening text.
 
-::: foldable
-<button class="fold-button">  Do not open this foldable unless you want to hear about a lion  </button>
-
+::: {.foldable}
 **ROAR**
 
 samantha Dec 2013
@@ -49,8 +43,6 @@ Can they contain:
 Inline r code?:
 
 ::: {.foldable}
-<button class="fold-button">  Show me more  </button>
-
 let's try some `r 2+2`
 :::
 
@@ -58,30 +50,23 @@ let's try some `r 2+2`
 Footnotes like this one?^[I'm a footnote]
 
 ::: {.foldable}
-<button class="fold-button">  Show me more  </button>
-
-Here comes a footnote.^[I'm a footnote fwa;ef awf awefj aw;lefj wa;lekfj aw;lefj aw;lefkj aw;lefj aw;lkfj awf awf aw;lkefj aw;lefj aw;lefj ;awjef ;alwkjef afawef awefwfawefawfwafwafawefawfeawfwafwafewafwafawfwafawfawfwfwaefw]
+Here comes a footnote.^[I'm a footnote fwa;ef awf awefj aw;lefj wa;lekfj aw;lefj aw;lefkj aw;lefj aw;lkfj awf awf aw;lkefj aw;lefj aw;lefj ;awjef ;alwkjef afawef 34 34 3 34 3 3443 34 34]
 :::
 
 
 itemized lists?:
 
 ::: {.foldable}
-<button class="fold-button">  Show me more  </button>
-
 Here comes a list
 
 - item one
 - item two
    - second level
-   
 :::
-
 
 Html commented out text?:
 
 ::: {.foldable}
-<button class="fold-button">  Show me more  </button>
 <!-- html comment thing -->
 more text
 :::
@@ -89,6 +74,5 @@ more text
 Latex math bits like "$x^2$?"?:
 
 ::: {.foldable}
-<button class="fold-button">  Show me more  </button>
 trying ... $x^2$?
 :::

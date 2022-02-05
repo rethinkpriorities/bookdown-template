@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="6 Tables | Bookdown Template" />
+<meta property="og:type" content="book" />
+
+
+<meta property="og:description" content="The Rethink Priorities bookdown template" />
+<meta name="github-repo" content="rethinkpriorities/bookdown-template" />
+
+<meta name="author" content="Rethink Priorities" />
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<meta name="description" content="The Rethink Priorities bookdown template">
+
+<title>6 Tables | Bookdown Template</title>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+/>
+
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+    
+
+
+<!-- Sidebar-->
+<div class="border-end bg-white vh-100" id="sidebar-wrapper">
+  <div class="sidebar-heading border-bottom bg-light">Bookdown Template</div>
+    <div id="TOC" class="list-group list-group-flush">
+    <a id="item-about" class="list-group-item list-group-item-light ps-3" href="index.html#about">About</a>
+    <a id="item-how-to-use-this-template" class="list-group-item list-group-item-light ps-3" href="how-to-use-this-template.html#how-to-use-this-template"><span class="toc-section-number">1</span> How to use this template</a>
+    <div class="list-group list-group-flush list-subgroup">
+    <a id="item-setup" class="list-group-item list-group-item-light ps-3" href="how-to-use-this-template.html#setup"><span class="toc-section-number">1.1</span> Setup</a>
+    <a id="item-usage" class="list-group-item list-group-item-light ps-3" href="how-to-use-this-template.html#usage"><span class="toc-section-number">1.2</span> Usage</a>
+    </div>
+    <a id="item-code" class="list-group-item list-group-item-light ps-3" href="code.html#code"><span class="toc-section-number">2</span> Code</a>
+    <div class="list-group list-group-flush list-subgroup">
+    <a id="item-code-chunks" class="list-group-item list-group-item-light ps-3" href="code.html#code-chunks"><span class="toc-section-number">2.1</span> Code chunks</a>
+    </div>
+    <a id="item-foldable-sections" class="list-group-item list-group-item-light ps-3" href="foldable-sections.html#foldable-sections"><span class="toc-section-number">3</span> Foldable Sections</a>
+    <div class="list-group list-group-flush list-subgroup">
+    <a id="item-content-types" class="list-group-item list-group-item-light ps-3" href="foldable-sections.html#content-types"><span class="toc-section-number">3.1</span> Content types</a>
+    </div>
+    <a id="item-alerts" class="list-group-item list-group-item-light ps-3" href="alerts.html#alerts"><span class="toc-section-number">4</span> Alerts</a>
+    <a id="item-footnotes" class="list-group-item list-group-item-light ps-3" href="footnotes.html#footnotes"><span class="toc-section-number">5</span> Footnotes</a>
+    <a id="item-tables" class="list-group-item list-group-item-light ps-3" href="tables.html#tables"><span class="toc-section-number">6</span> Tables</a>
+    <a id="item-ea-forum" class="list-group-item list-group-item-light ps-3" href="ea-forum.html#ea-forum"><span class="toc-section-number">7</span> EA Forum</a>
+    </div>
+  </div>
+
+<!-- Page content wrapper-->
+    <div id="page-content-wrapper">
+<!-- Top navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <div class="container-fluid">
+        <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item dropdown">
+              <a 
+                class="nav-link dropdown-toggle" 
+                id="navbarDropdown" 
+                href="#" 
+                role="button" 
+                data-bs-toggle="dropdown" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                  Settings
+              </a>
+              <div 
+                class="dropdown-menu dropdown-menu-end" 
+                aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#!">Toggle code</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- Page content-->
+    <div id="main-container" class="container-fluid">
+<main class="mx-md-5">
+<div id="tables" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> Tables</h1>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="tables.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb8-2"><a href="tables.html#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span></code></pre></div>
+<table>
+<colgroup>
+<col width="9%" />
+<col width="14%" />
+<col width="7%" />
+<col width="8%" />
+<col width="13%" />
+<col width="10%" />
+<col width="23%" />
+<col width="14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+<th>Filler</th>
+<th>Filler 2</th>
+<th>Even more</th>
+<th>Another column</th>
+<th>Another one</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>col 1 is</td>
+<td align="center">left-aligned</td>
+<td align="right">$1600</td>
+<td>Content</td>
+<td>More content</td>
+<td>OPhOh</td>
+<td>Maybe now its cuts off?</td>
+<td>Or now maybe?</td>
+</tr>
+<tr class="even">
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="tables.html#cb9-1" aria-hidden="true" tabindex="-1"></a>d1 <span class="ot">&lt;-</span> <span class="fu">head</span>(iris)</span>
+<span id="cb9-2"><a href="tables.html#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">select</span>(starwars, <span class="sc">-</span>films))</span></code></pre></div>
+<table>
+<colgroup>
+<col width="6%" />
+<col width="2%" />
+<col width="2%" />
+<col width="4%" />
+<col width="6%" />
+<col width="4%" />
+<col width="3%" />
+<col width="4%" />
+<col width="3%" />
+<col width="4%" />
+<col width="4%" />
+<col width="13%" />
+<col width="39%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">height</th>
+<th align="right">mass</th>
+<th align="left">hair_color</th>
+<th align="left">skin_color</th>
+<th align="left">eye_color</th>
+<th align="right">birth_year</th>
+<th align="left">sex</th>
+<th align="left">gender</th>
+<th align="left">homeworld</th>
+<th align="left">species</th>
+<th align="left">vehicles</th>
+<th align="left">starships</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Luke Skywalker</td>
+<td align="right">172</td>
+<td align="right">77.0</td>
+<td align="left">blond</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">19.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Tatooine</td>
+<td align="left">Human</td>
+<td align="left">Snowspeeder , Imperial Speeder Bike</td>
+<td align="left">X-wing , Imperial shuttle</td>
+</tr>
+<tr class="even">
+<td align="left">C-3PO</td>
+<td align="right">167</td>
+<td align="right">75.0</td>
+<td align="left">NA</td>
+<td align="left">gold</td>
+<td align="left">yellow</td>
+<td align="right">112.0</td>
+<td align="left">none</td>
+<td align="left">masculine</td>
+<td align="left">Tatooine</td>
+<td align="left">Droid</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">R2-D2</td>
+<td align="right">96</td>
+<td align="right">32.0</td>
+<td align="left">NA</td>
+<td align="left">white, blue</td>
+<td align="left">red</td>
+<td align="right">33.0</td>
+<td align="left">none</td>
+<td align="left">masculine</td>
+<td align="left">Naboo</td>
+<td align="left">Droid</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Darth Vader</td>
+<td align="right">202</td>
+<td align="right">136.0</td>
+<td align="left">none</td>
+<td align="left">white</td>
+<td align="left">yellow</td>
+<td align="right">41.9</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Tatooine</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">TIE Advanced x1</td>
+</tr>
+<tr class="odd">
+<td align="left">Leia Organa</td>
+<td align="right">150</td>
+<td align="right">49.0</td>
+<td align="left">brown</td>
+<td align="left">light</td>
+<td align="left">brown</td>
+<td align="right">19.0</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Alderaan</td>
+<td align="left">Human</td>
+<td align="left">Imperial Speeder Bike</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Owen Lars</td>
+<td align="right">178</td>
+<td align="right">120.0</td>
+<td align="left">brown, grey</td>
+<td align="left">light</td>
+<td align="left">blue</td>
+<td align="right">52.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Tatooine</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Beru Whitesun lars</td>
+<td align="right">165</td>
+<td align="right">75.0</td>
+<td align="left">brown</td>
+<td align="left">light</td>
+<td align="left">blue</td>
+<td align="right">47.0</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Tatooine</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">R5-D4</td>
+<td align="right">97</td>
+<td align="right">32.0</td>
+<td align="left">NA</td>
+<td align="left">white, red</td>
+<td align="left">red</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">masculine</td>
+<td align="left">Tatooine</td>
+<td align="left">Droid</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Biggs Darklighter</td>
+<td align="right">183</td>
+<td align="right">84.0</td>
+<td align="left">black</td>
+<td align="left">light</td>
+<td align="left">brown</td>
+<td align="right">24.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Tatooine</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">X-wing</td>
+</tr>
+<tr class="even">
+<td align="left">Obi-Wan Kenobi</td>
+<td align="right">182</td>
+<td align="right">77.0</td>
+<td align="left">auburn, white</td>
+<td align="left">fair</td>
+<td align="left">blue-gray</td>
+<td align="right">57.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Stewjon</td>
+<td align="left">Human</td>
+<td align="left">Tribubble bongo</td>
+<td align="left">Jedi starfighter , Trade Federation cruiser, Naboo star skiff , Jedi Interceptor , Belbullab-22 starfighter</td>
+</tr>
+<tr class="odd">
+<td align="left">Anakin Skywalker</td>
+<td align="right">188</td>
+<td align="right">84.0</td>
+<td align="left">blond</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">41.9</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Tatooine</td>
+<td align="left">Human</td>
+<td align="left">Zephyr-G swoop bike, XJ-6 airspeeder</td>
+<td align="left">Trade Federation cruiser, Jedi Interceptor , Naboo fighter</td>
+</tr>
+<tr class="even">
+<td align="left">Wilhuff Tarkin</td>
+<td align="right">180</td>
+<td align="right">NA</td>
+<td align="left">auburn, grey</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">64.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Eriadu</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Chewbacca</td>
+<td align="right">228</td>
+<td align="right">112.0</td>
+<td align="left">brown</td>
+<td align="left">unknown</td>
+<td align="left">blue</td>
+<td align="right">200.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Kashyyyk</td>
+<td align="left">Wookiee</td>
+<td align="left">AT-ST</td>
+<td align="left">Millennium Falcon, Imperial shuttle</td>
+</tr>
+<tr class="even">
+<td align="left">Han Solo</td>
+<td align="right">180</td>
+<td align="right">80.0</td>
+<td align="left">brown</td>
+<td align="left">fair</td>
+<td align="left">brown</td>
+<td align="right">29.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Corellia</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">Millennium Falcon, Imperial shuttle</td>
+</tr>
+<tr class="odd">
+<td align="left">Greedo</td>
+<td align="right">173</td>
+<td align="right">74.0</td>
+<td align="left">NA</td>
+<td align="left">green</td>
+<td align="left">black</td>
+<td align="right">44.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Rodia</td>
+<td align="left">Rodian</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Jabba Desilijic Tiure</td>
+<td align="right">175</td>
+<td align="right">1358.0</td>
+<td align="left">NA</td>
+<td align="left">green-tan, brown</td>
+<td align="left">orange</td>
+<td align="right">600.0</td>
+<td align="left">hermaphroditic</td>
+<td align="left">masculine</td>
+<td align="left">Nal Hutta</td>
+<td align="left">Hutt</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Wedge Antilles</td>
+<td align="right">170</td>
+<td align="right">77.0</td>
+<td align="left">brown</td>
+<td align="left">fair</td>
+<td align="left">hazel</td>
+<td align="right">21.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Corellia</td>
+<td align="left">Human</td>
+<td align="left">Snowspeeder</td>
+<td align="left">X-wing</td>
+</tr>
+<tr class="even">
+<td align="left">Jek Tono Porkins</td>
+<td align="right">180</td>
+<td align="right">110.0</td>
+<td align="left">brown</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Bestine IV</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">X-wing</td>
+</tr>
+<tr class="odd">
+<td align="left">Yoda</td>
+<td align="right">66</td>
+<td align="right">17.0</td>
+<td align="left">white</td>
+<td align="left">green</td>
+<td align="left">brown</td>
+<td align="right">896.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">NA</td>
+<td align="left">Yoda’s species</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Palpatine</td>
+<td align="right">170</td>
+<td align="right">75.0</td>
+<td align="left">grey</td>
+<td align="left">pale</td>
+<td align="left">yellow</td>
+<td align="right">82.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Naboo</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Boba Fett</td>
+<td align="right">183</td>
+<td align="right">78.2</td>
+<td align="left">black</td>
+<td align="left">fair</td>
+<td align="left">brown</td>
+<td align="right">31.5</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Kamino</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">Slave 1</td>
+</tr>
+<tr class="even">
+<td align="left">IG-88</td>
+<td align="right">200</td>
+<td align="right">140.0</td>
+<td align="left">none</td>
+<td align="left">metal</td>
+<td align="left">red</td>
+<td align="right">15.0</td>
+<td align="left">none</td>
+<td align="left">masculine</td>
+<td align="left">NA</td>
+<td align="left">Droid</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Bossk</td>
+<td align="right">190</td>
+<td align="right">113.0</td>
+<td align="left">none</td>
+<td align="left">green</td>
+<td align="left">red</td>
+<td align="right">53.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Trandosha</td>
+<td align="left">Trandoshan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Lando Calrissian</td>
+<td align="right">177</td>
+<td align="right">79.0</td>
+<td align="left">black</td>
+<td align="left">dark</td>
+<td align="left">brown</td>
+<td align="right">31.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Socorro</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">Millennium Falcon</td>
+</tr>
+<tr class="odd">
+<td align="left">Lobot</td>
+<td align="right">175</td>
+<td align="right">79.0</td>
+<td align="left">none</td>
+<td align="left">light</td>
+<td align="left">blue</td>
+<td align="right">37.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Bespin</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Ackbar</td>
+<td align="right">180</td>
+<td align="right">83.0</td>
+<td align="left">none</td>
+<td align="left">brown mottle</td>
+<td align="left">orange</td>
+<td align="right">41.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Mon Cala</td>
+<td align="left">Mon Calamari</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Mon Mothma</td>
+<td align="right">150</td>
+<td align="right">NA</td>
+<td align="left">auburn</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">48.0</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Chandrila</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Arvel Crynyd</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="left">brown</td>
+<td align="left">fair</td>
+<td align="left">brown</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">NA</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">A-wing</td>
+</tr>
+<tr class="odd">
+<td align="left">Wicket Systri Warrick</td>
+<td align="right">88</td>
+<td align="right">20.0</td>
+<td align="left">brown</td>
+<td align="left">brown</td>
+<td align="left">brown</td>
+<td align="right">8.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Endor</td>
+<td align="left">Ewok</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Nien Nunb</td>
+<td align="right">160</td>
+<td align="right">68.0</td>
+<td align="left">none</td>
+<td align="left">grey</td>
+<td align="left">black</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Sullust</td>
+<td align="left">Sullustan</td>
+<td align="left"></td>
+<td align="left">Millennium Falcon</td>
+</tr>
+<tr class="odd">
+<td align="left">Qui-Gon Jinn</td>
+<td align="right">193</td>
+<td align="right">89.0</td>
+<td align="left">brown</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">92.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">NA</td>
+<td align="left">Human</td>
+<td align="left">Tribubble bongo</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Nute Gunray</td>
+<td align="right">191</td>
+<td align="right">90.0</td>
+<td align="left">none</td>
+<td align="left">mottled green</td>
+<td align="left">red</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Cato Neimoidia</td>
+<td align="left">Neimodian</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Finis Valorum</td>
+<td align="right">170</td>
+<td align="right">NA</td>
+<td align="left">blond</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">91.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Coruscant</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Jar Jar Binks</td>
+<td align="right">196</td>
+<td align="right">66.0</td>
+<td align="left">none</td>
+<td align="left">orange</td>
+<td align="left">orange</td>
+<td align="right">52.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Naboo</td>
+<td align="left">Gungan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Roos Tarpals</td>
+<td align="right">224</td>
+<td align="right">82.0</td>
+<td align="left">none</td>
+<td align="left">grey</td>
+<td align="left">orange</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Naboo</td>
+<td align="left">Gungan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Rugor Nass</td>
+<td align="right">206</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">green</td>
+<td align="left">orange</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Naboo</td>
+<td align="left">Gungan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Ric Olié</td>
+<td align="right">183</td>
+<td align="right">NA</td>
+<td align="left">brown</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Naboo</td>
+<td align="left">NA</td>
+<td align="left"></td>
+<td align="left">Naboo Royal Starship</td>
+</tr>
+<tr class="even">
+<td align="left">Watto</td>
+<td align="right">137</td>
+<td align="right">NA</td>
+<td align="left">black</td>
+<td align="left">blue, grey</td>
+<td align="left">yellow</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Toydaria</td>
+<td align="left">Toydarian</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Sebulba</td>
+<td align="right">112</td>
+<td align="right">40.0</td>
+<td align="left">none</td>
+<td align="left">grey, red</td>
+<td align="left">orange</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Malastare</td>
+<td align="left">Dug</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Quarsh Panaka</td>
+<td align="right">183</td>
+<td align="right">NA</td>
+<td align="left">black</td>
+<td align="left">dark</td>
+<td align="left">brown</td>
+<td align="right">62.0</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Naboo</td>
+<td align="left">NA</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Shmi Skywalker</td>
+<td align="right">163</td>
+<td align="right">NA</td>
+<td align="left">black</td>
+<td align="left">fair</td>
+<td align="left">brown</td>
+<td align="right">72.0</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Tatooine</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Darth Maul</td>
+<td align="right">175</td>
+<td align="right">80.0</td>
+<td align="left">none</td>
+<td align="left">red</td>
+<td align="left">yellow</td>
+<td align="right">54.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Dathomir</td>
+<td align="left">Zabrak</td>
+<td align="left">Sith speeder</td>
+<td align="left">Scimitar</td>
+</tr>
+<tr class="odd">
+<td align="left">Bib Fortuna</td>
+<td align="right">180</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">pale</td>
+<td align="left">pink</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Ryloth</td>
+<td align="left">Twi’lek</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Ayla Secura</td>
+<td align="right">178</td>
+<td align="right">55.0</td>
+<td align="left">none</td>
+<td align="left">blue</td>
+<td align="left">hazel</td>
+<td align="right">48.0</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Ryloth</td>
+<td align="left">Twi’lek</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Dud Bolt</td>
+<td align="right">94</td>
+<td align="right">45.0</td>
+<td align="left">none</td>
+<td align="left">blue, grey</td>
+<td align="left">yellow</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Vulpter</td>
+<td align="left">Vulptereen</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Gasgano</td>
+<td align="right">122</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">white, blue</td>
+<td align="left">black</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Troiken</td>
+<td align="left">Xexto</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Ben Quadinaros</td>
+<td align="right">163</td>
+<td align="right">65.0</td>
+<td align="left">none</td>
+<td align="left">grey, green, yellow</td>
+<td align="left">orange</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Tund</td>
+<td align="left">Toong</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Mace Windu</td>
+<td align="right">188</td>
+<td align="right">84.0</td>
+<td align="left">none</td>
+<td align="left">dark</td>
+<td align="left">brown</td>
+<td align="right">72.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Haruun Kal</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Ki-Adi-Mundi</td>
+<td align="right">198</td>
+<td align="right">82.0</td>
+<td align="left">white</td>
+<td align="left">pale</td>
+<td align="left">yellow</td>
+<td align="right">92.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Cerea</td>
+<td align="left">Cerean</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Kit Fisto</td>
+<td align="right">196</td>
+<td align="right">87.0</td>
+<td align="left">none</td>
+<td align="left">green</td>
+<td align="left">black</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Glee Anselm</td>
+<td align="left">Nautolan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Eeth Koth</td>
+<td align="right">171</td>
+<td align="right">NA</td>
+<td align="left">black</td>
+<td align="left">brown</td>
+<td align="left">brown</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Iridonia</td>
+<td align="left">Zabrak</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Adi Gallia</td>
+<td align="right">184</td>
+<td align="right">50.0</td>
+<td align="left">none</td>
+<td align="left">dark</td>
+<td align="left">blue</td>
+<td align="right">NA</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Coruscant</td>
+<td align="left">Tholothian</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Saesee Tiin</td>
+<td align="right">188</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">pale</td>
+<td align="left">orange</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Iktotch</td>
+<td align="left">Iktotchi</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Yarael Poof</td>
+<td align="right">264</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">white</td>
+<td align="left">yellow</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Quermia</td>
+<td align="left">Quermian</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Plo Koon</td>
+<td align="right">188</td>
+<td align="right">80.0</td>
+<td align="left">none</td>
+<td align="left">orange</td>
+<td align="left">black</td>
+<td align="right">22.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Dorin</td>
+<td align="left">Kel Dor</td>
+<td align="left"></td>
+<td align="left">Jedi starfighter</td>
+</tr>
+<tr class="even">
+<td align="left">Mas Amedda</td>
+<td align="right">196</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">blue</td>
+<td align="left">blue</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Champala</td>
+<td align="left">Chagrian</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Gregar Typho</td>
+<td align="right">185</td>
+<td align="right">85.0</td>
+<td align="left">black</td>
+<td align="left">dark</td>
+<td align="left">brown</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Naboo</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">Naboo fighter</td>
+</tr>
+<tr class="even">
+<td align="left">Cordé</td>
+<td align="right">157</td>
+<td align="right">NA</td>
+<td align="left">brown</td>
+<td align="left">light</td>
+<td align="left">brown</td>
+<td align="right">NA</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Naboo</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Cliegg Lars</td>
+<td align="right">183</td>
+<td align="right">NA</td>
+<td align="left">brown</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">82.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Tatooine</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Poggle the Lesser</td>
+<td align="right">183</td>
+<td align="right">80.0</td>
+<td align="left">none</td>
+<td align="left">green</td>
+<td align="left">yellow</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Geonosis</td>
+<td align="left">Geonosian</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Luminara Unduli</td>
+<td align="right">170</td>
+<td align="right">56.2</td>
+<td align="left">black</td>
+<td align="left">yellow</td>
+<td align="left">blue</td>
+<td align="right">58.0</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Mirial</td>
+<td align="left">Mirialan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Barriss Offee</td>
+<td align="right">166</td>
+<td align="right">50.0</td>
+<td align="left">black</td>
+<td align="left">yellow</td>
+<td align="left">blue</td>
+<td align="right">40.0</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Mirial</td>
+<td align="left">Mirialan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Dormé</td>
+<td align="right">165</td>
+<td align="right">NA</td>
+<td align="left">brown</td>
+<td align="left">light</td>
+<td align="left">brown</td>
+<td align="right">NA</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Naboo</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Dooku</td>
+<td align="right">193</td>
+<td align="right">80.0</td>
+<td align="left">white</td>
+<td align="left">fair</td>
+<td align="left">brown</td>
+<td align="right">102.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Serenno</td>
+<td align="left">Human</td>
+<td align="left">Flitknot speeder</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Bail Prestor Organa</td>
+<td align="right">191</td>
+<td align="right">NA</td>
+<td align="left">black</td>
+<td align="left">tan</td>
+<td align="left">brown</td>
+<td align="right">67.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Alderaan</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Jango Fett</td>
+<td align="right">183</td>
+<td align="right">79.0</td>
+<td align="left">black</td>
+<td align="left">tan</td>
+<td align="left">brown</td>
+<td align="right">66.0</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Concord Dawn</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Zam Wesell</td>
+<td align="right">168</td>
+<td align="right">55.0</td>
+<td align="left">blonde</td>
+<td align="left">fair, green, yellow</td>
+<td align="left">yellow</td>
+<td align="right">NA</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Zolan</td>
+<td align="left">Clawdite</td>
+<td align="left">Koro-2 Exodrive airspeeder</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Dexter Jettster</td>
+<td align="right">198</td>
+<td align="right">102.0</td>
+<td align="left">none</td>
+<td align="left">brown</td>
+<td align="left">yellow</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Ojom</td>
+<td align="left">Besalisk</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Lama Su</td>
+<td align="right">229</td>
+<td align="right">88.0</td>
+<td align="left">none</td>
+<td align="left">grey</td>
+<td align="left">black</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Kamino</td>
+<td align="left">Kaminoan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Taun We</td>
+<td align="right">213</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">grey</td>
+<td align="left">black</td>
+<td align="right">NA</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Kamino</td>
+<td align="left">Kaminoan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Jocasta Nu</td>
+<td align="right">167</td>
+<td align="right">NA</td>
+<td align="left">white</td>
+<td align="left">fair</td>
+<td align="left">blue</td>
+<td align="right">NA</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Coruscant</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Ratts Tyerell</td>
+<td align="right">79</td>
+<td align="right">15.0</td>
+<td align="left">none</td>
+<td align="left">grey, blue</td>
+<td align="left">unknown</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Aleen Minor</td>
+<td align="left">Aleena</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">R4-P17</td>
+<td align="right">96</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">silver, red</td>
+<td align="left">red, blue</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">feminine</td>
+<td align="left">NA</td>
+<td align="left">Droid</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Wat Tambor</td>
+<td align="right">193</td>
+<td align="right">48.0</td>
+<td align="left">none</td>
+<td align="left">green, grey</td>
+<td align="left">unknown</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Skako</td>
+<td align="left">Skakoan</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">San Hill</td>
+<td align="right">191</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">grey</td>
+<td align="left">gold</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Muunilinst</td>
+<td align="left">Muun</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Shaak Ti</td>
+<td align="right">178</td>
+<td align="right">57.0</td>
+<td align="left">none</td>
+<td align="left">red, blue, white</td>
+<td align="left">black</td>
+<td align="right">NA</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Shili</td>
+<td align="left">Togruta</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Grievous</td>
+<td align="right">216</td>
+<td align="right">159.0</td>
+<td align="left">none</td>
+<td align="left">brown, white</td>
+<td align="left">green, yellow</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Kalee</td>
+<td align="left">Kaleesh</td>
+<td align="left">Tsmeu-6 personal wheel bike</td>
+<td align="left">Belbullab-22 starfighter</td>
+</tr>
+<tr class="even">
+<td align="left">Tarfful</td>
+<td align="right">234</td>
+<td align="right">136.0</td>
+<td align="left">brown</td>
+<td align="left">brown</td>
+<td align="left">blue</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Kashyyyk</td>
+<td align="left">Wookiee</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Raymus Antilles</td>
+<td align="right">188</td>
+<td align="right">79.0</td>
+<td align="left">brown</td>
+<td align="left">light</td>
+<td align="left">brown</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Alderaan</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Sly Moore</td>
+<td align="right">178</td>
+<td align="right">48.0</td>
+<td align="left">none</td>
+<td align="left">pale</td>
+<td align="left">white</td>
+<td align="right">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Umbara</td>
+<td align="left">NA</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Tion Medon</td>
+<td align="right">206</td>
+<td align="right">80.0</td>
+<td align="left">none</td>
+<td align="left">grey</td>
+<td align="left">black</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">Utapau</td>
+<td align="left">Pau’an</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Finn</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="left">black</td>
+<td align="left">dark</td>
+<td align="left">dark</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">NA</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Rey</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="left">brown</td>
+<td align="left">light</td>
+<td align="left">hazel</td>
+<td align="right">NA</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">NA</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Poe Dameron</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="left">brown</td>
+<td align="left">light</td>
+<td align="left">brown</td>
+<td align="right">NA</td>
+<td align="left">male</td>
+<td align="left">masculine</td>
+<td align="left">NA</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">T-70 X-wing fighter</td>
+</tr>
+<tr class="odd">
+<td align="left">BB8</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">none</td>
+<td align="left">black</td>
+<td align="right">NA</td>
+<td align="left">none</td>
+<td align="left">masculine</td>
+<td align="left">NA</td>
+<td align="left">Droid</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Captain Phasma</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="left">unknown</td>
+<td align="left">unknown</td>
+<td align="left">unknown</td>
+<td align="right">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Padmé Amidala</td>
+<td align="right">165</td>
+<td align="right">45.0</td>
+<td align="left">brown</td>
+<td align="left">light</td>
+<td align="left">brown</td>
+<td align="right">46.0</td>
+<td align="left">female</td>
+<td align="left">feminine</td>
+<td align="left">Naboo</td>
+<td align="left">Human</td>
+<td align="left"></td>
+<td align="left">H-type Nubian yacht, Naboo star skiff , Naboo fighter</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<p style="text-align: center;">
+<a href="footnotes.html"><button class="btn btn-secondary">Previous</button></a>
+<a href="ea-forum.html"><button class="btn btn-secondary">Next</button></a>
+</p>
+</main>
+</div>
+</div>
+
+
+</div>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
+</script>
+
+<script>
+// Set the current page to active in the TOC
+const id = document.getElementsByClassName("level1").item(0).id
+const item = document.getElementById("item-" + id)
+item.classList.toggle("active")
+
+// Add foldable sections
+const foldables = document.getElementsByClassName("foldable")
+
+for (foldable of foldables) {
+  const a = foldable.firstChild
+  console.log(a)
+  
+  a.href = "#"
+  a.onclick = function() {
+    const bsCollapse = new bootstrap.Collapse(a.nextSibling, {
+      toggle: true
+    })
+  }
+}
+</script>
+
+<script>
+// Add sidebar toggle functionality
+window.addEventListener('DOMContentLoaded', event => {
+  // Toggle the side navigation
+  const sidebarToggle = document.body.querySelector('#sidebarToggle');
+  if (sidebarToggle) {
+    // Uncomment Below to persist sidebar toggle between refreshes
+    if (localStorage.getItem('sb|sidebar-toggle') === 'true') {
+      document.body.classList.toggle('sb-sidenav-toggled');
+    }
+    sidebarToggle.addEventListener('click', event => {
+      event.preventDefault();
+      document.body.classList.toggle('sb-sidenav-toggled');
+      localStorage.setItem('sb|sidebar-toggle', 
+        document.body.classList.contains('sb-sidenav-toggled')
+      );
+    });
+  }
+});
+</script>
+
+</body>
+</html>

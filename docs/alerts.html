@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="3 Foldable Sections | Bookdown Template" />
+<meta property="og:title" content="4 Alerts | Bookdown Template" />
 <meta property="og:type" content="book" />
 
 
@@ -24,7 +24,7 @@ MathJax.Hub.Config({
 
 <meta name="description" content="The Rethink Priorities bookdown template">
 
-<title>3 Foldable Sections | Bookdown Template</title>
+<title>4 Alerts | Bookdown Template</title>
 
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -179,74 +179,48 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <!-- Page content-->
     <div id="main-container" class="container-fluid">
 <main class="mx-md-5">
-<div id="foldable-sections" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Foldable Sections</h1>
-<p>Our bookdown template supports foldable sections by means of custom blocks and custom code. Note that this means this feature is not supported out of the box and that some setup is necessary if you start with a fresh install of the <code>bookdown</code> format. It is recommended to clone the files of this template so that you don’t have to worry about it.</p>
-<p>A foldable section can be created by placing text between two sets of three colons (<code>:::</code>) and specifying the <code>.foldable</code> class between two curly braces. In addition, you should add a line of HTML code to add a button that folds and unfolds the section. An example is shown below.</p>
-<pre><code>::: {.foldable}
-This is a foldable section.
+<div id="alerts" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Alerts</h1>
+<p>You may want to style a certain paragraph in a different way to alert the user to it. Because this template is based on Bootstrap, you can use different kinds of alerts.</p>
+<p>The way it works is that you create a custom block and give it two classes. The first class is <code>.alert</code>, followed by one of the following: <code>.alert-primary</code>, <code>.alert-secondary</code>, <code>.alert-success</code>, <code>.alert-danger</code>, <code>.alert-warning</code>, <code>.alert-info</code>, <code>.alert-light</code>, <code>.alert-dark</code>.</p>
+<p>Here is an example:</p>
+<pre><code>::: {.alert .alert-primary}
+This is an alert!
 :::</code></pre>
-<p>This creates the following foldable section:</p>
-<div class="foldable"><a>Show me more</a><div class="collapse">
-<p>This is a foldable section.</p>
-</div></div>
-<p>You can specify which text the button shows initially, but once you click on the button it will show “Show me less.” This text could be changed to something else in the <code>header.html</code> file that can be found in the <code>html</code> folder of the <code>assets</code> folder.</p>
-<p>The reason you have to specify the button itself is because of performance reasons. By putting the HTML code into the section itself, the text will be immediately shown to the user when a page is loaded. If we add the button using JavaScript, the label will initially not be shown and only show up after some (variable) time when the page is first opened.</p>
-<p><br />
-</p>
-<p>We have had some issues with multiple foldables in the past, so I include another one just for testing, and to show a ‘multi-line’ foldable with a different opening text.</p>
-<div class="foldable"><a>Show me more</a><div class="collapse">
-<p><strong>ROAR</strong></p>
-<p>samantha Dec 2013</p>
-<p>The Lion &amp; the Lamb And so the lion fell in love with the lamb She thought she had the upper hand But fate got in the way And the lion had nothing to say So they began a life together Determined to last forever For their love was stronger than you would believe So intense it almost decieves But the lion couldn’t overcome All the obstacles to be with the one He left the lamb with tears in her eyes And wouldn’t return despite her tries Now the lamb couldn’t comprehend Why the lion wouldn’t spend A life time with her by his side the lion and his stupid pride But the lion soon came to regret The fact that he could ever let His precious lamb get away And now the lion knew what to say He needed his lamb and needed her bad See he missed the love that they had But the lamb did not forgive All that the lion did But she loved her lion, she couldn’t deny Even if she couldn’t explain why And so the lion fell in love with the lamb Stupid lion, stupid lamb</p>
-<p>From: <a href="https://hellopoetry.com/words/lion/" class="uri">https://hellopoetry.com/words/lion/</a></p>
-<p>(we warned you)</p>
-</div></div>
-<p>That’s foldables for ya.</p>
-<div id="content-types" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Content types</h2>
-<p>Can they contain:</p>
-<p>Inline r code?:</p>
-<div class="foldable"><a>Show me more</a><div class="collapse">
-<p>let’s try some 4</p>
-</div></div>
-<p>Footnotes like this one?<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
-<div class="foldable"><a>Show me more</a><div class="collapse">
-<p>Here comes a footnote.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
-</div></div>
-<p>itemized lists?:</p>
-<div class="foldable"><a>Show me more</a><div class="collapse">
-<p>Here comes a list</p>
-<ul>
-<li>item one</li>
-<li>item two
-<ul>
-<li>second level</li>
-</ul></li>
-</ul>
-</div></div>
-<p>Html commented out text?:</p>
-<div class="foldable"><a>Show me more</a><div class="collapse">
-<!-- html comment thing -->
-<p>more text</p>
-</div></div>
-<p>Latex math bits like “<span class="math inline">\(x^2\)</span>?”:</p>
-<div class="foldable"><a>Show me more</a><div class="collapse">
-<p>trying … <span class="math inline">\(x^2\)</span>?</p>
-</div></div>
+<p>Which produces the following result:</p>
+<div class="alert alert-primary">
+<p>This is an alert!</p>
+</div>
+<p>Below you can see an example of each different kind of alert.</p>
+<div class="alert alert-primary">
+<p>A simple primary alert—check it out!</p>
+</div>
+<div class="alert alert-secondary">
+<p>A simple secondary alert—check it out!</p>
+</div>
+<div class="alert alert-success">
+<p>A simple success alert—check it out!</p>
+</div>
+<div class="alert alert-danger">
+<p>A simple danger alert—check it out!</p>
+</div>
+<div class="alert alert-warning">
+<p>A simple warning alert—check it out!</p>
+</div>
+<div class="alert alert-info">
+<p>A simple info alert—check it out!</p>
+</div>
+<div class="alert alert-light">
+<p>A simple light alert—check it out!</p>
+</div>
+<div class="alert alert-dark">
+<p>A simple dark alert—check it out!</p>
+</div>
 
 </div>
-</div>
-<div class="footnotes">
-<hr />
-<ol start="1">
-<li id="fn1"><p>I’m a footnote<a href="foldable-sections.html#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>I’m a footnote fwa;ef awf awefj aw;lefj wa;lekfj aw;lefj aw;lefkj aw;lefj aw;lkfj awf awf aw;lkefj aw;lefj aw;lefj ;awjef ;alwkjef afawef 34 34 3 34 3 3443 34 34<a href="foldable-sections.html#fnref2" class="footnote-back">↩︎</a></p></li>
-</ol>
-</div>
 <p style="text-align: center;">
-<a href="code.html"><button class="btn btn-secondary">Previous</button></a>
-<a href="alerts.html"><button class="btn btn-secondary">Next</button></a>
+<a href="foldable-sections.html"><button class="btn btn-secondary">Previous</button></a>
+<a href="footnotes.html"><button class="btn btn-secondary">Next</button></a>
 </p>
 </main>
 </div>
