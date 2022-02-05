@@ -111,69 +111,41 @@ $endfor$
 </head>
 
 <body>
-
-
-
-<!--bookdown:title:start-->
-$if(title)$
-<div id="$idprefix$header">
-<h1 class="title">$title$</h1>
-$if(subtitle)$
-<h2 class="subtitle"><em>$subtitle$</em></h2>
-$endif$
-$for(author)$
-$if(author.name)$
-<p class="author multi-author"><em>$author.name$</em></p>
-$if(author.affiliation)$
-<address class="author_afil">
-$author.affiliation$<br>
-$if(author.email)$
-<a class="author_email" href="mailto:#">$author.email$</a>
-$endif$
-</address>
-$endif$
-$else$
-<p class="author"><em>$author$</em></p>
-$endif$
-$endfor$
-$if(date)$
-<p class="date"><em>$date$</em></p>
-$endif$
-$if(abstract)$
-<div class="abstract">
-<p class="abstract">$if(abstract-title)$$abstract-title$$else$Abstract$endif$</p>
-$abstract$
-</div>
-$endif$
-</div>
-$endif$
-<!--bookdown:title:end-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <div class="container">
+        <button
+          data-bs-target="#sidebar"
+          data-bs-toggle="collapse"
+          class="btn btn-primary px-1 py-0"
+          ><i class="bi bi-list"></i></button>
+        
+      </div>
+    </nav>
+  <div class="container">
+      <div class="row">
+        <div class="col-auto">
 
 <!--bookdown:toc:start-->
-  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
-
-    <div class="book-summary">
-      <nav role="navigation">
+  
+          <div
+            id="sidebar"
+            class="collapse collapse-horizontal sticky-top show"
+          >
+            <div
+              id="sidebar-nav"
+              class="list-group text-sm-start min-vh-100 bg-dark" 
+            >
 <!--bookdown:toc2:start-->
 $if(toc)$
 $toc$
 $endif$
 <!--bookdown:toc2:end-->
-      </nav>
-    </div>
-
-    <div class="book-body">
-      <div class="body-inner">
-        <div class="book-header" role="navigation">
-          <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="$if(book-url)$$book-url$$else$./$endif$">$if(title)$$title$$endif$</a>
-          </h1>
+      </div>
+          </div>
         </div>
 
-        <div class="page-wrapper" tabindex="-1" role="main">
-          <div class="page-inner">
-
-            <section class="normal" id="section-">
+    <div class="col d-flex justify-content-center ps-md-2 pt-2">
+          <main class="ps-md-2 pt-2">
 $for(include-before)$
 $include-before$
 $endfor$
@@ -184,11 +156,10 @@ $body$
 $for(include-after)$
 $include-after$
 $endfor$
-            </section>
-
-          </div>
+            </main>
         </div>
       </div>
+    </div>
 <!--bookdown:link_prev-->
 <!--bookdown:link_next-->
     </div>
