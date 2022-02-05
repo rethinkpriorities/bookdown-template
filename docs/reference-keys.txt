@@ -1,0 +1,11 @@
+how-to-use-this-template
+setup
+usage
+code
+code-chunks
+foldable-sections
+content-types
+callout-blocks
+footnotes
+tables
+ea-forum

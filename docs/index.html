@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3 Foldable Sections | Bookdown Template</title>
+  <title>Bookdown Template</title>
   <meta name="description" content="The Rethink Priorities bookdown template" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3 Foldable Sections | Bookdown Template" />
+  <meta property="og:title" content="Bookdown Template" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rethinkpriorities/bookdown-template" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3 Foldable Sections | Bookdown Template" />
+  <meta name="twitter:title" content="Bookdown Template" />
   
   <meta name="twitter:description" content="The Rethink Priorities bookdown template" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="code.html"/>
-<link rel="next" href="callout-blocks.html"/>
+
+<link rel="next" href="how-to-use-this-template.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -265,101 +265,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="foldable-sections" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Foldable Sections</h1>
-<p>Our bookdown template supports foldable sections by means of custom blocks and custom code. Note that this means this feature is not supported out of the box and that some setup is necessary if you start with a fresh install of the <code>bookdown</code> format. It is recommended to clone the files of this template so that you don’t have to worry about it.</p>
-<p>A foldable section can be created by placing text between two sets of three colons (<code>:::</code>) and specifying the <code>.foldable</code> class between two curly braces. In addition, you should add a line of HTML code to add a button that folds and unfolds the section. An example is shown below.</p>
-<pre><code>::: {.foldable}
-&lt;button class=&quot;fold-button&quot;&gt;Show me more&lt;/button&gt;
-
-This is a foldable section.
-:::</code></pre>
-<p>This creates the following foldable section:</p>
-<div class="foldable">
-<button class="fold-button">
-Show me more
-</button>
-<p>This is a foldable section.</p>
+<div id="header">
+<h1 class="title">Bookdown Template</h1>
+<p class="author"><em>Rethink Priorities</em></p>
 </div>
-<p>You can specify which text the button shows initially, but once you click on the button it will show “Show me less.” This text could be changed to something else in the <code>header.html</code> file that can be found in the <code>html</code> folder of the <code>assets</code> folder.</p>
-<p>The reason you have to specify the button itself is because of performance reasons. By putting the HTML code into the section itself, the text will be immediately shown to the user when a page is loaded. If we add the button using JavaScript, the label will initially not be shown and only show up after some (variable) time when the page is first opened.</p>
-<p><br />
-</p>
-<p>We have had some issues with multiple foldables in the past, so I include another one just for testing, and to show a ‘multi-line’ foldable with a different opening text.</p>
-<div class="foldable">
-<button class="fold-button">
-Do not open this foldable unless you want to hear about a lion
-</button>
-<p><strong>ROAR</strong></p>
-<p>samantha Dec 2013</p>
-<p>The Lion &amp; the Lamb And so the lion fell in love with the lamb She thought she had the upper hand But fate got in the way And the lion had nothing to say So they began a life together Determined to last forever For their love was stronger than you would believe So intense it almost decieves But the lion couldn’t overcome All the obstacles to be with the one He left the lamb with tears in her eyes And wouldn’t return despite her tries Now the lamb couldn’t comprehend Why the lion wouldn’t spend A life time with her by his side the lion and his stupid pride But the lion soon came to regret The fact that he could ever let His precious lamb get away And now the lion knew what to say He needed his lamb and needed her bad See he missed the love that they had But the lamb did not forgive All that the lion did But she loved her lion, she couldn’t deny Even if she couldn’t explain why And so the lion fell in love with the lamb Stupid lion, stupid lamb</p>
-<p>From: <a href="https://hellopoetry.com/words/lion/" class="uri">https://hellopoetry.com/words/lion/</a></p>
-<p>(we warned you)</p>
-</div>
-<p>That’s foldables for ya.</p>
-<div id="content-types" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Content types</h2>
-<p>Can they contain:</p>
-<p>Inline r code?:</p>
-<div class="foldable">
-<button class="fold-button">
-Show me more
-</button>
-<p>let’s try some 4</p>
-</div>
-<p>Footnotes like this one?<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
-<div class="foldable">
-<button class="fold-button">
-Show me more
-</button>
-<p>Here comes a footnote.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
-</div>
-<p>itemized lists?:</p>
-<div class="foldable">
-<button class="fold-button">
-Show me more
-</button>
-<p>Here comes a list</p>
+<div id="about" class="section level1 unnumbered">
+<h1>About</h1>
+<p>This book is a bookdown template to be used for various projects of the Rethink Priorities survey team. The main goal of this book is to serve as a skeleton project that can be copied and used in other projects. Additionally, it contains some chapters that serve as tutorials for different features of this bookdown format.</p>
+<p>You can find other content that will be helpful across bookdowns in the <code>main,R</code>, <code>index.Rmd</code> files in our other bookdowns, and <code>support</code>, <code>code</code>, and <code>assets</code> folders within these.</p>
+<div id="contributions" class="section level4 unnumbered">
+<h4>Contributions</h4>
+<p>Please add yourself to the list below to acknowledge your contributions.</p>
 <ul>
-<li>item one</li>
-<li>item two
-<ul>
-<li>second level</li>
-</ul></li>
+<li><p>Willem Sleegers: <a href="mailto:willem@rethinkpriorities.org">willem@rethinkpriorities.org</a></p></li>
+<li><p>David Reinstein: <a href="mailto:dreinstein@rethinkpriorities.org">dreinstein@rethinkpriorities.org</a></p></li>
 </ul>
-</div>
-<p>Html commented out text?:</p>
-<div class="foldable">
-<button class="fold-button">
-Show me more
-</button>
-<!-- html comment thing -->
-<p>more text</p>
-</div>
-<p>Latex math bits like “<span class="math inline">\(x^2\)</span>?”:</p>
-<div class="foldable">
-<button class="fold-button">
-Show me more
-</button>
-<p>trying … <span class="math inline">\(x^2\)</span>?</p>
-</div>
 
 </div>
-</div>
-<div class="footnotes">
-<hr />
-<ol start="1">
-<li id="fn1"><p>I’m a footnote<a href="foldable-sections.html#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>I’m a footnote fwa;ef awf awefj aw;lefj wa;lekfj aw;lefj aw;lefkj aw;lefj aw;lkfj awf awf aw;lkefj aw;lefj aw;lefj ;awjef ;alwkjef afawef awefwfawefawfwafwafawefawfeawfwafwafewafwafawfwafawfawfwfwaefw<a href="foldable-sections.html#fnref2" class="footnote-back">↩︎</a></p></li>
-</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="code.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="callout-blocks.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+<a href="how-to-use-this-template.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
