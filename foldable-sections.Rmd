@@ -1,8 +1,6 @@
 # Foldable Sections
 
-Our bookdown template supports foldable sections by means of custom blocks and custom code. Note that this means this feature is not supported out of the box and that some setup is necessary if you start with a fresh install of the `bookdown` format. It is recommended to clone the files of this template so that you don't have to worry about it.
-
-A foldable section can be created by placing text between two sets of three colons (`:::`) and specifying the `.foldable` class between two curly braces. In addition, you should add a line of HTML code to add a button that folds and unfolds the section. An example is shown below.
+A foldable section can be created by placing text between two sets of three colons (`:::`) and specifying the `.foldable` class between two curly braces. An example is shown below.
 
     ::: {.foldable}
     This is a foldable section.
@@ -14,11 +12,6 @@ This creates the following foldable section:
 This is a foldable section.
 :::
 
-You can specify which text the button shows initially, but once you click on the button it will show "Show me less". This text could be changed to something else in the `header.html` file that can be found in the `html` folder of the `assets` folder.
-
-The reason you have to specify the button itself is because of performance reasons. By putting the HTML code into the section itself, the text will be immediately shown to the user when a page is loaded. If we add the button using JavaScript, the label will initially not be shown and only show up after some (variable) time when the page is first opened.
-
-\
 
 We have had some issues with multiple foldables in the past, so I include another one just for testing, and to show a 'multi-line' foldable with a different opening text.
 
@@ -50,7 +43,7 @@ let's try some `r 2+2`
 Footnotes like this one?^[I'm a footnote]
 
 ::: {.foldable}
-Here comes a footnote.^[I'm a footnote fwa;ef awf awefj aw;lefj wa;lekfj aw;lefj aw;lefkj aw;lefj aw;lkfj awf awf aw;lkefj aw;lefj aw;lefj ;awjef ;alwkjef afawef 34 34 3 34 3 3443 34 34]
+Here comes a footnote.^[I'm a footnote]
 :::
 
 

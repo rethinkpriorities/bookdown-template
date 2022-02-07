@@ -3,6 +3,7 @@ setup
 usage
 code
 code-chunks
+citations
 foldable-sections
 content-types
 alerts

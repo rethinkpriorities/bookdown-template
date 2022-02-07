@@ -8,14 +8,7 @@ main h1 {
   padding-top: 2rem;
 }
 
-#TOC {
-  height: calc(100vh - 57px);
-  overflow-y: auto;
-}
-
-#TOC .toc-section-number {
-  font-weight: bold;
-}
+/* Sidebar */
 
 #wrapper {
   overflow-x: hidden;
@@ -25,11 +18,6 @@ main h1 {
   min-height: 100vh;
   margin-left: -15rem;
   transition: margin 0.25s ease-out;
-}
-
-#sidebar-wrapper .sidebar-heading {
-  padding: 0.875rem 1.25rem;
-  font-size: 1.2rem;
 }
 
 #sidebar-wrapper .list-group {
@@ -71,6 +59,34 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   }
 }
 
+#sidebar-heading {
+  display: flex;
+  height: 57px;
+  width: 15rem;
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-heading img {
+  margin-right: 0.5rem;
+}
+
+#navbar {
+  height: 57px;
+}
+
+/* TOC */
+
+#TOC {
+  height: calc(100vh - 57px);
+  overflow-y: auto;
+  font-size: 0.9rem;
+}
+
+#TOC .toc-section-number {
+  font-weight: bold;
+}
+
 /* Callout blocks */
 
 .alert {
@@ -91,20 +107,18 @@ pre {
 
 .foldable {
   margin: 0 0 1.275em;
-  padding: .85em 1em;
+  padding: .85em 1em 0 1em;
   background: #f7f7f7;
+}
+
+.foldable p {
+  padding-bottom: 1em;
+  margin-bottom: 0;
 }
 
 .foldable a {
   display: block;
   color: #212529;
   font-weight: bold;
-}
-
-.foldable p:first-child {
-  margin-top: 1em;
-}
-
-.foldable p:last-child {
-  margin-bottom: 0;
+  padding-bottom: 1em;
 }

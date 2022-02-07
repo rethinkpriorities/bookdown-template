@@ -8,6 +8,7 @@ A code chunk is created by using using two sets of three back ticks (\`\`\`). In
 
 ````markdown
 `r ''````{r cars}
+# Print a summary of the 'cars' data frame
 summary(cars)
 ```
 ````
@@ -15,12 +16,8 @@ summary(cars)
 This produces the following result:
 
 ```{r cars}
-
-# adding a comment here to make this code chunk a bit more visible
-# for this example
-
+# Print a summary of the 'cars' data frame
 summary(cars)
-
 ```
 
 
@@ -29,4 +26,3 @@ By default, the code that produces this result is hidden. Readers who are intere
 Note that the toggle code button is a custom feature and is not supported out of the box when you begin a `bookdown` project.
 
 Note that the above example table is output in a 'raw text' format; this could be styled to be more attractive with packages such as `kableExtra`.
-
