@@ -1,6 +1,7 @@
 
 :root {
   --sidebar-width: 16rem;
+  --primary-color: #43718f;
 }
 
 #wrapper {
@@ -17,11 +18,17 @@
   overflow-y: auto;
 }
 
-main h1 {
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main h1, main h2 {
   padding-top: 2rem;
 }
 
 /* Sidebar */
+
 #sidebar-wrapper {
   height: 100%;
   margin-left: calc(var(--sidebar-width) * -1);
@@ -42,6 +49,11 @@ main h1 {
 
 #sidebar-wrapper .list-subgroup a {
   margin-left: 1rem;
+}
+
+.list-group-item.active {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);;
 }
 
 #page-content-wrapper {
@@ -92,6 +104,26 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   font-weight: bold;
 }
 
+#TOC a {
+  display: flex;
+}
+
+#TOC a:hover {
+  color: var(--primary-color);
+}
+
+#TOC .active:hover {
+  color: #fff;
+}
+
+#TOC a span {
+  margin-left: 0.5em;
+}
+
+#TOC a .toc-section-number {
+  margin-left: 0;
+}
+
 /* Callout blocks */
 
 .alert {
@@ -130,4 +162,21 @@ pre {
 
 .foldable .show > ul {
   padding-bottom: 1em;
+}
+
+/* Buttons */
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);;
+}
+
+/* Links */
+
+a {
+  color: var(--primary-color);
+}
+
+.anchor-section {
+  color: var(--primary-color) !important;
 }
