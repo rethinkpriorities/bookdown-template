@@ -2,7 +2,7 @@
 bibliography: references.bib
 ---
 
-# Citations atest a test tttttt longer longer longer 6
+# Citations atest a test tttttt longer longer longer 7
 
 It's possible to use citations, although the current solution is not ideal yet. Our recommendation is to use the Zotero and the Visual Editor in RStudio to insert a citation. In the Visual Editor, click on the Insert button and then on Citation to select a citation from your Zotero library. You can select one or more citations. Once you have selected the citation, click on Insert to insert the citekey of the citation in the document. This will also create a new `.bib` file if the file did not exist yet or add it to the file if it did already exist.
 
