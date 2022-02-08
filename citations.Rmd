@@ -8,4 +8,4 @@ It's possible to use citations, although the current solution is not ideal yet. 
 
 You have to make sure that this file is also linked in the `YAML` options of `index.Rmd`.
 
-Here's an example of a citation: @festingerTheoryCognitiveDissonance1957
+Here's an example of a citation. @festingerTheoryCognitiveDissonance1957

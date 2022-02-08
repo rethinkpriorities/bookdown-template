@@ -1,4 +1,10 @@
 
+:root {
+  --sidebar-width: 16rem;
+}
+
+/* Main */
+
 #main-container {
   height: calc(100vh - 57px);
   overflow-y: auto;
@@ -16,12 +22,12 @@ main h1 {
 
 #sidebar-wrapper {
   min-height: 100vh;
-  margin-left: -15rem;
+  margin-left: calc(var(--sidebar-width) * -1);
   transition: margin 0.25s ease-out;
 }
 
 #sidebar-wrapper .list-group {
-  width: 15rem;
+  width: var(--sidebar-width);
 }
 
 #sidebar-wrapper .list-group-flush > .list-group-item:last-child {
@@ -29,7 +35,7 @@ main h1 {
 }
 
 #sidebar-wrapper .list-group {
-  width: 15rem;
+  width: var(--sidebar-width);
 }
 
 #sidebar-wrapper .list-subgroup a {
@@ -55,24 +61,20 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   }
 
   body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
-    margin-left: -15rem;
+    margin-left: calc(var(--sidebar-width) * -1);
   }
 }
 
 #sidebar-heading {
   display: flex;
   height: 57px;
-  width: 15rem;
+  width: var(--sidebar-width);
   padding: 0.875rem 1.25rem;
   font-size: 1.2rem;
 }
 
 #sidebar-heading img {
   margin-right: 0.5rem;
-}
-
-#navbar {
-  height: 57px;
 }
 
 /* TOC */
@@ -111,14 +113,18 @@ pre {
   background: #f7f7f7;
 }
 
-.foldable p {
-  padding-bottom: 1em;
-  margin-bottom: 0;
-}
-
 .foldable a {
   display: block;
   color: #212529;
   font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.foldable .show > p {
+  padding-bottom: 1em;
+  margin-bottom: 0;
+}
+
+.foldable .show > ul {
   padding-bottom: 1em;
 }

@@ -6,42 +6,10 @@ Footnotes are supported using the typical Markdown format:
 
 The result: This sentence has a footnote.^[Here I am!]
 
-The footnotes are shown in-line using [bigfoot.js](http://www.bigfootjs.com). Simply click on the footnote to show a popover window that contains the footnote. 
+The footnotes are shown in-line using [littlefoot.js](https://github.com/goblindegook/littlefoot). Simply click on the footnote to show a popover window that contains the footnote. 
 
-
-But (28 Jan 2022) we have a bit of a problem in some cases: hovered footnotes seem to be cut off on the left when they are long and start on the left. 
+Even larger footnotes are supported, such as the one below.
 
 Example^[... We have a bit of a problem in some cases: hovered footnotes seem to be cut off on the left when they are long and start on the left. Hovered footnotes seem to be cut off on the left when they are long and start on the left.]
 
-\
-
-What to do? 
-
-- fix
-- go back to traditional footnotes 
-- workaround to shift footnotes to the right?
-
-
-Let's try that.  First a footnote on the same line: 
-
-
-    Blah\hfill [^[Flush this right I hope We have a bit of a problem in some cases: hovered
-    footnotes seem to be cut off on the left when they are long and start]{style="float:right"}
-
-
-Blah\hfill [^[Flush this right I hope We have a bit of a problem in some cases: hovered footnotes seem to be cut off on the left when they are long and start]{style="float:right"}
-
-\
-
-Or maybe a flushed footnote needs it's own line and be included with some blank text itself?:
-
-      Blah
-      \hfill [ ^[Flush this right I hope We have a bit of a problem in some cases: hovered footnotes
-      seem to be cut off on the left when they are long and start]{style="float:right"}
-  
-
-Blah
-\hfill [ ^[Flush this right I hope We have a bit of a problem in some cases: hovered footnotes
-seem to be cut off on the left when they are long and start]{style="float:right"}
-  
-
+When the screen gets small, the footnotes show up as banners at the bottom of the screen.

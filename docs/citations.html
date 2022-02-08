@@ -106,6 +106,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 
   <script src="libs/header-attrs-2.11/header-attrs.js"></script>
   <link href="libs/book-1.0.0/style.css" rel="stylesheet" />
+  <script src="libs/book-1.0.0/littlefoot.js"></script>
   <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
   <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
   
@@ -203,7 +204,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">3</span> Citations</h1>
 <p>It’s possible to use citations, although the current solution is not ideal yet. Our recommendation is to use the Zotero and the Visual Editor in RStudio to insert a citation. In the Visual Editor, click on the Insert button and then on Citation to select a citation from your Zotero library. You can select one or more citations. Once you have selected the citation, click on Insert to insert the citekey of the citation in the document. This will also create a new <code>.bib</code> file if the file did not exist yet or add it to the file if it did already exist.</p>
 <p>You have to make sure that this file is also linked in the <code>YAML</code> options of <code>index.Rmd</code>.</p>
-<p>Here’s an example of a citation: <span class="citation"><a href="#ref-festingerTheoryCognitiveDissonance1957" role="doc-biblioref">Festinger</a> (<a href="#ref-festingerTheoryCognitiveDissonance1957" role="doc-biblioref">1957</a>)</span></p>
+<p>Here’s an example of a citation. <span class="citation"><a href="#ref-festingerTheoryCognitiveDissonance1957" role="doc-biblioref">Festinger</a> (<a href="#ref-festingerTheoryCognitiveDissonance1957" role="doc-biblioref">1957</a>)</span></p>
 
 </div>
 <h3>References</h3>
@@ -212,7 +213,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 Festinger, L. (1957). <em>A theory of cognitive dissonance</em>. Stanford University Press.
 </div>
 </div>
-<div class="d-flex justify-content-between mt-2">
+<div class="text-center m-3">
 <a href="code.html"><button class="btn btn-secondary">Previous</button></a>
 <a href="foldable-sections.html"><button class="btn btn-secondary">Next</button></a>
 </div>
@@ -231,10 +232,6 @@ Festinger, L. (1957). <em>A theory of cognitive dissonance</em>. Stanford Univer
 </script>
 
 <!-- Littlefoot -->
-<script
-  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
-  type="application/javascript"
-></script>
 <script type="application/javascript">
   littlefoot.littlefoot()
 </script>
