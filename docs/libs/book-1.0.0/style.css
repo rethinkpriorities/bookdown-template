@@ -3,18 +3,9 @@
   --sidebar-width: 16rem;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
-body {
-  position: relative;
-}
-
 #wrapper {
   overflow-x: hidden;
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
 }
 
 /* Main */

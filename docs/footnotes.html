@@ -116,7 +116,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
   <div class="d-flex" id="wrapper">
     
 
-<div class="border-end bg-white vh-100" id="sidebar-wrapper">
+<div class="border-end bg-white" id="sidebar-wrapper">
   <div id="sidebar-heading" class="border-bottom bg-light">
     <img src="logo.png" width="25px" height="25px"/>
     <span class="text-nowrap">Bookdown Template</span>
@@ -128,7 +128,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
   <a id="item-citations-1" class="list-group-item ps-3" href="citations-1.html#citations-1"><span class="toc-section-number">3</span> Citations</a>
   <a id="item-citations-2" class="list-group-item ps-3" href="citations-2.html#citations-2"><span class="toc-section-number">4</span> Citations</a>
   <a id="item-citations-3" class="list-group-item ps-3" href="citations-3.html#citations-3"><span class="toc-section-number">5</span> Citations</a>
-  <a id="item-citations-atest-a-test-tttttt-longer-longer-longer-11" class="list-group-item ps-3" href="citations-atest-a-test-tttttt-longer-longer-longer-11.html#citations-atest-a-test-tttttt-longer-longer-longer-11"><span class="toc-section-number">6</span> Citations atest a test tttttt longer longer longer 11</a>
+  <a id="item-citations-atest-a-test-tttttt-longer-longer-longer-13" class="list-group-item ps-3" href="citations-atest-a-test-tttttt-longer-longer-longer-13.html#citations-atest-a-test-tttttt-longer-longer-longer-13"><span class="toc-section-number">6</span> Citations atest a test tttttt longer longer longer 13</a>
   <a id="item-citations-4" class="list-group-item ps-3" href="citations-4.html#citations-4"><span class="toc-section-number">7</span> Citations</a>
   <a id="item-citations-5" class="list-group-item ps-3" href="citations-5.html#citations-5"><span class="toc-section-number">8</span> Citations</a>
   <a id="item-code" class="list-group-item ps-3" href="code.html#code"><span class="toc-section-number">9</span> Code</a>
@@ -268,17 +268,6 @@ for (foldable of foldables) {
   }
 }
 
-// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-let vh = window.innerHeight * 0.01;
-// Then we set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty('--vh', `px`);
-
-// We listen to the resize event
-window.addEventListener('resize', () => {
-  // We execute the same script as before
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `px`);
-});
 </script>
 
 <script>
