@@ -6,7 +6,7 @@
 #wrapper {
   overflow-x: hidden;
   height: calc(var(--vh, 1vh) * 100);
-  height: -webkit-fill-available;
+  height: calc(100vh - calc(100vh - 100%));
 }
 
 /* Main */
