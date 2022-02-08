@@ -3,6 +3,11 @@
   --sidebar-width: 16rem;
 }
 
+body,
+html {
+  position: fixed;
+}
+
 #wrapper {
   overflow: hidden;
   height: 100vh;
