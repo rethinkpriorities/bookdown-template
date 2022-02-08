@@ -82,6 +82,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 #TOC {
   height: calc(100vh - 57px);
   overflow-y: auto;
+  overflow-x: hidden;
   font-size: 0.9rem;
 }
 
