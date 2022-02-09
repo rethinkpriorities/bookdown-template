@@ -2,7 +2,6 @@
 :root {
   --sidebar-width: 16rem;
   --primary-color: #43718f;
-  --test: $title$;
 }
 
 #wrapper {
