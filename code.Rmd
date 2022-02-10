@@ -6,7 +6,7 @@ An important reason for creating this bookdown template is to present analyses p
 
 A code chunk is created by using using two sets of three back ticks (\`\`\`). In the case of R code, you add a set of parentheses containing the letter `r`, followed by a label that describes the code chunk. The actual R code goes between the sets of back ticks. For example, in the code chunk below we use R code to present a summary of the `cars` data frame.
 
-````markdown
+```` markdown
 `r ''````{r cars}
 # Print a summary of the 'cars' data frame
 summary(cars)
@@ -19,7 +19,6 @@ This produces the following result:
 # Print a summary of the 'cars' data frame
 summary(cars)
 ```
-
 
 By default, the code that produces this result is hidden. Readers who are interested in the code can click on the 'Toggle code' button in the navigation bar to show all the code chunks.
 

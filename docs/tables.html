@@ -125,7 +125,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <div id="TOC" class="list-group list-group-flush">
   <a id="item-about" class="list-group-item" href="index.html">About</a>
   <a id="item-alerts" class="list-group-item" href="alerts.html"><span class="toc-section-number">1</span><span>Alerts</a>
-  <a id="item-citations2" class="list-group-item" href="citations2.html"><span class="toc-section-number">2</span><span>Citations2</a>
+  <a id="item-citations" class="list-group-item" href="citations.html"><span class="toc-section-number">2</span><span>Citations</a>
   <a id="item-code" class="list-group-item" href="code.html"><span class="toc-section-number">3</span><span>Code</a>
   <div class="list-group list-group-flush list-subgroup">
   <a id="item-code-chunks" class="list-group-item" href="code.html#code-chunks"><span class="toc-section-number">3.1</span><span>Code chunks</a>
@@ -191,7 +191,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
               <div 
                 class="dropdown-menu dropdown-menu-end" 
                 aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#!">Toggle code</a>
+                  <a id="toggleCodeButton" class="dropdown-item" href="#!">Toggle code</a>
               </div>
             </li>
           </ul>
@@ -203,7 +203,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <main>
 <div id="tables" class="section level1" number="8">
 <h1><span class="header-section-number">8</span> Tables</h1>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="tables.html#cb6-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">head</span>(iris))</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r collapse"><div><code class="sourceCode r"><span id="cb6-1"><a href="tables.html#cb6-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">head</span>(iris))</span></code></div></pre></div>
 <div class="table-container overflow-auto"><table class="table">
 <thead>
 <tr class="header">
@@ -260,12 +260,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tbody>
 </table></div>
 
-<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
-<div class="csl-entry">
-Festinger, L. (1957). <em>A theory of cognitive dissonance</em>. Stanford University Press.
-</div>
-</div>
-</div>
+
+
+
+
+
+
 
 
 
@@ -322,6 +322,16 @@ for (foldable of foldables) {
 </script>
 
 <script>
+// Create toggle code function
+toggleCode = function() {
+  const mainContainer = document.getElementById("main-container")
+  const codes = mainContainer.getElementsByClassName('sourceCode r collapse')
+  
+  for (code of codes) {
+    new bootstrap.Collapse(code, {toggle: true})
+  }
+}
+
 // Add sidebar toggle functionality
 window.addEventListener('DOMContentLoaded', event => {
   // Toggle the side navigation
@@ -340,6 +350,10 @@ window.addEventListener('DOMContentLoaded', event => {
       );
     });
   }
+  
+  // Add toggle code function to toggle code button
+  const toggleCodeButton = document.getElementById("toggleCodeButton")
+  toggleCodeButton.onclick = toggleCode
 });
 </script>
 

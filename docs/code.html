@@ -125,7 +125,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <div id="TOC" class="list-group list-group-flush">
   <a id="item-about" class="list-group-item" href="index.html">About</a>
   <a id="item-alerts" class="list-group-item" href="alerts.html"><span class="toc-section-number">1</span><span>Alerts</a>
-  <a id="item-citations2" class="list-group-item" href="citations2.html"><span class="toc-section-number">2</span><span>Citations2</a>
+  <a id="item-citations" class="list-group-item" href="citations.html"><span class="toc-section-number">2</span><span>Citations</a>
   <a id="item-code" class="list-group-item" href="code.html"><span class="toc-section-number">3</span><span>Code</a>
   <div class="list-group list-group-flush list-subgroup">
   <a id="item-code-chunks" class="list-group-item" href="code.html#code-chunks"><span class="toc-section-number">3.1</span><span>Code chunks</a>
@@ -191,7 +191,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
               <div 
                 class="dropdown-menu dropdown-menu-end" 
                 aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#!">Toggle code</a>
+                  <a id="toggleCodeButton" class="dropdown-item" href="#!">Toggle code</a>
               </div>
             </li>
           </ul>
@@ -212,8 +212,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb2-3"><a href="code.html#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="in">summary(cars)</span></span>
 <span id="cb2-4"><a href="code.html#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <p>This produces the following result:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="code.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print a summary of the &#39;cars&#39; data frame</span></span>
-<span id="cb3-2"><a href="code.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cars)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r collapse"><div><code class="sourceCode r"><span id="cb3-1"><a href="code.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print a summary of the &#39;cars&#39; data frame</span></span>
+<span id="cb3-2"><a href="code.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cars)</span></code></div></pre></div>
 <pre><code>##      speed           dist       
 ##  Min.   : 4.0   Min.   :  2.00  
 ##  1st Qu.:12.0   1st Qu.: 26.00  
@@ -228,7 +228,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <div class="text-center m-3">
-<a href="citations2.html"><button class="btn btn-secondary">Previous</button></a>
+<a href="citations.html"><button class="btn btn-secondary">Previous</button></a>
 <a href="ea-forum.html"><button class="btn btn-secondary">Next</button></a>
 </div>
 </main>
@@ -274,6 +274,16 @@ for (foldable of foldables) {
 </script>
 
 <script>
+// Create toggle code function
+toggleCode = function() {
+  const mainContainer = document.getElementById("main-container")
+  const codes = mainContainer.getElementsByClassName('sourceCode r collapse')
+  
+  for (code of codes) {
+    new bootstrap.Collapse(code, {toggle: true})
+  }
+}
+
 // Add sidebar toggle functionality
 window.addEventListener('DOMContentLoaded', event => {
   // Toggle the side navigation
@@ -292,6 +302,10 @@ window.addEventListener('DOMContentLoaded', event => {
       );
     });
   }
+  
+  // Add toggle code function to toggle code button
+  const toggleCodeButton = document.getElementById("toggleCodeButton")
+  toggleCodeButton.onclick = toggleCode
 });
 </script>
 

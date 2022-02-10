@@ -138,6 +138,14 @@ pre {
   background: #f7f7f7;
 }
 
+pre.sourceCode.r {
+  padding: 0;
+}
+
+pre.sourceCode.r div {
+  padding: .85em 1em;
+}
+
 /* Foldables */
 
 .foldable {
