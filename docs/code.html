@@ -104,16 +104,16 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
   href="https://unpkg.com/littlefoot/dist/littlefoot.css"
 />
 
-  <script src="libs/header-attrs-2.11/header-attrs.js"></script>
-  <link href="libs/book-1.0.0/style.css" rel="stylesheet" />
-  <script src="libs/book-1.0.0/littlefoot.js"></script>
-  <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-  <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
-  
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<link href="libs/book-1.0.0/style.css" rel="stylesheet" />
+<script src="libs/book-1.0.0/littlefoot.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
 </head>
 
 <body>
-  <div class="d-flex" id="wrapper">
+  <div id="wrapper" class="d-flex">
     
 
 <div class="border-end bg-white" id="sidebar-wrapper">
@@ -122,25 +122,25 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
     <span class="text-nowrap">Bookdown Template</span>
   </div>
   <div id="TOC" class="list-group list-group-flush">
-  <a id="item-about" class="list-group-item" href="index.html#about">About</a>
-  <a id="item-alerts" class="list-group-item" href="alerts.html#alerts"><span class="toc-section-number">1</span><span>Alerts</a>
-  <a id="item-citations" class="list-group-item" href="citations.html#citations"><span class="toc-section-number">2</span><span>Citations</a>
-  <a id="item-code" class="list-group-item" href="code.html#code"><span class="toc-section-number">3</span><span>Code</a>
+  <a id="item-about" class="list-group-item" href="index.html">About</a>
+  <a id="item-alerts" class="list-group-item" href="alerts.html"><span class="toc-section-number">1</span><span>Alerts</a>
+  <a id="item-citations" class="list-group-item" href="citations.html"><span class="toc-section-number">2</span><span>Citations</a>
+  <a id="item-code" class="list-group-item" href="code.html"><span class="toc-section-number">3</span><span>Code</a>
   <div class="list-group list-group-flush list-subgroup">
   <a id="item-code-chunks" class="list-group-item" href="code.html#code-chunks"><span class="toc-section-number">3.1</span><span>Code chunks</a>
   </div>
-  <a id="item-ea-forum" class="list-group-item" href="ea-forum.html#ea-forum"><span class="toc-section-number">4</span><span>EA Forum</a>
-  <a id="item-foldable-sections" class="list-group-item" href="foldable-sections.html#foldable-sections"><span class="toc-section-number">5</span><span>Foldable Sections</a>
+  <a id="item-ea-forum" class="list-group-item" href="ea-forum.html"><span class="toc-section-number">4</span><span>EA Forum</a>
+  <a id="item-foldable-sections" class="list-group-item" href="foldable-sections.html"><span class="toc-section-number">5</span><span>Foldable Sections</a>
   <div class="list-group list-group-flush list-subgroup">
   <a id="item-content-types" class="list-group-item" href="foldable-sections.html#content-types"><span class="toc-section-number">5.1</span><span>Content types</a>
   </div>
-  <a id="item-footnotes" class="list-group-item" href="footnotes.html#footnotes"><span class="toc-section-number">6</span><span>Footnotes</a>
-  <a id="item-how-to-use-this-template" class="list-group-item" href="how-to-use-this-template.html#how-to-use-this-template"><span class="toc-section-number">7</span><span>How to use this template</a>
+  <a id="item-footnotes" class="list-group-item" href="footnotes.html"><span class="toc-section-number">6</span><span>Footnotes</a>
+  <a id="item-how-to-use-this-template" class="list-group-item" href="how-to-use-this-template.html"><span class="toc-section-number">7</span><span>How to use this template</a>
   <div class="list-group list-group-flush list-subgroup">
   <a id="item-setup" class="list-group-item" href="how-to-use-this-template.html#setup"><span class="toc-section-number">7.1</span><span>Setup</a>
   <a id="item-usage" class="list-group-item" href="how-to-use-this-template.html#usage"><span class="toc-section-number">7.2</span><span>Usage</a>
   </div>
-  <a id="item-tables" class="list-group-item" href="tables.html#tables"><span class="toc-section-number">8</span><span>Tables</a>
+  <a id="item-tables" class="list-group-item" href="tables.html"><span class="toc-section-number">8</span><span>Tables</a>
   </div>
 </div>
 <!-- Page content wrapper-->
@@ -190,7 +190,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
               <div 
                 class="dropdown-menu dropdown-menu-end" 
                 aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#!">Toggle code</a>
+                  <a id="toggleCodeButton" class="dropdown-item" href="#!">Toggle code</a>
               </div>
             </li>
           </ul>
@@ -211,8 +211,8 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb2-3"><a href="code.html#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="in">summary(cars)</span></span>
 <span id="cb2-4"><a href="code.html#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <p>This produces the following result:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="code.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print a summary of the &#39;cars&#39; data frame</span></span>
-<span id="cb3-2"><a href="code.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cars)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r collapse"><div><code class="sourceCode r"><span id="cb3-1"><a href="code.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print a summary of the &#39;cars&#39; data frame</span></span>
+<span id="cb3-2"><a href="code.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cars)</span></code></div></pre></div>
 <pre><code>##      speed           dist       
 ##  Min.   : 4.0   Min.   :  2.00  
 ##  1st Qu.:12.0   1st Qu.: 26.00  
@@ -272,15 +272,17 @@ for (foldable of foldables) {
 
 </script>
 
-<script src="https://unpkg.com/vh-check/dist/vh-check.min.js"></script>
 <script>
-  (function () {
-    // initialize the test
-    var test = vhCheck();
-  }());
-</script>
+// Create toggle code function
+toggleCode = function() {
+  const mainContainer = document.getElementById("main-container")
+  const codes = mainContainer.getElementsByClassName('sourceCode r collapse')
+  
+  for (code of codes) {
+    new bootstrap.Collapse(code, {toggle: true})
+  }
+}
 
-<script>
 // Add sidebar toggle functionality
 window.addEventListener('DOMContentLoaded', event => {
   // Toggle the side navigation
@@ -299,6 +301,10 @@ window.addEventListener('DOMContentLoaded', event => {
       );
     });
   }
+  
+  // Add toggle code function to toggle code button
+  const toggleCodeButton = document.getElementById("toggleCodeButton")
+  toggleCodeButton.onclick = toggleCode
 });
 </script>
 
