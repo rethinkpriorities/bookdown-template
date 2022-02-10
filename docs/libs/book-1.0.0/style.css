@@ -2,13 +2,13 @@
 :root {
   --sidebar-width: 16rem;
   --primary-color: #43718f;
-  --test: $title$;
 }
 
 #wrapper {
   overflow: hidden;
   height: 100vh;
-  height: calc(100vh - var(--vh-offset, 0px)); /* enable vh fix */
+  height: calc(100vh - var(--vh-offset, 0px));
+  /* enable vh fix */
 }
 
 /* Main */
@@ -24,7 +24,7 @@ main {
 }
 
 main h1, main h2 {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 /* Sidebar */
