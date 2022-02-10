@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="7 How to use this template | Bookdown Template" />
+<meta property="og:title" content="5 Foldable Sections | Bookdown Template" />
 <meta property="og:type" content="book" />
 
 
@@ -22,9 +22,9 @@ MathJax.Hub.Config({
 </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta name="description" content="7 How to use this template | Bookdown Template">
+<meta name="description" content="5 Foldable Sections | Bookdown Template">
 
-<title>7 How to use this template | Bookdown Template</title>
+<title>5 Foldable Sections | Bookdown Template</title>
 
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -201,28 +201,62 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- Page content-->
     <div id="main-container" class="container-fluid">
 <main>
-<div id="how-to-use-this-template" class="section level1" number="7">
-<h1><span class="header-section-number">7</span> How to use this template</h1>
-<p>The goal of this template is to make it easy to get started on writing a <code>bookdown</code> book. The word ‘book’ might be a misnomer because you can also use it to write notes, a manual (similar to this bookdown), a thesis, and many other things.</p>
-<p>If you have enough time, the best way to get started is to read the <code>bookdown</code> <a href="https://bookdown.org/yihui/bookdown/">book</a>. For those in a hurry, we list the important steps below.</p>
-<div id="setup" class="section level2" number="7.1">
-<h2><span class="header-section-number">7.1</span> Setup</h2>
-<ol style="list-style-type: decimal">
-<li><p>Clone this template from GitHub. The easiest way to do this is to open RStudio and select File -&gt; New Project -&gt; Version Control -&gt; Git. The repository URL of this template is “<a href="https://github.com/rethinkpriorities/bookdown-template" class="uri">https://github.com/rethinkpriorities/bookdown-template</a>.” After entering this, and changing some of the other settings if you want to, click on Create Project.</p></li>
-<li><p>Install the <code>rethinkpriorities</code> R package. This package includes the unique format that we developed.</p></li>
-<li><p>To preview the template, go to the Build tab (next to Environment, History, and Connection) and click on “Build Website.” This will open the book in the Viewer pane.</p></li>
-</ol>
-</div>
-<div id="usage" class="section level2" number="7.2">
-<h2><span class="header-section-number">7.2</span> Usage</h2>
-<p>The template is in and of itself not interesting, so you need to adapt the content. The first thing to adapt are the contents of <code>index.Rmd</code>. You should change some of the information at the top of the file (between the two <code>---</code> symbols). These are the YAML options and you can change them to alter the meta-information of the book or to change some of the settings. You probably only want to change the meta information, such as the name and author.</p>
-<p>After changing the content of this file, you should start adding chapters. This template comes with a ‘chapters’ folder where you can store individual chapter files. You can simply take one of the example chapters and change the content. You should also change the file names, but in order for the book to include the chapter when you build it, you should change the contents of <code>_bookdown.yml</code>. Make sure to adapt the file paths in the <code>rmd_files</code> option so it refers to the new chapter. The order of these file paths also determines the order of the chapters in the book.</p>
+<div id="foldable-sections" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Foldable Sections</h1>
+<p>A foldable section can be created by placing text between two sets of three colons (<code>:::</code>) and specifying the <code>.foldable</code> class between two curly braces. An example is shown below.</p>
+<pre><code>::: {.foldable}
+This is a foldable section.
+:::</code></pre>
+<p>This creates the following foldable section:</p>
+<div class="foldable"><a>Show me more</a><div class="collapse">
+<p>This is a foldable section.</p>
+</div></div>
+<p>We have had some issues with multiple foldables in the past, so I include another one just for testing, and to show a ‘multi-line’ foldable with a different opening text.</p>
+<div class="foldable"><a>Show me more</a><div class="collapse">
+<p><strong>ROAR</strong></p>
+<p>samantha Dec 2013</p>
+<p>The Lion &amp; the Lamb And so the lion fell in love with the lamb She thought she had the upper hand But fate got in the way And the lion had nothing to say So they began a life together Determined to last forever For their love was stronger than you would believe So intense it almost decieves But the lion couldn’t overcome All the obstacles to be with the one He left the lamb with tears in her eyes And wouldn’t return despite her tries Now the lamb couldn’t comprehend Why the lion wouldn’t spend A life time with her by his side the lion and his stupid pride But the lion soon came to regret The fact that he could ever let His precious lamb get away And now the lion knew what to say He needed his lamb and needed her bad See he missed the love that they had But the lamb did not forgive All that the lion did But she loved her lion, she couldn’t deny Even if she couldn’t explain why And so the lion fell in love with the lamb Stupid lion, stupid lamb</p>
+<p>From: <a href="https://hellopoetry.com/words/lion/" class="uri">https://hellopoetry.com/words/lion/</a></p>
+<p>(we warned you)</p>
+</div></div>
+<p>That’s foldables for ya.</p>
+<div id="content-types" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Content types</h2>
+<p>Can they contain:</p>
+<p>Inline r code?:</p>
+<div class="foldable"><a>Show me more</a><div class="collapse">
+<p>let’s try some 4</p>
+</div></div>
+<p>Footnotes like this one?<a href="tables.html#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<div class="foldable"><a>Show me more</a><div class="collapse">
+<p>Here comes a footnote.<a href="tables.html#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+</div></div>
+<p>itemized lists?:</p>
+<div class="foldable"><a>Show me more</a><div class="collapse">
+<p>Here comes a list</p>
+<ul>
+<li>item one</li>
+<li>item two
+<ul>
+<li>second level</li>
+</ul></li>
+</ul>
+</div></div>
+<p>Html commented out text?:</p>
+<div class="foldable"><a>Show me more</a><div class="collapse">
+<!-- html comment thing -->
+<p>more text</p>
+</div></div>
+<p>Latex math bits like “<span class="math inline">\(x^2\)</span>?”?:</p>
+<div class="foldable"><a>Show me more</a><div class="collapse">
+<p>trying … <span class="math inline">\(x^2\)</span>?</p>
+</div></div>
 
 </div>
 </div>
 <div class="text-center m-3">
-<a href="footnotes.html"><button class="btn btn-secondary">Previous</button></a>
-<a href="tables.html"><button class="btn btn-secondary">Next</button></a>
+<a href="ea-forum.html"><button class="btn btn-secondary">Previous</button></a>
+<a href="footnotes.html"><button class="btn btn-secondary">Next</button></a>
 </div>
 </main>
 </div>

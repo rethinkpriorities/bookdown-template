@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="7 How to use this template | Bookdown Template" />
+<meta property="og:title" content="2 Citations | Bookdown Template" />
 <meta property="og:type" content="book" />
 
 
@@ -22,9 +22,9 @@ MathJax.Hub.Config({
 </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta name="description" content="7 How to use this template | Bookdown Template">
+<meta name="description" content="2 Citations | Bookdown Template">
 
-<title>7 How to use this template | Bookdown Template</title>
+<title>2 Citations | Bookdown Template</title>
 
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -201,28 +201,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- Page content-->
     <div id="main-container" class="container-fluid">
 <main>
-<div id="how-to-use-this-template" class="section level1" number="7">
-<h1><span class="header-section-number">7</span> How to use this template</h1>
-<p>The goal of this template is to make it easy to get started on writing a <code>bookdown</code> book. The word ‘book’ might be a misnomer because you can also use it to write notes, a manual (similar to this bookdown), a thesis, and many other things.</p>
-<p>If you have enough time, the best way to get started is to read the <code>bookdown</code> <a href="https://bookdown.org/yihui/bookdown/">book</a>. For those in a hurry, we list the important steps below.</p>
-<div id="setup" class="section level2" number="7.1">
-<h2><span class="header-section-number">7.1</span> Setup</h2>
-<ol style="list-style-type: decimal">
-<li><p>Clone this template from GitHub. The easiest way to do this is to open RStudio and select File -&gt; New Project -&gt; Version Control -&gt; Git. The repository URL of this template is “<a href="https://github.com/rethinkpriorities/bookdown-template" class="uri">https://github.com/rethinkpriorities/bookdown-template</a>.” After entering this, and changing some of the other settings if you want to, click on Create Project.</p></li>
-<li><p>Install the <code>rethinkpriorities</code> R package. This package includes the unique format that we developed.</p></li>
-<li><p>To preview the template, go to the Build tab (next to Environment, History, and Connection) and click on “Build Website.” This will open the book in the Viewer pane.</p></li>
-</ol>
-</div>
-<div id="usage" class="section level2" number="7.2">
-<h2><span class="header-section-number">7.2</span> Usage</h2>
-<p>The template is in and of itself not interesting, so you need to adapt the content. The first thing to adapt are the contents of <code>index.Rmd</code>. You should change some of the information at the top of the file (between the two <code>---</code> symbols). These are the YAML options and you can change them to alter the meta-information of the book or to change some of the settings. You probably only want to change the meta information, such as the name and author.</p>
-<p>After changing the content of this file, you should start adding chapters. This template comes with a ‘chapters’ folder where you can store individual chapter files. You can simply take one of the example chapters and change the content. You should also change the file names, but in order for the book to include the chapter when you build it, you should change the contents of <code>_bookdown.yml</code>. Make sure to adapt the file paths in the <code>rmd_files</code> option so it refers to the new chapter. The order of these file paths also determines the order of the chapters in the book.</p>
+<div id="citations" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Citations</h1>
+<p>It’s possible to use citations, although the current solution is not ideal yet. Our recommendation is to use the Zotero and the Visual Editor in RStudio to insert a citation. In the Visual Editor, click on the Insert button and then on Citation to select a citation from your Zotero library. You can select one or more citations. Once you have selected the citation, click on Insert to insert the citekey of the citation in the document. This will also create a new <code>.bib</code> file if the file did not exist yet or add it to the file if it did already exist.</p>
+<p>You have to make sure that this file is also linked in the <code>YAML</code> options of <code>index.Rmd</code>.</p>
+<p>Here’s an example of a citation. <span class="citation">Festinger (<a href="#ref-festingerTheoryCognitiveDissonance1957" role="doc-biblioref">1957</a>)</span></p>
 
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-festingerTheoryCognitiveDissonance1957" class="csl-entry">
+Festinger, L. (1957). <em>A theory of cognitive dissonance</em>. Stanford University Press.
 </div>
 </div>
 <div class="text-center m-3">
-<a href="footnotes.html"><button class="btn btn-secondary">Previous</button></a>
-<a href="tables.html"><button class="btn btn-secondary">Next</button></a>
+<a href="alerts.html"><button class="btn btn-secondary">Previous</button></a>
+<a href="code.html"><button class="btn btn-secondary">Next</button></a>
 </div>
 </main>
 </div>
