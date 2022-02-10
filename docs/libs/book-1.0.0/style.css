@@ -7,8 +7,7 @@
 #wrapper {
   overflow: hidden;
   height: 100vh;
-  height: calc(100vh - var(--vh-offset, 0px));
-  /* enable vh fix */
+  height: -webkit-fill-available;
 }
 
 /* Main */
@@ -24,13 +23,12 @@ main {
 }
 
 main h1, main h2 {
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 /* Sidebar */
 
 #sidebar-wrapper {
-  height: 100%;
   margin-left: calc(var(--sidebar-width) * -1);
   transition: margin 0.25s ease-out;
 }
@@ -138,6 +136,14 @@ pre {
   margin: 0 0 1.275em;
   padding: .85em 1em;
   background: #f7f7f7;
+}
+
+pre.sourceCode.r {
+  padding: 0;
+}
+
+pre.sourceCode.r div {
+  padding: .85em 1em;
 }
 
 /* Foldables */
