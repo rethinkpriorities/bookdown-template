@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="4 EA Forum | Bookdown Template" />
+<meta property="og:type" content="book" />
+
+
+
+
+
+<meta name="author" content="Rethink Priorities" />
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<meta name="description" content="4 EA Forum | Bookdown Template">
+
+<title>4 EA Forum | Bookdown Template</title>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+/>
+
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<link href="libs/book-1.0.0/style.css" rel="stylesheet" />
+<script src="libs/book-1.0.0/littlefoot.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+</head>
+
+<body>
+  <div id="wrapper" class="d-flex">
+    
+
+<div class="border-end bg-white" id="sidebar-wrapper">
+  <div id="sidebar-heading" class="border-bottom bg-light">
+    <img src="logo.png" width="25px" height="25px"/>
+    <span class="text-nowrap">Bookdown Template</span>
+  </div>
+  <div id="TOC" class="list-group list-group-flush">
+  <a id="item-about" class="list-group-item" href="index.html">About</a>
+  <a id="item-alerts" class="list-group-item" href="alerts.html"><span class="toc-section-number">1</span><span>Alerts</a>
+  <a id="item-citations" class="list-group-item" href="citations.html"><span class="toc-section-number">2</span><span>Citations</a>
+  <a id="item-code" class="list-group-item" href="code.html"><span class="toc-section-number">3</span><span>Code</a>
+  <div class="list-group list-group-flush list-subgroup">
+  <a id="item-code-chunks" class="list-group-item" href="code.html#code-chunks"><span class="toc-section-number">3.1</span><span>Code chunks</a>
+  </div>
+  <a id="item-ea-forum" class="list-group-item" href="ea-forum.html"><span class="toc-section-number">4</span><span>EA Forum</a>
+  <a id="item-foldable-sections" class="list-group-item" href="foldable-sections.html"><span class="toc-section-number">5</span><span>Foldable Sections</a>
+  <div class="list-group list-group-flush list-subgroup">
+  <a id="item-content-types" class="list-group-item" href="foldable-sections.html#content-types"><span class="toc-section-number">5.1</span><span>Content types</a>
+  </div>
+  <a id="item-footnotes" class="list-group-item" href="footnotes.html"><span class="toc-section-number">6</span><span>Footnotes</a>
+  <a id="item-how-to-use-this-template" class="list-group-item" href="how-to-use-this-template.html"><span class="toc-section-number">7</span><span>How to use this template</a>
+  <div class="list-group list-group-flush list-subgroup">
+  <a id="item-setup" class="list-group-item" href="how-to-use-this-template.html#setup"><span class="toc-section-number">7.1</span><span>Setup</a>
+  <a id="item-usage" class="list-group-item" href="how-to-use-this-template.html#usage"><span class="toc-section-number">7.2</span><span>Usage</a>
+  </div>
+  <a id="item-tables" class="list-group-item" href="tables.html"><span class="toc-section-number">8</span><span>Tables</a>
+  </div>
+</div>
+<!-- Page content wrapper-->
+    <div id="page-content-wrapper">
+<!-- Top navigation-->
+    <nav 
+      id="navbar" 
+      class="navbar navbar-expand-lg navbar-light bg-light border-bottom"
+    >
+      <div class="container-fluid">
+        <button class="btn btn-primary p-1" id="sidebarToggle">
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="26" 
+            height="26" 
+            fill="currentColor" 
+            class="bi bi-list" viewBox="0 0 16 16"
+          >
+            <path 
+              fill-rule="evenodd" 
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </button>
+        <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarContent" 
+          aria-controls="navbarContent" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item dropdown">
+              <a 
+                class="nav-link dropdown-toggle" 
+                id="navbarDropdown" 
+                href="#" 
+                role="button" 
+                data-bs-toggle="dropdown" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                  Settings
+              </a>
+              <div 
+                class="dropdown-menu dropdown-menu-end" 
+                aria-labelledby="navbarDropdown">
+                  <a id="toggleCodeButton" class="dropdown-item" href="#!">Toggle code</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- Page content-->
+    <div id="main-container" class="container-fluid">
+<main>
+<div id="ea-forum" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> EA Forum</h1>
+<p>We often need to make output into a format acceptable for the EA Forum.</p>
+<p>Our current thinking for the EA Survey reports is:</p>
+<ul>
+<li><p>Bookdown: detailed graphs and analysis, some technical details, but minimal discussion. Link to our ‘methodology’ bookdown where relevant, rather than re-explaining a concept</p></li>
+<li><p>EA Forum: Summaries and excerpts of the analysis and figures, more discussion, interpretation, and implications.</p></li>
+</ul>
+<p>Typically, RP has made EA Forum these posts first in Google Docs for feedback and then there is some sort of procedure to get it into EA forum markdown syntax from there. For some previous posts, we pasted from the Rstudio visual mode pastes into Google docs for narrative, and figures/tables could be manually pasted. But we want to avoid having to do that!</p>
+<p>David Reinstein has worked with Pete and others on tools to (mostly) automate this conversion and hosting process, but some manual tweaks were needed at the end. See the work on this <a href="https://github.com/rethinkpriorities/ea-data/blob/master/main_2020.R">here, at bottom</a>, and in <a href="https://github.com/rethinkpriorities/ea-data/blob/master/code/parse_ea_forum_md.R">this R script</a> and <a href="https://github.com/rethinkpriorities/ea-data/blob/master/code/fix_eafo_links.py">this Python script</a>. Yes, it’s spaghetti code.</p>
+<p>Atm, some formatting adjustments are necessary, but both EA forum and our bookdown style templates are changing.</p>
+
+</div>
+<div class="text-center m-3">
+<a href="code.html"><button class="btn btn-secondary">Previous</button></a>
+<a href="foldable-sections.html"><button class="btn btn-secondary">Next</button></a>
+</div>
+</main>
+</div>
+</div>
+
+
+</div>
+
+<!-- Bootstrap Bundle with Popper -->
+<script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+  crossorigin="anonymous">
+</script>
+
+<!-- Littlefoot -->
+<script type="application/javascript">
+  littlefoot.littlefoot()
+</script>
+
+<script>
+// Set the current page to be active in the TOC
+const id = document.getElementsByClassName("level1").item(0).id
+const item = document.getElementById("item-" + id)
+item.classList.toggle("active")
+
+// Add foldable sections
+const foldables = document.getElementsByClassName("foldable")
+
+for (foldable of foldables) {
+  const a = foldable.firstChild
+  console.log(a)
+  
+  a.href = "#"
+  a.onclick = function() {
+    const bsCollapse = new bootstrap.Collapse(a.nextSibling, {
+      toggle: true
+    })
+  }
+}
+
+</script>
+
+<script>
+// Create toggle code function
+toggleCode = function() {
+  const mainContainer = document.getElementById("main-container")
+  const codes = mainContainer.getElementsByClassName('sourceCode r collapse')
+  
+  for (code of codes) {
+    new bootstrap.Collapse(code, {toggle: true})
+  }
+}
+
+// Add sidebar toggle functionality
+window.addEventListener('DOMContentLoaded', event => {
+  // Toggle the side navigation
+  const sidebarToggle = document.body.querySelector('#sidebarToggle');
+  if (sidebarToggle) {
+    
+    if (localStorage.getItem('sb|sidebar-toggle') === 'true') {
+      document.body.classList.toggle('sb-sidenav-toggled');
+    }
+    sidebarToggle.addEventListener('click', event => {
+      event.preventDefault();
+      document.body.classList.toggle('sb-sidenav-toggled');
+      localStorage.setItem(
+        'sb|sidebar-toggle', 
+        document.body.classList.contains('sb-sidenav-toggled')
+      );
+    });
+  }
+  
+  // Add toggle code function to toggle code button
+  const toggleCodeButton = document.getElementById("toggleCodeButton")
+  toggleCodeButton.onclick = toggleCode
+});
+</script>
+
+</body>
+</html>
