@@ -7,9 +7,6 @@
 #wrapper {
   overflow: hidden;
   height: 100vh;
-  height: -webkit-fill-available;
-  height: -moz-available;
-  height: fill-available;
 }
 
 /* Main */
