@@ -211,10 +211,10 @@
     },
     "crayon": {
       "Package": "crayon",
-      "Version": "1.4.2",
+      "Version": "1.5.0",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "0a6a65d92bd45b47b94b84244b528d17",
+      "Hash": "741c2e098e98afe3dc26a7b0e5489f4e",
       "Requirements": []
     },
     "curl": {
@@ -783,6 +783,14 @@
         "askpass"
       ]
     },
+    "packrat": {
+      "Package": "packrat",
+      "Version": "0.7.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "95e8c3825efcaad09411799da92c0af9",
+      "Requirements": []
+    },
     "parallelly": {
       "Package": "parallelly",
       "Version": "1.30.0",
@@ -963,8 +971,8 @@
       "RemoteRepo": "rp-r-package",
       "RemoteUsername": "rethinkpriorities",
       "RemoteRef": "HEAD",
-      "RemoteSha": "c7275cc418c90aaec30e48b27cbbfec15b21b34d",
-      "Hash": "b20544d4c8432d07181b8eea6d9df995",
+      "RemoteSha": "24bad2898adf109241a4ba91148c77deb99ed6b5",
+      "Hash": "c9304ffc4ceef2fd54882f1f0088fcd3",
       "Requirements": [
         "assertthat",
         "dplyr",
@@ -1017,6 +1025,22 @@
       "Repository": "CRAN",
       "Hash": "ea3ca1d9473daabb3cd0f1b4f974c1ed",
       "Requirements": []
+    },
+    "rsconnect": {
+      "Package": "rsconnect",
+      "Version": "0.8.25",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "c78e0acc405a6990475f1f9500ebe66c",
+      "Requirements": [
+        "curl",
+        "digest",
+        "jsonlite",
+        "openssl",
+        "packrat",
+        "rstudioapi",
+        "yaml"
+      ]
     },
     "rstudioapi": {
       "Package": "rstudioapi",
@@ -1157,10 +1181,10 @@
     },
     "systemfonts": {
       "Package": "systemfonts",
-      "Version": "1.0.3",
+      "Version": "1.0.4",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "5be9fcf8ef6763e8cb13ab009e273a1d",
+      "Hash": "90b28393209827327de889f49935140a",
       "Requirements": [
         "cpp11"
       ]
