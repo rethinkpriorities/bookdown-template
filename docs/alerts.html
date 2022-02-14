@@ -260,7 +260,7 @@ This is an alert!
 
 <!-- Littlefoot -->
 <script type="application/javascript">
-  littlefoot.littlefoot()
+littlefoot.littlefoot()
 </script>
 
 <script>
@@ -274,10 +274,16 @@ const foldables = document.getElementsByClassName("foldable")
 
 for (foldable of foldables) {
   const a = foldable.firstChild
-  console.log(a)
   
   a.href = "#"
   a.onclick = function() {
+
+    if (this.innerHTML === "Show") {
+      this.innerHTML = "Hide"
+    } else {
+      this.innerHTML = "Show"
+    }
+    
     const bsCollapse = new bootstrap.Collapse(a.nextSibling, {
       toggle: true
     })

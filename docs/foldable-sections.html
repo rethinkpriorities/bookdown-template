@@ -208,11 +208,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 This is a foldable section.
 :::</code></pre>
 <p>This creates the following foldable section:</p>
-<div class="foldable"><a>Show me more</a><div class="collapse">
+<div class="foldable"><a>Show</a><div class="collapse">
 <p>This is a foldable section.</p>
 </div></div>
 <p>We have had some issues with multiple foldables in the past, so I include another one just for testing, and to show a ‘multi-line’ foldable with a different opening text.</p>
-<div class="foldable"><a>Show me more</a><div class="collapse">
+<div class="foldable"><a>Show</a><div class="collapse">
 <p><strong>ROAR</strong></p>
 <p>samantha Dec 2013</p>
 <p>The Lion &amp; the Lamb And so the lion fell in love with the lamb She thought she had the upper hand But fate got in the way And the lion had nothing to say So they began a life together Determined to last forever For their love was stronger than you would believe So intense it almost decieves But the lion couldn’t overcome All the obstacles to be with the one He left the lamb with tears in her eyes And wouldn’t return despite her tries Now the lamb couldn’t comprehend Why the lion wouldn’t spend A life time with her by his side the lion and his stupid pride But the lion soon came to regret The fact that he could ever let His precious lamb get away And now the lion knew what to say He needed his lamb and needed her bad See he missed the love that they had But the lamb did not forgive All that the lion did But she loved her lion, she couldn’t deny Even if she couldn’t explain why And so the lion fell in love with the lamb Stupid lion, stupid lamb</p>
@@ -224,15 +224,15 @@ This is a foldable section.
 <h2><span class="header-section-number">5.1</span> Content types</h2>
 <p>Can they contain:</p>
 <p>Inline r code?:</p>
-<div class="foldable"><a>Show me more</a><div class="collapse">
+<div class="foldable"><a>Show</a><div class="collapse">
 <p>let’s try some 4</p>
 </div></div>
 <p>Footnotes like this one?<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
-<div class="foldable"><a>Show me more</a><div class="collapse">
+<div class="foldable"><a>Show</a><div class="collapse">
 <p>Here comes a footnote.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
 </div></div>
 <p>itemized lists?:</p>
-<div class="foldable"><a>Show me more</a><div class="collapse">
+<div class="foldable"><a>Show</a><div class="collapse">
 <p>Here comes a list</p>
 <ul>
 <li>item one</li>
@@ -243,12 +243,12 @@ This is a foldable section.
 </ul>
 </div></div>
 <p>Html commented out text?:</p>
-<div class="foldable"><a>Show me more</a><div class="collapse">
+<div class="foldable"><a>Show</a><div class="collapse">
 <!-- html comment thing -->
 <p>more text</p>
 </div></div>
 <p>Latex math bits like “<span class="math inline">\(x^2\)</span>?”:</p>
-<div class="foldable"><a>Show me more</a><div class="collapse">
+<div class="foldable"><a>Show</a><div class="collapse">
 <p>trying … <span class="math inline">\(x^2\)</span>?</p>
 </div></div>
 
@@ -281,7 +281,7 @@ This is a foldable section.
 
 <!-- Littlefoot -->
 <script type="application/javascript">
-  littlefoot.littlefoot()
+littlefoot.littlefoot()
 </script>
 
 <script>
@@ -295,10 +295,16 @@ const foldables = document.getElementsByClassName("foldable")
 
 for (foldable of foldables) {
   const a = foldable.firstChild
-  console.log(a)
   
   a.href = "#"
   a.onclick = function() {
+
+    if (this.innerHTML === "Show") {
+      this.innerHTML = "Hide"
+    } else {
+      this.innerHTML = "Show"
+    }
+    
     const bsCollapse = new bootstrap.Collapse(a.nextSibling, {
       toggle: true
     })
