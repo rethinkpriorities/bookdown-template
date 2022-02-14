@@ -140,6 +140,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <div class="list-group list-group-flush list-subgroup">
   <a id="item-setup" class="list-group-item" href="how-to-use-this-template.html#setup"><span class="toc-section-number">7.1</span><span>Setup</a>
   <a id="item-usage" class="list-group-item" href="how-to-use-this-template.html#usage"><span class="toc-section-number">7.2</span><span>Usage</a>
+  <a id="item-faqcommon-issues" class="list-group-item" href="how-to-use-this-template.html#faqcommon-issues"><span class="toc-section-number">7.3</span><span>FAQ/Common issues</a>
+  <div class="list-group list-group-flush list-subgroup">
+  <a id="item-pandoc" class="list-group-item" href="how-to-use-this-template.html#pandoc">Pandoc</a>
+  </div>
+  <a id="item-configuring-and-adjusting-the-style-of-this-bookdown" class="list-group-item" href="how-to-use-this-template.html#configuring-and-adjusting-the-style-of-this-bookdown"><span class="toc-section-number">7.4</span><span>Configuring and adjusting the style of this Bookdown</a>
   </div>
   <a id="item-tables" class="list-group-item" href="tables.html"><span class="toc-section-number">8</span><span>Tables</a>
   </div>
@@ -205,7 +210,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">2</span> Citations</h1>
 <p>It’s possible to use citations, although the current solution is not ideal yet. Our recommendation is to use the Zotero and the Visual Editor in RStudio to insert a citation. In the Visual Editor, click on the Insert button and then on Citation to select a citation from your Zotero library. You can select one or more citations. Once you have selected the citation, click on Insert to insert the citekey of the citation in the document. This will also create a new <code>.bib</code> file if the file did not exist yet or add it to the file if it did already exist.</p>
 <p>You have to make sure that this file is also linked in the <code>YAML</code> options of <code>index.Rmd</code>.</p>
-<p>Here’s an example of a citation. <span class="citation">Festinger (<a href="#ref-festingerTheoryCognitiveDissonance1957" role="doc-biblioref">1957</a>)</span></p>
+<p>Here’s an example of a citation. <span class="citation"><a href="#ref-festingerTheoryCognitiveDissonance1957" role="doc-biblioref">Festinger</a> (<a href="#ref-festingerTheoryCognitiveDissonance1957" role="doc-biblioref">1957</a>)</span></p>
 
 </div>
 <h3>References</h3>
@@ -234,7 +239,7 @@ Festinger, L. (1957). <em>A theory of cognitive dissonance</em>. Stanford Univer
 
 <!-- Littlefoot -->
 <script type="application/javascript">
-  littlefoot.littlefoot()
+littlefoot.littlefoot()
 </script>
 
 <script>
@@ -248,10 +253,16 @@ const foldables = document.getElementsByClassName("foldable")
 
 for (foldable of foldables) {
   const a = foldable.firstChild
-  console.log(a)
   
   a.href = "#"
   a.onclick = function() {
+
+    if (this.innerHTML === "Show") {
+      this.innerHTML = "Hide"
+    } else {
+      this.innerHTML = "Show"
+    }
+    
     const bsCollapse = new bootstrap.Collapse(a.nextSibling, {
       toggle: true
     })

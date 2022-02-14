@@ -140,6 +140,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <div class="list-group list-group-flush list-subgroup">
   <a id="item-setup" class="list-group-item" href="how-to-use-this-template.html#setup"><span class="toc-section-number">7.1</span><span>Setup</a>
   <a id="item-usage" class="list-group-item" href="how-to-use-this-template.html#usage"><span class="toc-section-number">7.2</span><span>Usage</a>
+  <a id="item-faqcommon-issues" class="list-group-item" href="how-to-use-this-template.html#faqcommon-issues"><span class="toc-section-number">7.3</span><span>FAQ/Common issues</a>
+  <div class="list-group list-group-flush list-subgroup">
+  <a id="item-pandoc" class="list-group-item" href="how-to-use-this-template.html#pandoc">Pandoc</a>
+  </div>
+  <a id="item-configuring-and-adjusting-the-style-of-this-bookdown" class="list-group-item" href="how-to-use-this-template.html#configuring-and-adjusting-the-style-of-this-bookdown"><span class="toc-section-number">7.4</span><span>Configuring and adjusting the style of this Bookdown</a>
   </div>
   <a id="item-tables" class="list-group-item" href="tables.html"><span class="toc-section-number">8</span><span>Tables</a>
   </div>
@@ -208,15 +213,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="setup" class="section level2" number="7.1">
 <h2><span class="header-section-number">7.1</span> Setup</h2>
 <ol style="list-style-type: decimal">
-<li><p>Clone this template from GitHub. The easiest way to do this is to open RStudio and select File -&gt; New Project -&gt; Version Control -&gt; Git. The repository URL of this template is “<a href="https://github.com/rethinkpriorities/bookdown-template" class="uri">https://github.com/rethinkpriorities/bookdown-template</a>”. After entering this, and changing some of the other settings if you want to, click on Create Project.</p></li>
-<li><p>Install the <code>rethinkpriorities</code> R package. This package includes the unique format that we developed.</p></li>
-<li><p>To preview the template, go to the Build tab (next to Environment, History, and Connection) and click on “Build Website”. This will open the book in the Viewer pane.</p></li>
+<li><p>Clone this template from GitHub. The easiest way to do this is to open RStudio and select File -&gt; New Project -&gt; Version Control -&gt; Git. The repository URL of this template is “<a href="https://github.com/rethinkpriorities/bookdown-template" class="uri">https://github.com/rethinkpriorities/bookdown-template</a>.” After entering this, and changing some of the other settings if you want to, click on Create Project.</p></li>
+<li><p>Install (or update) the <code>rethinkpriorities</code> R package. This package includes the unique format that we developed.</p>
+<p>devtools::install_github(“rethinkpriorities/rp-r-package”)
+library(rethinkpriorities)</p></li>
+<li><p>To preview the template, go to the Build tab (next to Environment, History, and Connection) and click on “Build Website.” This will open the book in the Viewer pane.</p></li>
 </ol>
 </div>
 <div id="usage" class="section level2" number="7.2">
 <h2><span class="header-section-number">7.2</span> Usage</h2>
 <p>The template is in and of itself not interesting, so you need to adapt the content. The first thing to adapt are the contents of <code>index.Rmd</code>. You should change some of the information at the top of the file (between the two <code>---</code> symbols). These are the YAML options and you can change them to alter the meta-information of the book or to change some of the settings. You probably only want to change the meta information, such as the name and author.</p>
 <p>After changing the content of this file, you should start adding chapters. This template comes with a ‘chapters’ folder where you can store individual chapter files. You can simply take one of the example chapters and change the content. You should also change the file names, but in order for the book to include the chapter when you build it, you should change the contents of <code>_bookdown.yml</code>. Make sure to adapt the file paths in the <code>rmd_files</code> option so it refers to the new chapter. The order of these file paths also determines the order of the chapters in the book.</p>
+</div>
+<div id="faqcommon-issues" class="section level2" number="7.3">
+<h2><span class="header-section-number">7.3</span> FAQ/Common issues</h2>
+<div id="pandoc" class="section level3 unnumbered">
+<h3>Pandoc</h3>
+<p>DR: If your rmd/bookdowns don’t build like someone else in the same repo… check pandoc install with <code>rmarkdown::find_pandoc()</code>. It should be in the Rstudio folder. If not, remove it &amp; restart Rstudio.</p>
+</div>
+</div>
+<div id="configuring-and-adjusting-the-style-of-this-bookdown" class="section level2" number="7.4">
+<h2><span class="header-section-number">7.4</span> Configuring and adjusting the style of this Bookdown</h2>
+<p>Video: <a href="https://www.dropbox.com/s/l87jnsipitzdnkv/css_for_rp_bookdown_previewing_editing.mp4?dl=0">Tweaking and viewing the css in Chrome, adjusting it in the RP package</a></p>
 
 </div>
 </div>
@@ -240,7 +258,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <!-- Littlefoot -->
 <script type="application/javascript">
-  littlefoot.littlefoot()
+littlefoot.littlefoot()
 </script>
 
 <script>
@@ -254,10 +272,16 @@ const foldables = document.getElementsByClassName("foldable")
 
 for (foldable of foldables) {
   const a = foldable.firstChild
-  console.log(a)
   
   a.href = "#"
   a.onclick = function() {
+
+    if (this.innerHTML === "Show") {
+      this.innerHTML = "Hide"
+    } else {
+      this.innerHTML = "Show"
+    }
+    
     const bsCollapse = new bootstrap.Collapse(a.nextSibling, {
       toggle: true
     })

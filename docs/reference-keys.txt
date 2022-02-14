@@ -9,4 +9,6 @@ footnotes
 how-to-use-this-template
 setup
 usage
+faqcommon-issues
+configuring-and-adjusting-the-style-of-this-bookdown
 tables

@@ -140,6 +140,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <div class="list-group list-group-flush list-subgroup">
   <a id="item-setup" class="list-group-item" href="how-to-use-this-template.html#setup"><span class="toc-section-number">7.1</span><span>Setup</a>
   <a id="item-usage" class="list-group-item" href="how-to-use-this-template.html#usage"><span class="toc-section-number">7.2</span><span>Usage</a>
+  <a id="item-faqcommon-issues" class="list-group-item" href="how-to-use-this-template.html#faqcommon-issues"><span class="toc-section-number">7.3</span><span>FAQ/Common issues</a>
+  <div class="list-group list-group-flush list-subgroup">
+  <a id="item-pandoc" class="list-group-item" href="how-to-use-this-template.html#pandoc">Pandoc</a>
+  </div>
+  <a id="item-configuring-and-adjusting-the-style-of-this-bookdown" class="list-group-item" href="how-to-use-this-template.html#configuring-and-adjusting-the-style-of-this-bookdown"><span class="toc-section-number">7.4</span><span>Configuring and adjusting the style of this Bookdown</a>
   </div>
   <a id="item-tables" class="list-group-item" href="tables.html"><span class="toc-section-number">8</span><span>Tables</a>
   </div>
@@ -295,7 +300,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <!-- Littlefoot -->
 <script type="application/javascript">
-  littlefoot.littlefoot()
+littlefoot.littlefoot()
 </script>
 
 <script>
@@ -309,10 +314,16 @@ const foldables = document.getElementsByClassName("foldable")
 
 for (foldable of foldables) {
   const a = foldable.firstChild
-  console.log(a)
   
   a.href = "#"
   a.onclick = function() {
+
+    if (this.innerHTML === "Show") {
+      this.innerHTML = "Hide"
+    } else {
+      this.innerHTML = "Show"
+    }
+    
     const bsCollapse = new bootstrap.Collapse(a.nextSibling, {
       toggle: true
     })
