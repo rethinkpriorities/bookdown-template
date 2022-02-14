@@ -9,6 +9,12 @@
   height: 100vh;
 }
 
+@supports (-webkit-touch-callout: none) {
+  #wrapper {
+    height: -webkit-fill-available;
+  }
+}
+
 /* Main */
 
 #main-container {
