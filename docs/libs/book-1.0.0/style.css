@@ -7,7 +7,12 @@
 #wrapper {
   overflow: hidden;
   height: 100vh;
-  height: -webkit-fill-available;
+}
+
+@supports (-webkit-touch-callout: none) {
+  #wrapper {
+    height: -webkit-fill-available;
+  }
 }
 
 /* Main */

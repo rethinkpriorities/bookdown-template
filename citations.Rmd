@@ -9,3 +9,36 @@ It's possible to use citations, although the current solution is not ideal yet. 
 You have to make sure that this file is also linked in the `YAML` options of `index.Rmd`.
 
 Here's an example of a citation. @festingerTheoryCognitiveDissonance1957
+
+
+## Offset quotes
+
+I'm not sure these are working in the current style. Normally in bookdowns I type 
+  
+  ```
+  > I am a quote 
+  ```
+  
+and I get a nice grey offsetting thing with a vertical line displaying the whole quot. See, e.g., the content [HERE](https://daaronr.github.io/ea_giving_barriers/aware-distance.html#theoretical-and-conceptual-underpinning) 
+
+
+Here it comes out as:
+
+> I am a quote
+
+
+As a workaround, we could indent texts or use the three backticks for quoted sections ... which gives it the same style as 'displaying literal code'. 
+
+
+
+    This text was indented
+    
+
+Or I use the three backticks normally used for code
+
+```
+Does this look like a quote?
+```
+
+
+    

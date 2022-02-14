@@ -1,10 +1,11 @@
 alerts
 citations
+offset-quotes
 code
 code-chunks
 ea-forum
 foldable-sections
-content-types
+content-types-within-foldables
 footnotes
 how-to-use-this-template
 setup

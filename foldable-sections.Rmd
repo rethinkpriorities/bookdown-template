@@ -29,7 +29,7 @@ From: <https://hellopoetry.com/words/lion/>
 
 That's foldables for ya.
 
-## Content types
+## Content types within foldables
 
 Can they contain:
 
