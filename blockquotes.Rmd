@@ -1,0 +1,9 @@
+# Blockquotes
+
+Paragraphs that start with `>` are converted to block quotes. For example:
+
+    > I am a quote 
+
+This produces:
+
+> I am a quote

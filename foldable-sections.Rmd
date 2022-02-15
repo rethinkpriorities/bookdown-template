@@ -12,60 +12,70 @@ This creates the following foldable section:
 This is a foldable section.
 :::
 
+Foldable sections can contain all kinds of content, in varying sizes. Below you can find more examples.
 
-We have had some issues with multiple foldables in the past, so I include another one just for testing, and to show a 'multi-line' foldable with a different opening text.
+Lots of (lion) content:
 
 ::: {.foldable}
 **ROAR**
 
-samantha Dec 2013
+The Lion & the Lamb - samantha Dec 2013
 
-The Lion & the Lamb And so the lion fell in love with the lamb She thought she had the upper hand But fate got in the way And the lion had nothing to say So they began a life together Determined to last forever For their love was stronger than you would believe So intense it almost decieves But the lion couldn't overcome All the obstacles to be with the one He left the lamb with tears in her eyes And wouldn't return despite her tries Now the lamb couldn't comprehend Why the lion wouldn't spend A life time with her by his side the lion and his stupid pride But the lion soon came to regret The fact that he could ever let His precious lamb get away And now the lion knew what to say He needed his lamb and needed her bad See he missed the love that they had But the lamb did not forgive All that the lion did But she loved her lion, she couldn't deny Even if she couldn't explain why And so the lion fell in love with the lamb Stupid lion, stupid lamb
+And so the lion fell in love with the lamb 
+She thought she had the upper hand 
+But fate got in the way 
+And the lion had nothing to say 
+So they began a life together 
+Determined to last forever 
+For their love was stronger than you would believe 
+So intense it almost deceives 
+But the lion couldn't overcome 
+All the obstacles to be with the one 
+He left the lamb with tears in her eyes 
+And wouldn't return despite her tries 
+Now the lamb couldn't comprehend 
+Why the lion wouldn't spend 
+A life time with her by his side the lion and his stupid pride 
+But the lion soon came to regret 
+The fact that he could ever let 
+His precious lamb get away 
+And now the lion knew what to say 
+He needed his lamb and needed her bad 
+See he missed the love that they had 
+But the lamb did not forgive 
+All that the lion did 
+But she loved her lion, she couldn't deny 
+Even if she couldn't explain why 
+And so the lion fell in love with the lamb 
+Stupid lion, stupid lamb
 
 From: <https://hellopoetry.com/words/lion/>
 
 (we warned you)
 :::
 
-That's foldables for ya.
-
-## Content types within foldables
-
-Can they contain:
-
-Inline r code?:
+With inline r code:
 
 ::: {.foldable}
-let's try some `r 2+2`
+Let's run `2 + 2`, which is: `r 2+2`
 :::
 
-
-Footnotes like this one?^[I'm a footnote]
+With a footnote:
 
 ::: {.foldable}
-Here comes a footnote.^[I'm a footnote]
+This is a footnote.^[I'm a footnote]
 :::
 
-
-itemized lists?:
+With a list:
 
 ::: {.foldable}
-Here comes a list
-
-- item one
-- item two
-   - second level
+- Item one
+- Item two
+   - Second level
 :::
 
-Html commented out text?:
+With Latex math:
 
 ::: {.foldable}
-<!-- html comment thing -->
-more text
-:::
-
-Latex math bits like "$x^2$?"?:
-
-::: {.foldable}
-trying ... $x^2$?
+$x^2$
 :::
