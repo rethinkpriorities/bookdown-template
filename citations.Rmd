@@ -13,32 +13,26 @@ Here's an example of a citation. @festingerTheoryCognitiveDissonance1957
 
 ## Offset quotes
 
-I'm not sure these are working in the current style. Normally in bookdowns I type 
+Type 
   
-  ```
-  > I am a quote 
-  ```
+```
+> I am a quote 
+```
   
-and I get a nice grey offsetting thing with a vertical line displaying the whole quot. See, e.g., the content [HERE](https://daaronr.github.io/ea_giving_barriers/aware-distance.html#theoretical-and-conceptual-underpinning) 
+to get a nice grey offsetting thing with a vertical line displaying the whole quote. 
 
+<!-- (More use examples in a different context  [HERE](https://daaronr.github.io/ea_giving_barriers/aware-distance.html#theoretical-and-conceptual-underpinning) 
+-->
 
-Here it comes out as:
+It comes out as
 
 > I am a quote
 
+Longer quotes work too: 
 
-As a workaround, we could indent texts or use the three backticks for quoted sections ... which gives it the same style as 'displaying literal code'. 
+> It is important to offset all content that is a literal quotation, and give references. One can use this style for things other than actual quoted material as well, but we should be careful it doesn't get confused. Note that this whole paragraph has only a single  "carrot" (`>`) at the beginning. But now I'll place another carrot  on the next line, that works too, and contiguously, I think...
+> I'm on a new line with a new carrot
 
-
-
-    This text was indented
-    
-
-Or I use the three backticks normally used for code
-
-```
-Does this look like a quote?
-```
-
-
+> And then here I put two line breaks and a new carrot before this line.
+> Will footnotes work within quote sections?^[This is meant to be a footnote and it seems to come out OK.]
     

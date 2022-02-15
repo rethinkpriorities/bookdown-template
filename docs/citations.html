@@ -216,17 +216,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Here’s an example of a citation. <span class="citation"><a href="#ref-festingerTheoryCognitiveDissonance1957" role="doc-biblioref">Festinger</a> (<a href="#ref-festingerTheoryCognitiveDissonance1957" role="doc-biblioref">1957</a>)</span></p>
 <div id="offset-quotes" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> Offset quotes</h2>
-<p>I’m not sure these are working in the current style. Normally in bookdowns I type</p>
+<p>Type</p>
 <pre><code>&gt; I am a quote </code></pre>
-<p>and I get a nice grey offsetting thing with a vertical line displaying the whole quot. See, e.g., the content <a href="https://daaronr.github.io/ea_giving_barriers/aware-distance.html#theoretical-and-conceptual-underpinning">HERE</a></p>
-<p>Here it comes out as:</p>
+<p>to get a nice grey offsetting thing with a vertical line displaying the whole quote.</p>
+<!-- (More use examples in a different context  [HERE](https://daaronr.github.io/ea_giving_barriers/aware-distance.html#theoretical-and-conceptual-underpinning) 
+-->
+<p>It comes out as</p>
 <blockquote>
 <p>I am a quote</p>
 </blockquote>
-<p>As a workaround, we could indent texts or use the three backticks for quoted sections … which gives it the same style as ‘displaying literal code.’</p>
-<pre><code>This text was indented</code></pre>
-<p>Or I use the three backticks normally used for code</p>
-<pre><code>Does this look like a quote?</code></pre>
+<p>Longer quotes work too:</p>
+<blockquote>
+<p>It is important to offset all content that is a literal quotation, and give references. One can use this style for things other than actual quoted material as well, but we should be careful it doesn’t get confused. Note that this whole paragraph has only a single “carrot” (<code>&gt;</code>) at the beginning. But now I’ll place another carrot on the next line, that works too, and contiguously, I think…
+I’m on a new line with a new carrot</p>
+</blockquote>
+<blockquote>
+<p>And then here I put two line breaks and a new carrot before this line.
+Will footnotes work within quote sections?<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+</blockquote>
 
 </div>
 </div>
@@ -236,7 +243,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 Festinger, L. (1957). <em>A theory of cognitive dissonance</em>. Stanford University Press.
 </div>
 </div>
-<div class="text-center m-3">
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>This is meant to be a footnote and it seems to come out OK.<a href="citations.html#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+<div class="text-center m-5">
 <a href="alerts.html"><button class="btn btn-secondary">Previous</button></a>
 <a href="code.html"><button class="btn btn-secondary">Next</button></a>
 </div>
