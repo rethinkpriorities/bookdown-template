@@ -9,30 +9,3 @@ It's possible to use citations, although the current solution is not ideal yet. 
 You have to make sure that this file is also linked in the `YAML` options of `index.Rmd`.
 
 Here's an example of a citation. @festingerTheoryCognitiveDissonance1957
-
-
-## Offset quotes
-
-Type 
-  
-```
-> I am a quote 
-```
-  
-to get a nice grey offsetting thing with a vertical line displaying the whole quote. 
-
-<!-- (More use examples in a different context  [HERE](https://daaronr.github.io/ea_giving_barriers/aware-distance.html#theoretical-and-conceptual-underpinning) 
--->
-
-It comes out as
-
-> I am a quote
-
-Longer quotes work too: 
-
-> It is important to offset all content that is a literal quotation, and give references. One can use this style for things other than actual quoted material as well, but we should be careful it doesn't get confused. Note that this whole paragraph has only a single  "carrot" (`>`) at the beginning. But now I'll place another carrot  on the next line, that works too, and contiguously, I think...
-> I'm on a new line with a new carrot
-
-> And then here I put two line breaks and a new carrot before this line.
-> Will footnotes work within quote sections?^[This is meant to be a footnote and it seems to come out OK.]
-    
