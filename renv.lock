@@ -971,8 +971,8 @@
       "RemoteRepo": "rp-r-package",
       "RemoteUsername": "rethinkpriorities",
       "RemoteRef": "HEAD",
-      "RemoteSha": "24bad2898adf109241a4ba91148c77deb99ed6b5",
-      "Hash": "c9304ffc4ceef2fd54882f1f0088fcd3",
+      "RemoteSha": "a846a999ac1b176b4b7dffbe4540d9c8170896b8",
+      "Hash": "328d415fb323ae4c39e9395d3154a342",
       "Requirements": [
         "assertthat",
         "dplyr",
