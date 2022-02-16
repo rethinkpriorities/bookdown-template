@@ -24,7 +24,7 @@ After changing the content of this file, you should start adding chapters. This 
 
 ## Common issues
 
-#### Pandoc {-}
+### Pandoc
 
 If building the book ends up looking different on your device, check whether you are using the same version of Pandoc. This bookdown format relies on the version of Pandoc that comes with RStudio. You can check the version and location of your Pandoc installation by running `rmarkdown::find_pandoc()`. 
 

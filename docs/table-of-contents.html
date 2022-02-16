@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="10 EA Forum | Bookdown Template" />
+<meta property="og:title" content="2 Table of Contents | Bookdown Template" />
 <meta property="og:type" content="book" />
 
 
@@ -22,9 +22,9 @@ MathJax.Hub.Config({
 </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta name="description" content="10 EA Forum | Bookdown Template">
+<meta name="description" content="2 Table of Contents | Bookdown Template">
 
-<title>10 EA Forum | Bookdown Template</title>
+<title>2 Table of Contents | Bookdown Template</title>
 
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -202,35 +202,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- Page content-->
     <div id="main-container" class="container-fluid">
 <main>
-<div id="ea-forum" class="section level1" number="10">
-<h1><span class="header-section-number">10</span> EA Forum</h1>
-<p>We often need to make output into a format acceptable for the EA Forum.</p>
-<p>Our current thinking for the EA Survey reports is:</p>
-<ul>
-<li><p>Bookdown: detailed graphs and analysis, some technical details, but minimal discussion. Link to our ‘methodology’ bookdown where relevant, rather than re-explaining a concept</p></li>
-<li><p>EA Forum: Summaries and excerpts of the analysis and figures, more discussion, interpretation, and implications.</p></li>
-</ul>
-<p>Typically, RP has made EA Forum these posts first in Google Docs for feedback and then there is some sort of procedure to get it into EA forum markdown syntax from there. For some previous posts, we pasted from the Rstudio visual mode pastes into Google docs for narrative, and figures/tables could be manually pasted. But we want to avoid having to do that!</p>
-<p>David Reinstein has worked with Pete and others on tools to (mostly) automate this conversion and hosting process, but some manual tweaks were needed at the end. See the work on this <a href="https://github.com/rethinkpriorities/ea-data/blob/master/main_2020.R">here, at bottom</a>, and in <a href="https://github.com/rethinkpriorities/ea-data/blob/master/code/parse_ea_forum_md.R">this R script</a> and <a href="https://github.com/rethinkpriorities/ea-data/blob/master/code/fix_eafo_links.py">this Python script</a>. Yes, it’s spaghetti code.</p>
-<p>Atm, some formatting adjustments are necessary, but both EA forum and our bookdown style templates are changing.</p>
+<div id="table-of-contents" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Table of Contents</h1>
+<p>The bookdown template comes with a table of contents (TOC), visible on the left-hand side. The TOC automatically adapts to different screen sizes (it disappears on small screens). You can toggle the TOC by clicking on the left button in the navigation bar. It’s particularly nice to hide the TOC when you want to focus on the content of the page.</p>
+<p>Each chapter section is automatically added to the TOC, up until a default level of 3. Each chapter needs to start with a level 1 (#) heading and this header will always show up in the TOC. After that, you can use level 2 (##) or level 3 (###) headings to create additional sections. These will be automatically added to the TOC. If you want to limit the TOC depth, you can add the following code to <code>index.Rmd</code> or to <code>_output.yml</code>.</p>
+<pre><code>output: 
+  rethinkpriorities::book:
+    toc_depth: 2</code></pre>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 <div class="text-center m-5">
-<a href="tables.html"><button class="btn btn-secondary">Previous</button></a>
-
+<a href="how-to-use-this-template.html"><button class="btn btn-secondary">Previous</button></a>
+<a href="code.html"><button class="btn btn-secondary">Next</button></a>
 </div>
 </main>
 </div>

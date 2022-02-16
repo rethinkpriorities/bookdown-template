@@ -3,6 +3,7 @@ output_dir: "docs"
 rmd_files: [
   "index.Rmd", 
   "how-to.Rmd", 
+  "toc.Rmd",
   "code.Rmd", 
   "citations.Rmd", 
   "blockquotes.Rmd", 

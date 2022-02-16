@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="2 Code | Bookdown Template" />
+<meta property="og:title" content="3 Code | Bookdown Template" />
 <meta property="og:type" content="book" />
 
 
@@ -22,9 +22,9 @@ MathJax.Hub.Config({
 </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta name="description" content="2 Code | Bookdown Template">
+<meta name="description" content="3 Code | Bookdown Template">
 
-<title>2 Code | Bookdown Template</title>
+<title>3 Code | Bookdown Template</title>
 
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -131,17 +131,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <a id="item-common-issues" class="list-group-item" href="how-to-use-this-template.html#common-issues"><span class="toc-section-number">1.3</span><span>Common issues</a>
   <a id="item-customization" class="list-group-item" href="how-to-use-this-template.html#customization"><span class="toc-section-number">1.4</span><span>Customization</a>
   </div>
-  <a id="item-code" class="list-group-item" href="code.html"><span class="toc-section-number">2</span><span>Code</a>
+  <a id="item-table-of-contents" class="list-group-item" href="table-of-contents.html"><span class="toc-section-number">2</span><span>Table of Contents</a>
+  <a id="item-code" class="list-group-item" href="code.html"><span class="toc-section-number">3</span><span>Code</a>
   <div class="list-group list-group-flush list-subgroup">
-  <a id="item-code-chunks" class="list-group-item" href="code.html#code-chunks"><span class="toc-section-number">2.1</span><span>Code chunks</a>
+  <a id="item-code-chunks" class="list-group-item" href="code.html#code-chunks"><span class="toc-section-number">3.1</span><span>Code chunks</a>
   </div>
-  <a id="item-citations" class="list-group-item" href="citations.html"><span class="toc-section-number">3</span><span>Citations</a>
-  <a id="item-blockquotes" class="list-group-item" href="blockquotes.html"><span class="toc-section-number">4</span><span>Blockquotes</a>
-  <a id="item-footnotes" class="list-group-item" href="footnotes.html"><span class="toc-section-number">5</span><span>Footnotes</a>
-  <a id="item-foldable-sections" class="list-group-item" href="foldable-sections.html"><span class="toc-section-number">6</span><span>Foldable Sections</a>
-  <a id="item-alerts" class="list-group-item" href="alerts.html"><span class="toc-section-number">7</span><span>Alerts</a>
-  <a id="item-tables" class="list-group-item" href="tables.html"><span class="toc-section-number">8</span><span>Tables</a>
-  <a id="item-ea-forum" class="list-group-item" href="ea-forum.html"><span class="toc-section-number">9</span><span>EA Forum</a>
+  <a id="item-citations" class="list-group-item" href="citations.html"><span class="toc-section-number">4</span><span>Citations</a>
+  <a id="item-blockquotes" class="list-group-item" href="blockquotes.html"><span class="toc-section-number">5</span><span>Blockquotes</a>
+  <a id="item-footnotes" class="list-group-item" href="footnotes.html"><span class="toc-section-number">6</span><span>Footnotes</a>
+  <a id="item-foldable-sections" class="list-group-item" href="foldable-sections.html"><span class="toc-section-number">7</span><span>Foldable Sections</a>
+  <a id="item-alerts" class="list-group-item" href="alerts.html"><span class="toc-section-number">8</span><span>Alerts</a>
+  <a id="item-tables" class="list-group-item" href="tables.html"><span class="toc-section-number">9</span><span>Tables</a>
+  <a id="item-ea-forum" class="list-group-item" href="ea-forum.html"><span class="toc-section-number">10</span><span>EA Forum</a>
   </div>
 </div>
 <!-- Page content wrapper-->
@@ -201,19 +202,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- Page content-->
     <div id="main-container" class="container-fluid">
 <main>
-<div id="code" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> Code</h1>
+<div id="code" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Code</h1>
 <p>An important reason for creating this bookdown template is to present analyses performed in R. Not only do we want to show these results, we also want to show the R code that was used to produce those results. This can be done by using so-called code chunks.</p>
-<div id="code-chunks" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Code chunks</h2>
+<div id="code-chunks" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Code chunks</h2>
 <p>A code chunk is created by using using two sets of three back ticks (```). In the case of R code, you add a set of parentheses containing the letter <code>r</code>, followed by a label that describes the code chunk. The actual R code goes between the sets of back ticks. For example, in the code chunk below we use R code to present a summary of the <code>cars</code> data frame.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="code.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r cars}</span></span>
-<span id="cb1-2"><a href="code.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="in"># Print a summary of the &#39;cars&#39; data frame</span></span>
-<span id="cb1-3"><a href="code.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="in">summary(cars)</span></span>
-<span id="cb1-4"><a href="code.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb2-1"><a href="code.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r cars}</span></span>
+<span id="cb2-2"><a href="code.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="in"># Print a summary of the &#39;cars&#39; data frame</span></span>
+<span id="cb2-3"><a href="code.html#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="in">summary(cars)</span></span>
+<span id="cb2-4"><a href="code.html#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 <p>This produces the following result:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r collapse"><div><code class="sourceCode r"><span id="cb2-1"><a href="code.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print a summary of the &#39;cars&#39; data frame</span></span>
-<span id="cb2-2"><a href="code.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cars)</span></code></div></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r collapse"><div><code class="sourceCode r"><span id="cb3-1"><a href="code.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print a summary of the &#39;cars&#39; data frame</span></span>
+<span id="cb3-2"><a href="code.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cars)</span></code></div></pre></div>
 <pre><code>##      speed           dist       
 ##  Min.   : 4.0   Min.   :  2.00  
 ##  1st Qu.:12.0   1st Qu.: 26.00  
@@ -228,7 +229,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <div class="text-center m-5">
-<a href="how-to-use-this-template.html"><button class="btn btn-secondary">Previous</button></a>
+<a href="table-of-contents.html"><button class="btn btn-secondary">Previous</button></a>
 <a href="citations.html"><button class="btn btn-secondary">Next</button></a>
 </div>
 </main>

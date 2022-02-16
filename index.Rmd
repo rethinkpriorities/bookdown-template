@@ -7,7 +7,9 @@ bibliography: references.bib
 csl: apa.csl
 link-citations: true
 site: bookdown::bookdown_site
-output: rethinkpriorities::book
+output: 
+  rethinkpriorities::book:
+    toc_depth: 2
 ---
 
 # About {.unnumbered}

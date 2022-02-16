@@ -2,7 +2,9 @@ how-to-use-this-template
 setup
 usage
 common-issues
+pandoc
 customization
+table-of-contents
 code
 code-chunks
 citations
