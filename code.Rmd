@@ -1,0 +1,27 @@
+# Code
+
+An important reason for creating this bookdown template is to present analyses performed in R. Not only do we want to show these results, we also want to show the R code that was used to produce those results. This can be done by using so-called code chunks.
+
+## Code chunks
+
+A code chunk is created by using using two sets of three back ticks (\`\`\`). In the case of R code, you add a set of parentheses containing the letter `r`, followed by a label that describes the code chunk. The actual R code goes between the sets of back ticks. For example, in the code chunk below we use R code to present a summary of the `cars` data frame.
+
+```` markdown
+`r ''````{r cars}
+# Print a summary of the 'cars' data frame
+summary(cars)
+```
+````
+
+This produces the following result:
+
+```{r cars}
+# Print a summary of the 'cars' data frame
+summary(cars)
+```
+
+By default, the code that produces this result is hidden. Readers who are interested in the code can click on the 'Toggle code' button in the navigation bar to show all the code chunks.
+
+Note that the toggle code button is a custom feature and is not supported out of the box when you begin a `bookdown` project.
+
+Note that the above example table is output in a 'raw text' format; this could be styled to be more attractive with packages such as `kableExtra`.

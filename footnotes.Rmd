@@ -1,0 +1,15 @@
+# Footnotes
+
+Footnotes are supported using the typical Markdown format:
+
+`This sentence has a footnote.^[Here I am!]`
+
+The result: This sentence has a footnote.^[Here I am!]
+
+The footnotes are shown in-line using [littlefoot.js](https://github.com/goblindegook/littlefoot). Simply click on the footnote to show a popover window that contains the footnote. 
+
+Even larger footnotes are supported, such as the one below.
+
+Example^[... We have a bit of a problem in some cases: hovered footnotes seem to be cut off on the left when they are long and start on the left. Hovered footnotes seem to be cut off on the left when they are long and start on the left.]
+
+When the screen gets small, the footnotes show up as banners at the bottom of the screen.

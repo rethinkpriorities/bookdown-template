@@ -1,0 +1,44 @@
+# Alerts
+
+You may want to style a certain paragraph in a different way to alert the user to it. Because this template is based on Bootstrap, you can use different kinds of alerts. 
+
+The way it works is that you create a custom block and give it two classes. The first class is `.alert`, followed by one of the following: `.alert-primary`, `.alert-secondary`, `.alert-success`, `.alert-danger`, `.alert-warning`, `.alert-info`, `.alert-light`, `.alert-dark`.
+
+Here is an example:
+
+    ::: {.alert .alert-primary}
+    This is an alert!
+    :::
+
+Which produces the following result:
+
+::: {.alert .alert-primary}
+  This is an alert!
+:::
+
+Below you can see an example of each different kind of alert.
+
+::: {.alert .alert-primary}
+  A simple primary alert—check it out!
+:::
+::: {.alert .alert-secondary}
+  A simple secondary alert—check it out!
+:::
+::: {.alert .alert-success}
+  A simple success alert—check it out!
+:::
+::: {.alert .alert-danger}
+  A simple danger alert—check it out!
+:::
+::: {.alert .alert-warning}
+  A simple warning alert—check it out!
+:::
+::: {.alert .alert-info}
+  A simple info alert—check it out!
+:::
+::: {.alert .alert-light}
+  A simple light alert—check it out!
+:::
+::: {.alert .alert-dark}
+  A simple dark alert—check it out!
+:::

@@ -1,21 +1,20 @@
 ---
-title: "Bookdown Template"
-author: "Rethink Priorities"
-bibliography: ["assets/bib/book.bib"]
-always_allow_html: yes
-link-citations: yes
-github-repo: rethinkpriorities/bookdown-template
-description: "The Rethink Priorities bookdown template"
+title: Bookdown Template
+author: Rethink Priorities
+logo: logo.png
+always_allow_html: true
+bibliography: references.bib
+csl: apa.csl
+link-citations: true
 site: bookdown::bookdown_site
+output: 
+  rethinkpriorities::book:
+    toc_depth: 2
 ---
-
 
 # About {.unnumbered}
 
 This book is a bookdown template to be used for various projects of the Rethink Priorities survey team. The main goal of this book is to serve as a skeleton project that can be copied and used in other projects. Additionally, it contains some chapters that serve as tutorials for different features of this bookdown format.
-
-You can find other content that will be helpful across bookdowns in the `main,R`, `index.Rmd` files in our other bookdowns, and `support`, `code`, and `assets` folders within these. 
-
 
 #### Contributions {.unnumbered}
 

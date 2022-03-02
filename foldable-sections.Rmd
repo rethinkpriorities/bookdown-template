@@ -1,0 +1,81 @@
+# Foldable Sections
+
+A foldable section can be created by placing text between two sets of three colons (`:::`) and specifying the `.foldable` class between two curly braces. An example is shown below.
+
+    ::: {.foldable}
+    This is a foldable section.
+    :::
+
+This creates the following foldable section:
+
+::: {.foldable}
+This is a foldable section.
+:::
+
+Foldable sections can contain all kinds of content, in varying sizes. Below you can find more examples.
+
+Lots of (lion) content:
+
+::: {.foldable}
+**ROAR**
+
+The Lion & the Lamb - samantha Dec 2013
+
+And so the lion fell in love with the lamb 
+She thought she had the upper hand 
+But fate got in the way 
+And the lion had nothing to say 
+So they began a life together 
+Determined to last forever 
+For their love was stronger than you would believe 
+So intense it almost deceives 
+But the lion couldn't overcome 
+All the obstacles to be with the one 
+He left the lamb with tears in her eyes 
+And wouldn't return despite her tries 
+Now the lamb couldn't comprehend 
+Why the lion wouldn't spend 
+A life time with her by his side the lion and his stupid pride 
+But the lion soon came to regret 
+The fact that he could ever let 
+His precious lamb get away 
+And now the lion knew what to say 
+He needed his lamb and needed her bad 
+See he missed the love that they had 
+But the lamb did not forgive 
+All that the lion did 
+But she loved her lion, she couldn't deny 
+Even if she couldn't explain why 
+And so the lion fell in love with the lamb 
+Stupid lion, stupid lamb
+
+From: <https://hellopoetry.com/words/lion/>
+
+(we warned you)
+:::
+
+With inline r code:
+
+::: {.foldable}
+Let's run `2 + 2`, which is: `r 2+2`
+:::
+
+With a footnote:
+
+::: {.foldable}
+This is a footnote.^[I'm a footnote]
+:::
+
+With a list:
+
+::: {.foldable}
+- Item one
+- Item two
+   - Second level
+:::
+
+With Latex math:
+
+::: {.foldable}
+$x^2$
+:::

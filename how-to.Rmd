@@ -1,0 +1,37 @@
+# How to use this template
+
+The goal of this template is to make it easy to get started on writing a `bookdown` book. The word 'book' might be a misnomer because you can also use it to write notes, a manual (similar to this bookdown), a thesis, and many other things.
+
+If you have enough time, the best way to get started is to read the `bookdown` [book](https://bookdown.org/yihui/bookdown/). For those in a hurry, we list the important steps below.
+
+## Setup
+
+1.  Clone this template from GitHub. The easiest way to do this is to open RStudio and select File -> New Project -> Version Control -> Git. The repository URL of this template is "<https://github.com/rethinkpriorities/bookdown-template>". After entering this, and changing some of the other settings if you want to, click on Create Project.
+
+2.  Install (or update) the `rethinkpriorities` R package. This package includes the unique format that we developed.
+
+    devtools::install_github("rethinkpriorities/rp-r-package")
+    library(rethinkpriorities)
+
+
+3.  To preview the template, go to the Build tab (next to Environment, History, and Connection) and click on "Build Website". This will open the book in the Viewer pane.
+
+## Usage
+
+The template is in and of itself not interesting, so you need to adapt the content. The first thing to adapt are the contents of `index.Rmd`. You should change some of the information at the top of the file (between the two `---` symbols). These are the YAML options and you can change them to alter the meta-information of the book or to change some of the settings. You probably only want to change the meta information, such as the name and author.
+
+After changing the content of this file, you should start adding chapters. This template comes with a 'chapters' folder where you can store individual chapter files. You can simply take one of the example chapters and change the content. You should also change the file names, but in order for the book to include the chapter when you build it, you should change the contents of `_bookdown.yml`. Make sure to adapt the file paths in the `rmd_files` option so it refers to the new chapter. The order of these file paths also determines the order of the chapters in the book.
+
+## Common issues
+
+### Pandoc
+
+If building the book ends up looking different on your device, check whether you are using the same version of Pandoc. This bookdown format relies on the version of Pandoc that comes with RStudio. You can check the version and location of your Pandoc installation by running `rmarkdown::find_pandoc()`. 
+
+If it turns out that your version of Pandoc is different, you can uninstall it and restart RStudio to use the version that comes with RStudio. 
+
+## Customization
+
+It's currently not possible to add your own customization of the bookdown format, unless you change the files in the `rethinkpriorities` package. 
+
+We will soon add some options to customize certain settings (e.g., `css` styling), but for now we recommend you open an issue in the `bookdown-template` repository so that we can discuss any changes to the styling.

@@ -1,5 +1,15 @@
 delete_merged_file: TRUE
 output_dir: "docs"
-rmd_files: ["index.Rmd", "chapters/how-to.Rmd", "chapters/code.Rmd",
-  "chapters/foldable-sections.Rmd", "chapters/callout.Rmd", 
-  "chapters/footnotes.Rmd", "chapters/tables.Rmd", "chapters/EA-forum.Rmd"]
+rmd_files: [
+  "index.Rmd", 
+  "how-to.Rmd", 
+  "toc.Rmd",
+  "code.Rmd", 
+  "citations.Rmd", 
+  "blockquotes.Rmd", 
+  "footnotes.Rmd", 
+  "foldable-sections.Rmd", 
+  "alerts.Rmd", 
+  "tables.Rmd", 
+  "EA-forum.Rmd"
+]

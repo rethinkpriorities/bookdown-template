@@ -1,0 +1,9 @@
+# Table of Contents
+
+The bookdown template comes with a table of contents (TOC), visible on the left-hand side. The TOC automatically adapts to different screen sizes (it disappears on small screens). You can toggle the TOC by clicking on the left button in the navigation bar. It's particularly nice to hide the TOC when you want to focus on the content of the page.
+
+Each chapter section is automatically added to the TOC, up until a default level of 3. Each chapter needs to start with a level 1 (#) heading and this header will always show up in the TOC. After that, you can use level 2 (##) or level 3 (###) headings to create additional sections. These will be automatically added to the TOC. If you want to limit the TOC depth, you can add the following code to `index.Rmd` or to `_output.yml`.
+
+    output: 
+      rethinkpriorities::book:
+        toc_depth: 2
