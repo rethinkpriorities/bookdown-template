@@ -206,15 +206,43 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">6</span> Footnotes</h1>
 <p>Footnotes are supported using the typical Markdown format:</p>
 <p><code>This sentence has a footnote.^[Here I am!]</code></p>
+<<<<<<< HEAD
 <p>The result: This sentence has a footnote.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 <p>The footnotes are shown in-line using <a href="https://github.com/goblindegook/littlefoot">littlefoot.js</a>. Simply click on the footnote to show a popover window that contains the footnote.</p>
 <p>Even larger footnotes are supported, such as the one below.</p>
 <p>Example<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
 <p>When the screen gets small, the footnotes show up as banners at the bottom of the screen.</p>
+=======
+<p>The result: This sentence has a footnote.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+<p>The footnotes are shown in-line using <a href="http://www.bigfootjs.com">bigfoot.js</a>. Simply click on the footnote to show a popover window that contains the footnote.</p>
+<p>But (28 Jan 2022) we have a bit of a problem in some cases: hovered footnotes seem to be cut off on the left when they are long and start on the left.</p>
+<p>Example<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+<p><br />
+</p>
+<p>What to do?</p>
+<ul>
+<li>fix</li>
+<li>go back to traditional footnotes</li>
+<li>workaround to shift footnotes to the right?</li>
+</ul>
+<p>Let’s try that. First a footnote on the same line:</p>
+<pre><code>Blah\hfill [^[Flush this right I hope We have a bit of a problem in some cases: hovered
+footnotes seem to be cut off on the left when they are long and start]{style=&quot;float:right&quot;}</code></pre>
+<p>Blah</p>
+<p><br />
+</p>
+<p>Or maybe a flushed footnote needs it’s own line and be included with some blank text itself?:</p>
+<pre><code>  Blah
+  \hfill [ ^[Flush this right I hope We have a bit of a problem in some cases: hovered footnotes
+  seem to be cut off on the left when they are long and start]{style=&quot;float:right&quot;}</code></pre>
+<p>Blah
+</p>
+>>>>>>> main
 
 </div>
 <div class="footnotes">
 <hr />
+<<<<<<< HEAD
 <ol start="1">
 <li id="fn1"><p>Here I am!<a href="footnotes.html#fnref1" class="footnote-back">↩︎</a></p></li>
 <li id="fn2"><p>… We have a bit of a problem in some cases: hovered footnotes seem to be cut off on the left when they are long and start on the left. Hovered footnotes seem to be cut off on the left when they are long and start on the left.<a href="footnotes.html#fnref2" class="footnote-back">↩︎</a></p></li>
@@ -242,6 +270,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script type="application/javascript">
 littlefoot.littlefoot()
 </script>
+=======
+<ol start="3">
+<li id="fn3"><p>Here I am!<a href="footnotes.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>… We have a bit of a problem in some cases: hovered footnotes seem to be cut off on the left when they are long and start on the left. Hovered footnotes seem to be cut off on the left when they are long and start on the left.<a href="footnotes.html#fnref4" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+>>>>>>> main
 
 <script>
 // Set the current page to be active in the TOC
