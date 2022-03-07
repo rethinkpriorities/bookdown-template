@@ -1,10 +1,8 @@
 how-to-use-this-template
 setup
 usage
-<<<<<<< HEAD
-common-issues
-pandoc
 customization
+known-issues
 table-of-contents
 code
 code-chunks
@@ -13,13 +11,5 @@ blockquotes
 footnotes
 foldable-sections
 alerts
-=======
-code
-code-chunks
-foldable-sections
-content-types
-callout-blocks
-footnotes
->>>>>>> main
 tables
 ea-forum

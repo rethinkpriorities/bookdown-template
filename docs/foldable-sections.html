@@ -94,6 +94,209 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style>
+  
+:root {
+  --sidebar-width: 250px;
+  --primary-color: #43718f;
+}
+
+#wrapper {
+  overflow: hidden;
+  height: 100vh;
+}
+
+@supports (-webkit-touch-callout: none) {
+  #wrapper {
+    height: -webkit-fill-available;
+  }
+}
+
+/* Main */
+
+#main-container {
+  height: calc(100% - 57px);
+  overflow-y: auto;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main h1, main h2 {
+  padding-top: 1rem;
+}
+
+/* Sidebar */
+
+#sidebar-wrapper {
+  margin-left: calc(var(--sidebar-width) * -1);
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .list-group {
+  width: var(--sidebar-width);
+}
+
+#sidebar-wrapper .list-group-flush > .list-group-item:last-child {
+  border-bottom-width: 1px;
+}
+
+#sidebar-wrapper .list-group {
+  width: var(--sidebar-width);
+}
+
+#sidebar-wrapper .list-subgroup a {
+  margin-left: 1rem;
+}
+
+.list-group-item.active {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: calc(var(--sidebar-width) * -1);
+  }
+}
+
+#sidebar-heading {
+  display: flex;
+  height: 57px;
+  width: var(--sidebar-width);
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-heading img {
+  margin-right: 0.5rem;
+}
+
+/* TOC */
+
+#TOC {
+  height: calc(100% - 57px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 0.9rem;
+}
+
+#TOC a {
+  display: flex;
+}
+
+#TOC a:hover {
+  color: var(--primary-color);
+}
+
+#TOC .active:hover {
+  color: #fff;
+}
+
+#TOC a span {
+  margin-left: 0.5em;
+}
+
+#TOC a .toc-section-number {
+  margin-left: 0;
+}
+
+/* Callout blocks */
+
+.alert {
+  padding-bottom: 0 !important;
+}
+
+/* Code */
+
+pre {
+  overflow: auto;
+  word-wrap: normal;
+  margin: 0 0 1.275em;
+  padding: .85em 1em;
+  background: #f7f7f7;
+}
+
+pre.sourceCode.r {
+  padding: 0;
+}
+
+pre.sourceCode.r div {
+  padding: .85em 1em;
+}
+
+/* Foldables */
+
+.foldable {
+  margin: 0 0 1.275em;
+  padding: .85em 1em 0 1em;
+  background: #f7f7f7;
+}
+
+.foldable a {
+  display: block;
+  color: #212529;
+  padding-bottom: 1em;
+}
+
+.foldable .show > p {
+  padding-bottom: 1em;
+  margin-bottom: 0;
+}
+
+.foldable .show > ul {
+  padding-bottom: 1em;
+}
+
+/* Buttons */
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);;
+}
+
+/* Links */
+
+a {
+  color: var(--primary-color);
+}
+
+.anchor-section {
+  color: var(--primary-color) !important;
+}
+
+/* Blockquotes */
+
+blockquote {
+  border-left: 5px solid #f7f7f7;
+  padding-left: 1em;
+  font-style: italic;
+}
+
+blockquote p {
+  padding: 0.25em;
+}
+</style>
+
 
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -105,11 +308,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   href="https://unpkg.com/littlefoot/dist/littlefoot.css"
 />
 
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
-<link href="libs/book-1.0.0/style.css" rel="stylesheet" />
-<script src="libs/book-1.0.0/littlefoot.js"></script>
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<!--<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+-->
 
 </head>
 
@@ -119,7 +334,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <div class="border-end bg-white" id="sidebar-wrapper">
   <div id="sidebar-heading" class="border-bottom bg-light">
-    <img src="logo.png" width="25px" height="25px"/>
+    <img src="assets/logo.png" width="25px" height="25px"/>
     <span class="text-nowrap">Bookdown Template</span>
   </div>
   <div id="TOC" class="list-group list-group-flush">
@@ -128,8 +343,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <div class="list-group list-group-flush list-subgroup">
   <a id="item-setup" class="list-group-item" href="how-to-use-this-template.html#setup"><span class="toc-section-number">1.1</span><span>Setup</a>
   <a id="item-usage" class="list-group-item" href="how-to-use-this-template.html#usage"><span class="toc-section-number">1.2</span><span>Usage</a>
-  <a id="item-common-issues" class="list-group-item" href="how-to-use-this-template.html#common-issues"><span class="toc-section-number">1.3</span><span>Common issues</a>
-  <a id="item-customization" class="list-group-item" href="how-to-use-this-template.html#customization"><span class="toc-section-number">1.4</span><span>Customization</a>
+  <a id="item-customization" class="list-group-item" href="how-to-use-this-template.html#customization"><span class="toc-section-number">1.3</span><span>Customization</a>
+  <a id="item-known-issues" class="list-group-item" href="how-to-use-this-template.html#known-issues"><span class="toc-section-number">1.4</span><span>Known issues</a>
   </div>
   <a id="item-table-of-contents" class="list-group-item" href="table-of-contents.html"><span class="toc-section-number">2</span><span>Table of Contents</a>
   <a id="item-code" class="list-group-item" href="code.html"><span class="toc-section-number">3</span><span>Code</a>
@@ -211,23 +426,10 @@ This is a foldable section.
 <p>This creates the following foldable section:</p>
 <div class="foldable"><a>Show</a><div class="collapse">
 <p>This is a foldable section.</p>
-<<<<<<< HEAD
 </div></div>
 <p>Foldable sections can contain all kinds of content, in varying sizes. Below you can find more examples.</p>
 <p>Lots of (lion) content:</p>
 <div class="foldable"><a>Show</a><div class="collapse">
-=======
-</div>
-<p>You can specify which text the button shows initially, but once you click on the button it will show “Show me less.” This text could be changed to something else in the <code>header.html</code> file that can be found in the <code>html</code> folder of the <code>assets</code> folder.</p>
-<p>The reason you have to specify the button itself is because of performance reasons. By putting the HTML code into the section itself, the text will be immediately shown to the user when a page is loaded. If we add the button using JavaScript, the label will initially not be shown and only show up after some (variable) time when the page is first opened.</p>
-<p><br />
-</p>
-<p>We have had some issues with multiple foldables in the past, so I include another one just for testing, and to show a ‘multi-line’ foldable with a different opening text.</p>
-<div class="foldable">
-<button class="fold-button">
-Do not open this foldable unless you want to hear about a lion
-</button>
->>>>>>> main
 <p><strong>ROAR</strong></p>
 <p>The Lion &amp; the Lamb - samantha Dec 2013</p>
 <p>And so the lion fell in love with the lamb
@@ -259,7 +461,6 @@ And so the lion fell in love with the lamb
 Stupid lion, stupid lamb</p>
 <p>From: <a href="https://hellopoetry.com/words/lion/" class="uri">https://hellopoetry.com/words/lion/</a></p>
 <p>(we warned you)</p>
-<<<<<<< HEAD
 </div></div>
 <p>With inline r code:</p>
 <div class="foldable"><a>Show</a><div class="collapse">
@@ -267,37 +468,10 @@ Stupid lion, stupid lamb</p>
 </div></div>
 <p>With a footnote:</p>
 <div class="foldable"><a>Show</a><div class="collapse">
-<p>This is a footnote.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+<p>This is a footnote.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
 </div></div>
 <p>With a list:</p>
 <div class="foldable"><a>Show</a><div class="collapse">
-=======
-</div>
-<p>That’s foldables for ya.</p>
-<div id="content-types" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Content types</h2>
-<p>Can they contain:</p>
-<p>Inline r code?:</p>
-<div class="foldable">
-<button class="fold-button">
-Show me more
-</button>
-<p>let’s try some 4</p>
-</div>
-<p>Footnotes like this one?<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
-<div class="foldable">
-<button class="fold-button">
-Show me more
-</button>
-<p>Here comes a footnote.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
-</div>
-<p>itemized lists?:</p>
-<div class="foldable">
-<button class="fold-button">
-Show me more
-</button>
-<p>Here comes a list</p>
->>>>>>> main
 <ul>
 <li>Item one</li>
 <li>Item two
@@ -314,37 +488,17 @@ Show me more
 </div>
 <div class="footnotes">
 <hr />
-<ol start="3">
-<li id="fn3"><p>I’m a footnote<a href="foldable-sections.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<ol start="2">
+<li id="fn2"><p>I’m a footnote<a href="foldable-sections.html#fnref2" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
-<<<<<<< HEAD
 <div class="text-center m-5">
 <a href="footnotes.html"><button class="btn btn-secondary">Previous</button></a>
 <a href="alerts.html"><button class="btn btn-secondary">Next</button></a>
-=======
-<p>Latex math bits like “<span class="math inline">\(x^2\)</span>?”:</p>
-<div class="foldable">
-<button class="fold-button">
-Show me more
-</button>
-<p>trying … <span class="math inline">\(x^2\)</span>?</p>
->>>>>>> main
 </div>
 </main>
 </div>
 </div>
-<<<<<<< HEAD
-=======
-<div class="footnotes">
-<hr />
-<ol start="1">
-<li id="fn1"><p>I’m a footnote<a href="foldable-sections.html#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>I’m a footnote fwa;ef awf awefj aw;lefj wa;lekfj aw;lefj aw;lefkj aw;lefj aw;lkfj awf awf aw;lkefj aw;lefj aw;lefj ;awjef ;alwkjef afawef awefwfawefawfwafwafawefawfeawfwafwafewafwafawfwafawfawfwfwaefw<a href="foldable-sections.html#fnref2" class="footnote-back">↩︎</a></p></li>
-</ol>
-</div>
-            </section>
->>>>>>> main
 
 
 </div>
@@ -357,8 +511,12 @@ Show me more
 </script>
 
 <!-- Littlefoot -->
+<script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
 <script type="application/javascript">
-littlefoot.littlefoot()
+  littlefoot.littlefoot() // Pass any littlefoot settings here.
 </script>
 
 <script>

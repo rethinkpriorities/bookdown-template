@@ -7,3 +7,11 @@ Each chapter section is automatically added to the TOC, up until a default level
     output: 
       rethinkpriorities::book:
         toc_depth: 2
+        
+It's also possible to change the width of the sidebar that contains the TOC. You can change the width by setting the `sidebar_width` option in `index.Rmd`. For example, you can set the width to 250px using the following code:
+
+```
+sidebar_width: "250px"
+```
+
+The value should be any css-valid value.

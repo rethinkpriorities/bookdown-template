@@ -4,12 +4,16 @@ Footnotes are supported using the typical Markdown format:
 
 `This sentence has a footnote.^[Here I am!]`
 
-The result: This sentence has a footnote.^[Here I am!]
+The result: This sentence has a footnote.[^1]
 
-The footnotes are shown in-line using [littlefoot.js](https://github.com/goblindegook/littlefoot). Simply click on the footnote to show a popover window that contains the footnote. 
+[^1]: Here I am!
 
-Even larger footnotes are supported, such as the one below.
+There are two ways that footnotes can be implemented in this template:
 
-Example^[... We have a bit of a problem in some cases: hovered footnotes seem to be cut off on the left when they are long and start on the left. Hovered footnotes seem to be cut off on the left when they are long and start on the left.]
+-   Standard footnotes
 
-When the screen gets small, the footnotes show up as banners at the bottom of the screen.
+-   Footnotes using [littlefoot.js](https://github.com/goblindegook/littlefoot).
+
+The benefit of using **littlefoot** is that footnotes show up in-text rather than at the bottom of the screen. Simply click on the footnote to show a popover window that contains the footnote.
+
+You can change whether you want to use **littlefoot** by setting the `use_littlefoot` parameter in `index.Rmd` to either `true` or `false`.

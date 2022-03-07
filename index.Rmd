@@ -1,15 +1,18 @@
 ---
 title: Bookdown Template
 author: Rethink Priorities
-logo: logo.png
-always_allow_html: true
+logo: assets/logo.png
 bibliography: references.bib
-csl: apa.csl
+csl: assets/apa.csl
+always_allow_html: true
 link-citations: true
+use_littlefoot: true
+sidebar_width: "250px"
 site: bookdown::bookdown_site
 output: 
   rethinkpriorities::book:
     toc_depth: 2
+    split_by: "chapter"
 ---
 
 # About {.unnumbered}

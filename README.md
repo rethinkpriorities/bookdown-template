@@ -11,8 +11,7 @@ The Rethink Priorities `bookdown` template is, as the name indicates, a template
 ## Usage
 
 1. Replace the contents of `index.Rmd` with content relevant to the project (e.g., an introduction/summary of the project and contributions)
-2. Remove the chapter files in the `chapters` folder
-3. Add new chapters (File -> New File -> R Markdown...) to the `chapters` folders; these chapters represent each chapter in the book
+2. Remove the chapter files and add your own
 4. Update the `_bookdown.yml` file to refer to the new chapters specified in the `rmd_files` parameter (by default it lists the tutorial chapters)
 
 ## Building the book
