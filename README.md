@@ -1,6 +1,9 @@
 # Rethink Priorities `bookdown` Template
 
+*Update 29 Mar 2022: We are leaning towards switching to [quarto](https://quarto.org/) as it can do most of what our template does, and more, and will be maintained by RStudio.*
+
 The Rethink Priorities `bookdown` template is, as the name indicates, a template for creating `bookdown` books used by the survey team at Rethink Priorities. The main goal of this template is to serve as a skeleton project that can be copied and used in other projects. Additionally, it contains some chapters that serve as tutorials for different features of this `bookdown` format.
+
 
 ## Installation
 
