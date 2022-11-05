@@ -1,0 +1,66 @@
+.kable_styling          Convenience 'hijacks' of kable and
+                        kable_styling to get formats I like
+.summ                   Preferred version of vtable::sumtable, with
+                        nice names
+XXX                     XXX Explanation in one sentence
+book                    The Rethink Priorities bookdown output format
+clean_sink              Puts together a bunch of common 'recipe' steps
+                        used in ML and other contexts
+convert_one_hot_back    Converts 'one-hot' Dummies to factors
+extract_hyp_results     'extract_hyp_results' is a function to extract
+                        key results from hypothesis testing using the
+                        infer package
+extract_hyp_value       Hypothesis test helpers for working with
+                        'infer' package 'extract_hyp_value' is a
+                        function to switch hypothesis statistic names
+                        to value for standardized output. It is mainly
+                        used in 'extract_hyp_results'.
+geom_tree_tot_by_split
+                        Shortcut functions for commonly used plots in
+                        RP style
+get_var_importance      Machine learning Tidymodels helpers
+grp_n                   Grouped summaries, listing of unique groups
+grp_sum                 Grouped summary table of 2 variables, mainly
+                        for plotting bivariate means by groups
+                        'grp_sum' creates a table of summary statistics
+                        on two variables, grouped by a third variable.
+grp_uniq                'grp_uniq' counts nonmissing _distinct_
+                        observations of each column by group
+hijack                  Shortcut tool for altering a function
+htest_infer_sim         helper for randomization-inference simulation
+                        testing using Infer package; set options in
+                        args
+huxoptions              Functions to set some options that look OK when
+                        using the huxtable package
+impute.med              Replaces missing values with medians for column
+                        (ignoring NA's in computing median)
+lab_list_to_text        Functions to deal with lists and text
+make_formula            Making formulas 'm_f' simply collapses lists
+                        into a formula notation and makes it a formula
+                        'make_formula' does something similar but in a
+                        more sophisticated way. using the 'reformulate'
+                        function. We use this in predictive modeling
+                        'make_formula_df' attatches thi formula to a
+                        tibble (multiple) data frames? 'wdwd' is a
+                        function that...
+mn                      Some shortcut functions for mean, median, and
+                        sd, removing missing values
+op                      Number formatting options, mainly useful for
+                        inline code
+ops                     'ops' limits to 2 digits after decimal point
+rdr_cbk                 Convenience function to make codebooks with
+                        options, particular file structure
+read_file_from_repo     Read a file from a (personal) GitHub repository
+remove_str_list         'remove_str_list' - not sure what it does
+rename_to_var_label     Rename a variable with it's label
+se_bin                  Calculate the SE of a bin
+str_det                 Case insensitive string_detect
+sumtab                  A styled summary table for one outcome by
+                        another grouping variable. A lovely set of
+                        statistics
+tabyl_ow                simple tables and tabsum ####
+tabylstuff              A set of functions to 'adorn' and format
+                        janitor::tabyl() table objects
+try_download            downloads from a url to a local path, without
+                        breaking if it fails
+zero_to_missing         Missing to zero and vice versa

@@ -1,0 +1,32 @@
+Package: rethinkpriorities
+Title: Rethink Priority's R Package
+Version: 0.1
+Authors@R: c(
+    person("Willem", "Sleegers", , "willem@rethink.org", role = c("aut", "cre")),
+    person("David", "Reinstein", , "daaronr@gmail.com", role = c("aut")))
+Description: This package contains several functions useful for the kind of
+    work that is done at Rethink Priorities.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+        license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: assertthat, dplyr, httr, huxtable, ggplot2, janitor,
+        kableExtra, keyring, labelled, purrr, readr, recipes,
+        rmarkdown, stats, stringr, tools, treemapify, vtable
+RemoteType: github
+RemoteHost: api.github.com
+RemoteRepo: rp-r-package
+RemoteUsername: rethinkpriorities
+RemoteRef: HEAD
+RemoteSha: a846a999ac1b176b4b7dffbe4540d9c8170896b8
+GithubRepo: rp-r-package
+GithubUsername: rethinkpriorities
+GithubRef: HEAD
+GithubSHA1: a846a999ac1b176b4b7dffbe4540d9c8170896b8
+NeedsCompilation: no
+Packaged: 2022-02-15 14:58:11 UTC; yosemite
+Author: Willem Sleegers [aut, cre],
+  David Reinstein [aut]
+Maintainer: Willem Sleegers <willem@rethink.org>
+Built: R 4.1.2; ; 2022-02-15 14:58:11 UTC; unix
